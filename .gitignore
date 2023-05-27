@@ -1,3 +1,9 @@
+dist/
+*.sqbpro
+items_raw.json
+items_massaged.json
+recipes.csv
+
 # Logs
 logs
 *.log
@@ -121,6 +127,7 @@ dist
 
 # Stores VSCode versions used for testing VSCode extensions
 .vscode-test
+.vscode/
 
 # yarn v2
 .yarn/cache
