@@ -1,6 +1,6 @@
 import axios from 'axios';
 import fs from 'fs';
-import JSONStream from 'JSONStream';
+import { parse } from 'JSONStream';
 import csv from 'csv-parser';
 import { 
     getDb,
@@ -63,7 +63,7 @@ async function maybeRegenItems() {
                 createItemsTable();
             }
             const rawReadStream = fs.createReadStream(ITEMS_RAW_JSON_FILE, 'utf8');
-            const jsonParser = JSONStream.parse('*');
+            const jsonParser = parse('*');
             rawReadStream.pipe(jsonParser);
             //TODO: unclear how JSONStream handles maps, otherwise this should not require a temp var
             let id = 0;
