@@ -14,14 +14,18 @@ import {
 
 const ITEM_ID_MAPPING_LOCATION = 'https://raw.githubusercontent.com/ffxiv-teamcraft/ffxiv-teamcraft/master/libs/data/src/lib/json/items.json';
 const RECIPE_LOCATION = 'https://raw.githubusercontent.com/viion/ffxiv-datamining/master/csv/Recipe.csv';
+const RETAINER_VENTURE_LOCATION = 'https://raw.githubusercontent.com/xivapi/ffxiv-datamining/e55e6d71d43999157db5a5cca94e7d596fd7088d/csv/RetainerTaskNormal.csv';
+
 const ITEMS_RAW_JSON_FILE = 'items_raw.json';
 const ITEMS_MASSAGED_JSON_FILE = 'items_massaged.json';
 const RECIPES_RAW_CSV_FILE = 'recipes.csv';
+const RETAINER_VENTURE_LOCATION_CSV_FILE = 'retainer_task_normal.csv';
 
 let refetch = false;
 let regenItems = false;
 let regenRecipes = false;
 let dropAll = false;
+let ventures = false;
 process.argv.forEach((argName) => {
     if (argName === 'fetch') {
         refetch = true;
@@ -37,6 +41,10 @@ process.argv.forEach((argName) => {
     
     if (argName === 'drop') {
         dropAll = true;
+    }
+
+    if (argName === 'ventures') {
+        ventures = true;
     }
 });
 
@@ -135,13 +143,61 @@ async function maybeGetRecipePrices() {
     })
 }
 
+type VentureItem = {
+    itemId: number;
+    itemQuantityBreakpoints: number[];
+}
+const ventureItems: VentureItem[] = [];
+async function maybeGenerateVentureCalcs() {
+    if (!ventures) {
+        console.log('Not generating ventures stats');
+        return;
+    }
+    await axios.get(RETAINER_VENTURE_LOCATION)
+        .then((response) => {
+            return fs.promises.writeFile(RETAINER_VENTURE_LOCATION_CSV_FILE, response.data, 'utf8');
+        });
+    const marketable = await UniversalClient.marketable();
+    await new Promise<void>((resolve, reject) => {
+            const rawReadStream = fs.createReadStream(RETAINER_VENTURE_LOCATION_CSV_FILE, 'utf8');
+            rawReadStream.pipe(csv({ skipLines: 1 }))
+                .on('data', (data) => {
+                    const itemId = Number(data[`Item`]);
+                    if (marketable.includes(itemId)) {
+                        const itemQuantityBreakpoints: number[] = [];
+                        for (let i = 0; i < 5; i++) {
+                            itemQuantityBreakpoints.push(data[`Quantity[${i}]`]);
+                        }
+                        ventureItems.push({
+                            itemId,
+                            itemQuantityBreakpoints,
+                        })
+                    }
+                })
+                .on('end', () => {
+                    console.log('Retainer ventures done');
+                    console.log(ventureItems.length);
+                    resolve();
+                });
+    });        
+
+    const itemStats = await UniversalClient.itemStats(ventureItems.map(({ itemId }) => itemId));
+    await fs.promises.writeFile('temp.json', JSON.stringify(itemStats));
+    return;
+}
+
 async function runGen() {
+    const beforeMemory = process.memoryUsage().heapUsed;
     await maybeFetch();
     await maybeRegenItems();
     await maybeRegenRecipes();
     // await maybeGetRecipePrices();
-    UniversalClient.itemStats([34343,34344,34344]);
-    console.log('done done');
+    await maybeGenerateVentureCalcs();
+    // UniversalClient.itemStats([34343,34344,34344]);
+
+    const afterMemory = process.memoryUsage().heapUsed;
+
+    console.log(`Finished, before memory: ${beforeMemory} after ${afterMemory}`);
 }
 
 runGen();

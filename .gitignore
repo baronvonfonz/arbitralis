@@ -3,6 +3,8 @@ dist/
 items_raw.json
 items_massaged.json
 recipes.csv
+retainer_task_normal.csv
+temp.json
 
 # Logs
 logs

@@ -39,12 +39,21 @@ async function itemStats(itemIds: number[], worldDcRegion = 40,) {
         throw Error(`Bad item IDs were passed: ${unresolvedItems}`);
     }
 
-    console.log(items);
+    return items;
 }
 
 async function marketable() {
     const results = await get('/api/v2/marketable', {});
-    console.log(results.data);
+    const { data, error } = results;
+
+    if (error) {
+        throw Error(JSON.stringify(error));
+    }
+
+    if (!data) {
+        throw Error('Null response?');
+    }
+    return data;
 }
 
 export { itemStats, marketable };

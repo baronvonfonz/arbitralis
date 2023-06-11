@@ -31,7 +31,7 @@ jobs:
         run: npm ci
 
       - name: Build
-        run: npm run cli
+        run: npm run cli -- ventures
 
       - name: Deploy
         run: npm run deploy
