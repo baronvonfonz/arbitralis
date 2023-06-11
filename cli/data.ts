@@ -141,3 +141,21 @@ export function getAllRecipesIngredients(resultsFunc: (error: Error, rows: Recip
         `, resultsFunc);
     });
 }
+
+export async function getItemsById(itemIds: number[]): Promise<Item[]> {
+    return new Promise<Item[]>((resolve, reject) => {
+        getDb().serialize(function() {
+            getDb().all(`
+                SELECT i.id, i.name
+                  FROM items i
+                 WHERE i.id IN (${itemIds.join(',')})
+            `, (error: Error, rows: Item[]) => {
+                console.log('returning');
+                if (error) {
+                    reject(error);
+                }
+                resolve(rows);
+            });
+        });    
+    });
+}

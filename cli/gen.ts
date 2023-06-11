@@ -10,6 +10,7 @@ import {
     insertItem,    
     insertRecipe,
     getAllRecipesIngredients,
+    getItemsById,
  } from './data.js';
  import { UniversalClient } from '../shared/index.js';
 
@@ -153,10 +154,13 @@ type VentureItem = {
     amountFive: number;
 }
 type UniversalisEnrichedVentureItem = {
+    name: string;
     regularSaleVelocity: number;
     averagePricePerUnit: number;
     amountOneTotalPrice: number;
     universalisUrl: string;
+    minPricePerUnit: number;
+    maxPricePerUnit: number;
 } & VentureItem;
 const ventureItems: VentureItem[] = [];
 const universalisEnrichedVentureItems: UniversalisEnrichedVentureItem[] = [];
@@ -196,18 +200,23 @@ async function maybeGenerateVentureCalcs() {
     });        
 
     // need to batch items 100 at once
-    const sublists: number[][] = [];
+    const itemIdSublists: number[][] = [];
     for (let i = 0; i < ventureItems.length; i += 100) {
-        sublists.push(ventureItems.slice(i, i + 100).map(({ itemId }) => itemId));
+        itemIdSublists.push(ventureItems.slice(i, i + 100).map(({ itemId }) => itemId));
     }
     const itemStats = (await Promise.all(
-        sublists.map(async (itemIds) => UniversalClient.itemStats(itemIds))
+        itemIdSublists.map(async (itemIds) => UniversalClient.itemStats(itemIds))
     )).reduce((bigMap, subMap) => ({ ...bigMap, ...subMap }), {});
+
     // Useful for debugging
     // await fs.promises.writeFile('temp.json', JSON.stringify(itemStats, null, 2));
     if (!itemStats) {
         throw Error('Could not make map of item stats');
     }
+
+    const itemIdToNameMap: Record<number,string> = (await getItemsById(itemIdSublists.flat()))
+        .reduce((idNameMap, item) => ({ [item.id]: item.name, ...idNameMap }), {});
+
     ventureItems.forEach((ventureItem) => {
         const ventureItemStat = itemStats[ventureItem.itemId];
         if (!ventureItemStat) {
@@ -219,7 +228,15 @@ async function maybeGenerateVentureCalcs() {
             console.log(`No buys for ${ventureItem.itemId}`);
             return;
         }
-        const sumOfPricePerUnit = ventureItemStat?.entries?.reduce((sum, saleEntry) => sum + (saleEntry.pricePerUnit || 0), 0);
+        
+        let minPricePerUnit = 0;
+        let maxPricePerUnit = Number.MAX_SAFE_INTEGER;
+        const sumOfPricePerUnit = ventureItemStat?.entries?.reduce((sum, saleEntry) => {
+            const pricePerUnit = saleEntry.pricePerUnit || 0;
+            minPricePerUnit = Math.min(minPricePerUnit, pricePerUnit);
+            maxPricePerUnit = Math.max(maxPricePerUnit, pricePerUnit);
+            return sum + pricePerUnit
+        }, 0);
         const averagePricePerUnit = Math.floor((sumOfPricePerUnit || 0) / (numberOfBuys || 0));
         if (isNaN(averagePricePerUnit)) {
             console.log(`NaN calc for ${ventureItem.itemId}`);
@@ -232,11 +249,15 @@ async function maybeGenerateVentureCalcs() {
             averagePricePerUnit,
             amountOneTotalPrice: averagePricePerUnit * ventureItem.amountOne,
             universalisUrl: `https://universalis.app/market/${ventureItem.itemId}`,
+            maxPricePerUnit,
+            minPricePerUnit,
+            name: itemIdToNameMap[ventureItem.itemId]
         })
     });
     const csvWriter = createObjectCsvWriter({
         path: 'dist/gh-pages/csv/venture_items_stats.csv',
         header: [
+            { id: 'name', title: 'Item Name' },
             { id: 'itemId', title: 'Item ID' },
             { id: 'universalisUrl', title: 'Universalis URL' },
             { id: 'amountOne', title: 'Amount One' },
@@ -245,7 +266,9 @@ async function maybeGenerateVentureCalcs() {
             { id: 'amountFour', title: 'Amount Four' },
             { id: 'amountFive', title: 'Amount Five' },
             { id: 'regularSaleVelocity', title: 'Daily Average Sold (Seven Day Window)' },
+            { id: 'minPricePerUnit', title: 'Min Price Per Unit' },
             { id: 'averagePricePerUnit', title: 'Average Price Per Unit' },
+            { id: 'maxPricePerUnit', title: 'Max Price Per Unit' },
             { id: 'amountOneTotalPrice', title: 'Total Per Venture (min amount)' },
         ]
     });
