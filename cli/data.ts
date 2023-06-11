@@ -106,39 +106,76 @@ export function insertRecipe(
     });
 }
 
-export function createItemsVolumesTable() {
-    getDb().serialize(function() {
-        getDb().run(`DROP TABLE IF EXISTS items_volumes`);
-        getDb().run(`CREATE TABLE IF NOT EXISTS items_volumes (
-            item_id INTEGER,
-            start_epoch INTEGER,
-            end_epoch INTEGER,
-            units INTEGER,
-            gil INTEGER,
-            PRIMARY KEY(item_id, from_id),
-        )`);        
-    });
+export type IngredientAmounts = Map<number, number>;
+export type RecipeStrategy = {
+    amount: number;
+    ingredientAmounts: IngredientAmounts;
+};
+export type RecipeToIngredients = Record<number, RecipeStrategy>;
+export type RecipesIngredientsMetadata = {
+    recipesToIngredients: RecipeToIngredients;
+    allItemIds: Set<number>;
 }
-
-type RecipesIngredientsRow = {
+export type RecipesIngredientsRow = {
+    amount: number;
     ingredientId: number;
-    ingredientName: string;
-    craftedName: string;
     craftedId: number;
+    craftedAmount: number;
 }
-export function getAllRecipesIngredients(resultsFunc: (error: Error, rows: RecipesIngredientsRow[]) => void) {
-    getDb().serialize(function() {
-        getDb().all(`
-            SELECT ri.ingredient_id as ingredientId, i.name as ingredientName, i2.name as craftedName, i2.id as craftedId        
-              FROM recipes_ingredients ri
-              JOIN items i
-                ON i.id = ri.ingredient_id
-              JOIN recipes r
-                ON r.id = ri.recipe_id
-              JOIN items i2
-                ON i2.id = r.crafted_id
-          ORDER BY 1 desc;
-        `, resultsFunc);
+export function getAllRecipesIngredients(itemIdstoInclude: number[] = []): Promise<RecipesIngredientsMetadata> {
+    return new Promise<RecipesIngredientsMetadata>((resolve, reject) => {
+        getDb().serialize(function() {
+            getDb().all(`
+                SELECT ri.ingredient_id as ingredientId, i2.id as craftedId, ri.amount as ingredientAmount, r.crafted_amount as craftedAmount       
+                FROM recipes_ingredients ri
+                JOIN items i
+                    ON i.id = ri.ingredient_id
+                JOIN recipes r
+                    ON r.id = ri.recipe_id
+                JOIN items i2
+                    ON i2.id = r.crafted_id
+               WHERE ri.ingredient_id IN (${itemIdstoInclude.join(',')})
+                 AND r.crafted_id IN (${itemIdstoInclude.join(',')})
+            ORDER BY craftedId desc;
+            `, (error: Error, rows: RecipesIngredientsRow[]) => {
+                if (error) {
+                    reject(error);
+                }
+                console.log(`Found ${rows.length} recipe ingredients`);
+                const allItemIds = new Set<number>();
+                const recipesToIngredients: RecipeToIngredients = {};
+                let currentCraftedId = -1;
+                let currentCraftedAmount = -1;
+                let currentIngredientsAmounts: Map<number,number> = new Map();
+                rows.forEach((aRow, index) => {
+                    console.log(`next row ${aRow.craftedId} - ${aRow.ingredientId}`);
+                    if (aRow.craftedId !== currentCraftedId) {
+                        recipesToIngredients[currentCraftedId] = {
+                            ingredientAmounts: currentIngredientsAmounts,
+                            amount: currentCraftedAmount,
+                        };
+                        currentIngredientsAmounts = new Map();
+                        currentIngredientsAmounts.set(aRow.ingredientId, aRow.amount);
+                        currentCraftedId = aRow.craftedId;
+                        allItemIds.add(currentCraftedId);
+                        Object.keys(currentIngredientsAmounts).forEach(ingredientId => allItemIds.add(Number(ingredientId)));
+                    } else {
+                        currentIngredientsAmounts.set(aRow.ingredientId, aRow.amount);
+                        currentCraftedAmount = aRow.craftedAmount;
+                    }
+                });
+                recipesToIngredients[currentCraftedId] = {
+                    ingredientAmounts: currentIngredientsAmounts,
+                    amount: currentCraftedAmount,
+                };
+                delete recipesToIngredients[-1];
+                allItemIds.delete(-1);
+                resolve({
+                    allItemIds,
+                    recipesToIngredients,
+                });
+            });
+        });
     });
 }
 
@@ -150,7 +187,6 @@ export async function getItemsById(itemIds: number[]): Promise<Item[]> {
                   FROM items i
                  WHERE i.id IN (${itemIds.join(',')})
             `, (error: Error, rows: Item[]) => {
-                console.log('returning');
                 if (error) {
                     reject(error);
                 }

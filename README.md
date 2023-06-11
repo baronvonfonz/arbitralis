@@ -8,6 +8,8 @@ Raw -> https://raw.githubusercontent.com/baronvonfonz/arbitralis/gh-pages/csv/ve
 
 ## TODO:
 
+- better timestamping?
+
 - gil/specialshop
 
 https://raw.githubusercontent.com/xivapi/ffxiv-datamining/master/csv/SpecialShop.csv
