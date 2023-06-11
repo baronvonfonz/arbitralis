@@ -13,6 +13,7 @@ import {
     getItemsById,
  } from './data.js';
  import { UniversalClient } from '../shared/index.js';
+import { UniversalisV2 } from 'universalis-ts';
 
 const ITEM_ID_MAPPING_LOCATION = 'https://raw.githubusercontent.com/ffxiv-teamcraft/ffxiv-teamcraft/master/libs/data/src/lib/json/items.json';
 const RECIPE_LOCATION = 'https://raw.githubusercontent.com/viion/ffxiv-datamining/master/csv/Recipe.csv';
@@ -162,8 +163,18 @@ type UniversalisEnrichedVentureItem = {
     minPricePerUnit: number;
     maxPricePerUnit: number;
 } & VentureItem;
+type UniversalisBuyEntry = {
+    itemId: number;
+    name: string;
+    pricePerUnit: number;
+    quantity: number;
+    buyerName: string;
+    timestamp: string;
+    universalisUrl: string;
+}
 const ventureItems: VentureItem[] = [];
 const universalisEnrichedVentureItems: UniversalisEnrichedVentureItem[] = [];
+const universalisMaxBuyEntries: UniversalisBuyEntry[] = [];
 async function maybeGenerateVentureCalcs() {
     if (!ventures) {
         console.log('Not generating ventures stats');
@@ -225,20 +236,25 @@ async function maybeGenerateVentureCalcs() {
         }
         const numberOfBuys = ventureItemStat?.entries?.length;
         if ((numberOfBuys || 0) === 0) {
-            console.log(`No buys for ${ventureItem.itemId}`);
+            console.log(`No buys for ${itemIdToNameMap[ventureItem.itemId]} (id:${ventureItem.itemId})`);
             return;
         }
         
-        let minPricePerUnit = 0;
-        let maxPricePerUnit = Number.MAX_SAFE_INTEGER;
+        let minPricePerUnit = Number.MAX_SAFE_INTEGER;
+        let maxPricePerUnit = 0;
+        let maxPriceEntry: UniversalisV2.components["schemas"]["MinimizedSaleView"] = {};
         const sumOfPricePerUnit = ventureItemStat?.entries?.reduce((sum, saleEntry) => {
             const pricePerUnit = saleEntry.pricePerUnit || 0;
+            const localMaxPricePerUnit = Math.max(maxPricePerUnit, pricePerUnit);
+            if (localMaxPricePerUnit > maxPricePerUnit) {
+                maxPricePerUnit = localMaxPricePerUnit;
+                maxPriceEntry = saleEntry;
+            }
             minPricePerUnit = Math.min(minPricePerUnit, pricePerUnit);
-            maxPricePerUnit = Math.max(maxPricePerUnit, pricePerUnit);
             return sum + pricePerUnit
         }, 0);
         const averagePricePerUnit = Math.floor((sumOfPricePerUnit || 0) / (numberOfBuys || 0));
-        if (isNaN(averagePricePerUnit)) {
+        if (isNaN(averagePricePerUnit) || !maxPriceEntry.buyerName) {
             console.log(`NaN calc for ${ventureItem.itemId}`);
             return;
         }
@@ -252,6 +268,15 @@ async function maybeGenerateVentureCalcs() {
             maxPricePerUnit,
             minPricePerUnit,
             name: itemIdToNameMap[ventureItem.itemId]
+        });
+        universalisMaxBuyEntries.push({
+            itemId: ventureItem.itemId,
+            name: itemIdToNameMap[ventureItem.itemId],
+            buyerName: maxPriceEntry.buyerName || 'N/A',
+            pricePerUnit: maxPriceEntry.pricePerUnit || 0,
+            quantity: maxPriceEntry.quantity || 0,
+            timestamp: maxPriceEntry.timestamp ? new Date(maxPriceEntry.timestamp * 1000).toISOString() : 'N/A',
+            universalisUrl: `https://universalis.app/market/${ventureItem.itemId}`,
         })
     });
     const csvWriter = createObjectCsvWriter({
@@ -278,7 +303,26 @@ async function maybeGenerateVentureCalcs() {
         })
         .catch((err) => {
             console.error(`CSV writing error: `, err);
+        });
+    const maxBuyerCsvWriter = createObjectCsvWriter({
+        path: 'dist/gh-pages/csv/max_buyer_items_stats.csv',
+        header: [
+            { id: 'name', title: 'Item Name' },
+            { id: 'itemId', title: 'Item ID' },
+            { id: 'buyerName', title: 'Buyer Name' },
+            { id: 'universalisUrl', title: 'Universalis URL' },
+            { id: 'pricePerUnit', title: 'Price per unit' },
+            { id: 'quantity', title: 'Quantity' },
+            { id: 'timestamp', title: 'Timestamp' },
+        ]
+    });
+    await maxBuyerCsvWriter.writeRecords(universalisMaxBuyEntries)
+        .then(() => {
+            console.log('Wrote max buyer CSV!')
         })
+        .catch((err) => {
+            console.error(`CSV writing error: `, err);
+        });        
     return;
 }
 

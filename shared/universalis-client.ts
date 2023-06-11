@@ -13,12 +13,20 @@ async function worlds() {
     });
 }
 
+const _28_DAYS_SECONDS = 28 * 24 * 60 * 60;
+const _28_DAYS_MILLISECONDS = _28_DAYS_SECONDS * 1000;
+
 async function itemStats(itemIds: number[], worldDcRegion = 40,) {
     if (itemIds.length > 100) {
         throw Error('API allows only 100 items at a time');
     }
+    
     const results = await get('/api/v2/history/{worldDcRegion}/{itemIds}', {
         params: {
+            query: {
+                statsWithin: Number(_28_DAYS_MILLISECONDS).toString(),
+                entriesWithin: Number(_28_DAYS_SECONDS).toString(),
+            },
             path: {
                 worldDcRegion: worldDcRegion.toString(),
                 itemIds: itemIds.join(','),
