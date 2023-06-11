@@ -2,6 +2,7 @@ import axios from 'axios';
 import fs from 'fs';
 import { parse } from 'JSONStream';
 import csv from 'csv-parser';
+import { createObjectCsvWriter } from 'csv-writer';
 import { 
     getDb,
     createItemsTable,
@@ -145,9 +146,20 @@ async function maybeGetRecipePrices() {
 
 type VentureItem = {
     itemId: number;
-    itemQuantityBreakpoints: number[];
+    amountOne: number;
+    amountTwo: number;
+    amountThree: number;
+    amountFour: number;
+    amountFive: number;
 }
+type UniversalisEnrichedVentureItem = {
+    regularSaleVelocity: number;
+    averagePricePerUnit: number;
+    amountOneTotalPrice: number;
+    universalisUrl: string;
+} & VentureItem;
 const ventureItems: VentureItem[] = [];
+const universalisEnrichedVentureItems: UniversalisEnrichedVentureItem[] = [];
 async function maybeGenerateVentureCalcs() {
     if (!ventures) {
         console.log('Not generating ventures stats');
@@ -170,24 +182,94 @@ async function maybeGenerateVentureCalcs() {
                         }
                         ventureItems.push({
                             itemId,
-                            itemQuantityBreakpoints,
+                            amountOne: itemQuantityBreakpoints[0],
+                            amountTwo: itemQuantityBreakpoints[1],
+                            amountThree: itemQuantityBreakpoints[2],
+                            amountFour: itemQuantityBreakpoints[3],
+                            amountFive: itemQuantityBreakpoints[4],
                         })
                     }
                 })
                 .on('end', () => {
-                    console.log('Retainer ventures done');
-                    console.log(ventureItems.length);
                     resolve();
                 });
     });        
 
-    const itemStats = await UniversalClient.itemStats(ventureItems.map(({ itemId }) => itemId));
-    await fs.promises.writeFile('temp.json', JSON.stringify(itemStats));
+    // need to batch items 100 at once
+    const sublists: number[][] = [];
+    for (let i = 0; i < ventureItems.length; i += 100) {
+        sublists.push(ventureItems.slice(i, i + 100).map(({ itemId }) => itemId));
+    }
+    const itemStats = (await Promise.all(
+        sublists.map(async (itemIds) => UniversalClient.itemStats(itemIds))
+    )).reduce((bigMap, subMap) => ({ ...bigMap, ...subMap }), {});
+    // Useful for debugging
+    // await fs.promises.writeFile('temp.json', JSON.stringify(itemStats, null, 2));
+    if (!itemStats) {
+        throw Error('Could not make map of item stats');
+    }
+    ventureItems.forEach((ventureItem) => {
+        const ventureItemStat = itemStats[ventureItem.itemId];
+        if (!ventureItemStat) {
+            console.log(`No data from universalis for ${ventureItem.itemId}`);
+            return;
+        }
+        const numberOfBuys = ventureItemStat?.entries?.length;
+        if ((numberOfBuys || 0) === 0) {
+            console.log(`No buys for ${ventureItem.itemId}`);
+            return;
+        }
+        const sumOfPricePerUnit = ventureItemStat?.entries?.reduce((sum, saleEntry) => sum + (saleEntry.pricePerUnit || 0), 0);
+        const averagePricePerUnit = Math.floor((sumOfPricePerUnit || 0) / (numberOfBuys || 0));
+        if (isNaN(averagePricePerUnit)) {
+            console.log(`NaN calc for ${ventureItem.itemId}`);
+            return;
+        }
+        const regularSaleVelocity = ventureItemStat.regularSaleVelocity || 0;
+        universalisEnrichedVentureItems.push({
+            ...ventureItem,
+            regularSaleVelocity,
+            averagePricePerUnit,
+            amountOneTotalPrice: averagePricePerUnit * ventureItem.amountOne,
+            universalisUrl: `https://universalis.app/market/${ventureItem.itemId}`,
+        })
+    });
+    const csvWriter = createObjectCsvWriter({
+        path: 'dist/gh-pages/csv/venture_items_stats.csv',
+        header: [
+            { id: 'itemId', title: 'Item ID' },
+            { id: 'universalisUrl', title: 'Universalis URL' },
+            { id: 'amountOne', title: 'Amount One' },
+            { id: 'amountTwo', title: 'Amount Two' },
+            { id: 'amountThree', title: 'Amount Three' },
+            { id: 'amountFour', title: 'Amount Four' },
+            { id: 'amountFive', title: 'Amount Five' },
+            { id: 'regularSaleVelocity', title: 'Daily Average Sold (Seven Day Window)' },
+            { id: 'averagePricePerUnit', title: 'Average Price Per Unit' },
+            { id: 'amountOneTotalPrice', title: 'Total Per Venture (min amount)' },
+        ]
+    });
+    await csvWriter.writeRecords(universalisEnrichedVentureItems)
+        .then(() => {
+            console.log('Wrote CSV!')
+        })
+        .catch((err) => {
+            console.error(`CSV writing error: `, err);
+        })
     return;
 }
 
 async function runGen() {
     const beforeMemory = process.memoryUsage().heapUsed;
+
+    const distDirectoryPath = './dist/gh-pages/csv';
+    if (!fs.existsSync(distDirectoryPath)) {
+        fs.mkdirSync(distDirectoryPath, { recursive: true });
+        console.log(`Directory structure created at ${distDirectoryPath}`);
+      } else {
+        console.log(`Directory structure already exists at ${distDirectoryPath}`);
+      }
+
     await maybeFetch();
     await maybeRegenItems();
     await maybeRegenRecipes();

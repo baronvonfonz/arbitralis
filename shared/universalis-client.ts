@@ -14,6 +14,9 @@ async function worlds() {
 }
 
 async function itemStats(itemIds: number[], worldDcRegion = 40,) {
+    if (itemIds.length > 100) {
+        throw Error('API allows only 100 items at a time');
+    }
     const results = await get('/api/v2/history/{worldDcRegion}/{itemIds}', {
         params: {
             path: {
