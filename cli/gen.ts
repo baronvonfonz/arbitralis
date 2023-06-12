@@ -168,8 +168,6 @@ type UniversalisEnrichedItem = {
     regularSaleVelocity: number;
     averagePricePerUnit: number;
     universalisUrl: string;
-    minPricePerUnit: number;
-    maxPricePerUnit: number;
 } & Item;
 type UniversalisEnrichedVentureItem = {
     amountOneTotalPrice: number;    
@@ -206,27 +204,24 @@ function universalisEntryEnrichedItem(item: Item, historyView: UniversalisV2.com
         console.log(`No data from universalis for ${item.itemId}`);
         return undefined;
     }
-    const numberOfBuys = historyView?.entries?.length;
-    if ((numberOfBuys || 0) === 0) {
+    if ((historyView?.entries?.length || 0) === 0) {
         console.log(`No buys for (id:${item.itemId})`);
         return undefined;
     }
     
     const regularSaleVelocity = historyView.regularSaleVelocity || 0;
-    let minPricePerUnit = Number.MAX_SAFE_INTEGER;
-    let maxPricePerUnit = 0;
-    let maxPriceEntry: UniversalisV2.components["schemas"]["MinimizedSaleView"] = {};
-    const sumOfPricePerUnit = historyView?.entries?.reduce((sum, saleEntry) => {
-        const pricePerUnit = saleEntry.pricePerUnit || 0;
-        const localMaxPricePerUnit = Math.max(maxPricePerUnit, pricePerUnit);
-        if (localMaxPricePerUnit > maxPricePerUnit) {
-            maxPricePerUnit = localMaxPricePerUnit;
-            maxPriceEntry = saleEntry;
-        }
-        minPricePerUnit = Math.min(minPricePerUnit, pricePerUnit);
-        return sum + pricePerUnit
-    }, 0);
-    const averagePricePerUnit = Math.floor((sumOfPricePerUnit || 0) / (numberOfBuys || 0));
+    // prepare trimmed mean
+    const sortedByPricePerUnit: UniversalisV2.components["schemas"]["MinimizedSaleView"][] = historyView?.entries?.sort(
+        (leftEntry, rightEntry) => (leftEntry.pricePerUnit || 0) - (rightEntry.pricePerUnit || 0)
+    ) || [];
+    const maxPriceEntry = sortedByPricePerUnit[sortedByPricePerUnit.length - 1];
+    const tenPercentOfEntries = Math.round(sortedByPricePerUnit.length * 0.1);
+    const trimmedEntries = sortedByPricePerUnit.slice(tenPercentOfEntries, sortedByPricePerUnit.length - tenPercentOfEntries);
+
+    // calculate trimmed mean
+    
+    const sumOfPricePerUnit = trimmedEntries?.reduce((sum, saleEntry) => sum + (saleEntry.pricePerUnit || 0), 0);
+    const averagePricePerUnit = Math.floor((sumOfPricePerUnit || 0) / trimmedEntries.length);
     if (isNaN(averagePricePerUnit) || !maxPriceEntry.buyerName) {
         console.log(`NaN calc for ${item.itemId}`);
         return undefined;
@@ -234,9 +229,7 @@ function universalisEntryEnrichedItem(item: Item, historyView: UniversalisV2.com
 
     return {
         ...item,
-        minPricePerUnit,
         maxPriceEntry,
-        maxPricePerUnit,
         averagePricePerUnit,
         regularSaleVelocity,
         universalisUrl: `https://universalis.app/market/${item.itemId}`,
@@ -286,7 +279,7 @@ async function generateCsvs() {
     const recipesIngredientsMetadata = await getAllRecipesIngredients(marketable);
     // await fs.promises.writeFile('temp.json', JSON.stringify(recipesIngredientsMetadata, null, 2));
     const allItemIdsToLookup: number[] = [...(ventureItems.map(({ itemId }) => itemId)), ...recipesIngredientsMetadata.allItemIds];
-    const itemStats = await UniversalClient.itemStats(allItemIdsToLookup);
+    const itemStats = await UniversalClient.historicalItemStats(allItemIdsToLookup);
     // Useful for debugging
     // await fs.promises.writeFile('temp.json', JSON.stringify(itemStats, null, 2));
     if (!itemStats) {
@@ -311,9 +304,7 @@ async function generateCsvs() {
         }
 
         const {
-            minPricePerUnit,
             maxPriceEntry,
-            maxPricePerUnit,
             averagePricePerUnit,
             regularSaleVelocity,
             universalisUrl,
@@ -324,8 +315,6 @@ async function generateCsvs() {
             averagePricePerUnit,
             amountOneTotalPrice: averagePricePerUnit * ventureItem.amountOne,
             universalisUrl,
-            maxPricePerUnit,
-            minPricePerUnit,
             name: itemIdToNameMap[ventureItem.itemId]
         });
         universalisMaxBuyEntries.push({
@@ -350,9 +339,7 @@ async function generateCsvs() {
             { id: 'amountFour', title: 'Amount Four' },
             { id: 'amountFive', title: 'Amount Five' },
             { id: 'regularSaleVelocity', title: 'Daily Average Sold (Seven Day Window)' },
-            { id: 'minPricePerUnit', title: 'Min Price Per Unit' },
             { id: 'averagePricePerUnit', title: 'Average Price Per Unit' },
-            { id: 'maxPricePerUnit', title: 'Max Price Per Unit' },
             { id: 'amountOneTotalPrice', title: 'Total Per Venture (min amount)' },
         ]
     }, universalisEnrichedVentureItems);
@@ -389,8 +376,6 @@ async function generateCsvs() {
         }
 
         const {
-            minPricePerUnit,
-            maxPricePerUnit,
             averagePricePerUnit,
             regularSaleVelocity,
             universalisUrl,
@@ -417,8 +402,6 @@ async function generateCsvs() {
         universalisEnrichedRecipes.push({
             crafted_name: craftedName,
             crafted_itemId: Number(craftedItemId),
-            crafted_minPricePerUnit: minPricePerUnit,
-            crafted_maxPricePerUnit: maxPricePerUnit,
             crafted_averagePricePerUnit: averagePricePerUnit,
             crafted_regularSaleVelocity: regularSaleVelocity,
             crafted_universalisUrl: universalisUrl,
@@ -426,8 +409,6 @@ async function generateCsvs() {
             
             ingredientOne_name: ingredientsEnriched[0]?.name,
             ingredientOne_itemId: ingredientsEnriched[0]?.itemId,
-            ingredientOne_minPricePerUnit: ingredientsEnriched[0]?.minPricePerUnit,
-            ingredientOne_maxPricePerUnit: ingredientsEnriched[0]?.maxPricePerUnit,
             ingredientOne_averagePricePerUnit: ingredientsEnriched[0]?.averagePricePerUnit,
             ingredientOne_regularSaleVelocity: ingredientsEnriched[0]?.regularSaleVelocity,
             ingredientOne_universalisUrl: ingredientsEnriched[0]?.name,
@@ -435,8 +416,6 @@ async function generateCsvs() {
 
             ingredientTwo_name: ingredientsEnriched[1]?.name,
             ingredientTwo_itemId: ingredientsEnriched[1]?.itemId,
-            ingredientTwo_minPricePerUnit: ingredientsEnriched[1]?.minPricePerUnit,
-            ingredientTwo_maxPricePerUnit: ingredientsEnriched[1]?.maxPricePerUnit,
             ingredientTwo_averagePricePerUnit: ingredientsEnriched[1]?.averagePricePerUnit,
             ingredientTwo_regularSaleVelocity: ingredientsEnriched[1]?.regularSaleVelocity,
             ingredientTwo_universalisUrl: ingredientsEnriched[1]?.name,
@@ -444,8 +423,6 @@ async function generateCsvs() {
 
             ingredientThree_name: ingredientsEnriched[2]?.name,
             ingredientThree_itemId: ingredientsEnriched[2]?.itemId,
-            ingredientThree_minPricePerUnit: ingredientsEnriched[2]?.minPricePerUnit,
-            ingredientThree_maxPricePerUnit: ingredientsEnriched[2]?.maxPricePerUnit,
             ingredientThree_averagePricePerUnit: ingredientsEnriched[2]?.averagePricePerUnit,
             ingredientThree_regularSaleVelocity: ingredientsEnriched[2]?.regularSaleVelocity,
             ingredientThree_universalisUrl: ingredientsEnriched[2]?.name,
@@ -453,8 +430,6 @@ async function generateCsvs() {
 
             ingredientFour_name: ingredientsEnriched[3]?.name,
             ingredientFour_itemId: ingredientsEnriched[3]?.itemId,
-            ingredientFour_minPricePerUnit: ingredientsEnriched[3]?.minPricePerUnit,
-            ingredientFour_maxPricePerUnit: ingredientsEnriched[3]?.maxPricePerUnit,
             ingredientFour_averagePricePerUnit: ingredientsEnriched[3]?.averagePricePerUnit,
             ingredientFour_regularSaleVelocity: ingredientsEnriched[3]?.regularSaleVelocity,
             ingredientFour_universalisUrl: ingredientsEnriched[3]?.name,
@@ -462,8 +437,6 @@ async function generateCsvs() {
 
             ingredientFive_name: ingredientsEnriched[4]?.name,
             ingredientFive_itemId: ingredientsEnriched[4]?.itemId,
-            ingredientFive_minPricePerUnit: ingredientsEnriched[4]?.minPricePerUnit,
-            ingredientFive_maxPricePerUnit: ingredientsEnriched[4]?.maxPricePerUnit,
             ingredientFive_averagePricePerUnit: ingredientsEnriched[4]?.averagePricePerUnit,
             ingredientFive_regularSaleVelocity: ingredientsEnriched[4]?.regularSaleVelocity,
             ingredientFive_universalisUrl: ingredientsEnriched[4]?.name,
@@ -471,8 +444,6 @@ async function generateCsvs() {
 
             ingredientSix_name: ingredientsEnriched[5]?.name,
             ingredientSix_itemId: ingredientsEnriched[5]?.itemId,
-            ingredientSix_minPricePerUnit: ingredientsEnriched[5]?.minPricePerUnit,
-            ingredientSix_maxPricePerUnit: ingredientsEnriched[5]?.maxPricePerUnit,
             ingredientSix_averagePricePerUnit: ingredientsEnriched[5]?.averagePricePerUnit,
             ingredientSix_regularSaleVelocity: ingredientsEnriched[5]?.regularSaleVelocity,
             ingredientSix_universalisUrl: ingredientsEnriched[5]?.name,
@@ -480,8 +451,6 @@ async function generateCsvs() {
 
             ingredientSeven_name: ingredientsEnriched[6]?.name,
             ingredientSeven_itemId: ingredientsEnriched[6]?.itemId,
-            ingredientSeven_minPricePerUnit: ingredientsEnriched[6]?.minPricePerUnit,
-            ingredientSeven_maxPricePerUnit: ingredientsEnriched[6]?.maxPricePerUnit,
             ingredientSeven_averagePricePerUnit: ingredientsEnriched[6]?.averagePricePerUnit,
             ingredientSeven_regularSaleVelocity: ingredientsEnriched[6]?.regularSaleVelocity,
             ingredientSeven_universalisUrl: ingredientsEnriched[6]?.name,
@@ -489,8 +458,6 @@ async function generateCsvs() {
 
             ingredientEight_name: ingredientsEnriched[7]?.name,
             ingredientEight_itemId: ingredientsEnriched[7]?.itemId,
-            ingredientEight_minPricePerUnit: ingredientsEnriched[7]?.minPricePerUnit,
-            ingredientEight_maxPricePerUnit: ingredientsEnriched[7]?.maxPricePerUnit,
             ingredientEight_averagePricePerUnit: ingredientsEnriched[7]?.averagePricePerUnit,
             ingredientEight_regularSaleVelocity: ingredientsEnriched[7]?.regularSaleVelocity,
             ingredientEight_universalisUrl: ingredientsEnriched[7]?.name,
@@ -498,8 +465,6 @@ async function generateCsvs() {
 
             ingredientNine_name: ingredientsEnriched[8]?.name,
             ingredientNine_itemId: ingredientsEnriched[8]?.itemId,
-            ingredientNine_minPricePerUnit: ingredientsEnriched[8]?.minPricePerUnit,
-            ingredientNine_maxPricePerUnit: ingredientsEnriched[8]?.maxPricePerUnit,
             ingredientNine_averagePricePerUnit: ingredientsEnriched[8]?.averagePricePerUnit,
             ingredientNine_regularSaleVelocity: ingredientsEnriched[8]?.regularSaleVelocity,
             ingredientNine_universalisUrl: ingredientsEnriched[8]?.name,

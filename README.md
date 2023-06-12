@@ -4,9 +4,12 @@
 
 ### Ventures
 [GH Pages](https://github.com/baronvonfonz/arbitralis/tree/gh-pages/csv)
+
 Raw -> https://raw.githubusercontent.com/baronvonfonz/arbitralis/gh-pages/csv/venture_items_stats.csv
 
 ## TODO:
+
+- retry a few times on API failures
 
 - better timestamping?
 

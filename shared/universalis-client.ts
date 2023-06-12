@@ -18,7 +18,7 @@ async function worlds() {
 const _28_DAYS_SECONDS = 28 * 24 * 60 * 60;
 const _28_DAYS_MILLISECONDS = _28_DAYS_SECONDS * 1000;
 
-async function itemStatsInner(itemIds: number[], worldDcRegion = 40,): Promise<ItemsStatsType> {
+async function historicalItemStatsInner(itemIds: number[], worldDcRegion = 40,): Promise<ItemsStatsType> {
     if (itemIds.length > 100) {
         throw Error('API allows only 100 items at a time');
     }
@@ -26,6 +26,7 @@ async function itemStatsInner(itemIds: number[], worldDcRegion = 40,): Promise<I
     const results = await get('/api/v2/history/{worldDcRegion}/{itemIds}', {
         params: {
             query: {
+                entriesToReturn: '5000',
                 statsWithin: Number(_28_DAYS_MILLISECONDS).toString(),
                 entriesWithin: Number(_28_DAYS_SECONDS).toString(),
             },
@@ -56,7 +57,7 @@ async function itemStatsInner(itemIds: number[], worldDcRegion = 40,): Promise<I
 }
 
 // 40 is Jenova
-async function itemStats(itemIds: number[]) {
+async function historicalItemStats(itemIds: number[]) {
     console.log(`Attempting to query ${itemIds.length}, this will be appx ${Math.floor(itemIds.length / 100)} API calls`);
     const itemIdSublists: number[][] = [];
     for (let i = 0; i < itemIds.length; i += 100) {
@@ -72,7 +73,7 @@ async function itemStats(itemIds: number[]) {
             }
         }
         (await Promise.all(
-            itemIdSublistIndices.map(async (itemSublistIndex) => itemStatsInner(itemIdSublists[itemSublistIndex]))
+            itemIdSublistIndices.map(async (itemSublistIndex) => historicalItemStatsInner(itemIdSublists[itemSublistIndex]))
         )).forEach(result => responses.push(result));
         console.log('Waiting 3 seconds before next batch');
         await new Promise((resolve) => setTimeout(resolve, 3000));
@@ -94,4 +95,4 @@ async function marketable() {
     return data;
 }
 
-export { itemStats, marketable };
+export { historicalItemStats, marketable };
