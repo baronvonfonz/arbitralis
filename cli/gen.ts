@@ -184,11 +184,21 @@ type UniversalisBuyEntryItem = {
 type UniversalisEnrichedItemAmount = {
     amount: number;
 } & UniversalisEnrichedItem;
-type UniversalisEnrichedRecipe = {
-    crafted: UniversalisEnrichedItemAmount;
-    ingredients: UniversalisEnrichedItemAmount[];
-    craftingOutcomeInGil: number;
+type PrefixedType<T, Prefix extends string> = {
+    [K in keyof T as `${Prefix}${string & K}`]: T[K];
 };
+type UniversalisEnrichedRecipe = {
+    craftingOutcomeInGil: number;
+} & PrefixedType<UniversalisEnrichedItemAmount, "crafted_">
+& Partial<PrefixedType<UniversalisEnrichedItemAmount, "ingredientOne_">>
+& Partial<PrefixedType<UniversalisEnrichedItemAmount, "ingredientTwo_">>
+& Partial<PrefixedType<UniversalisEnrichedItemAmount, "ingredientThree_">>
+& Partial<PrefixedType<UniversalisEnrichedItemAmount, "ingredientFour_">>
+& Partial<PrefixedType<UniversalisEnrichedItemAmount, "ingredientFive_">>
+& Partial<PrefixedType<UniversalisEnrichedItemAmount, "ingredientSix_">>
+& Partial<PrefixedType<UniversalisEnrichedItemAmount, "ingredientSeven_">>
+& Partial<PrefixedType<UniversalisEnrichedItemAmount, "ingredientEight_">>
+& Partial<PrefixedType<UniversalisEnrichedItemAmount, "ingredientNine_">>;
 function universalisEntryEnrichedItem(item: Item, historyView: UniversalisV2.components["schemas"]["HistoryView"]): 
     (UniversalisEnrichedItem & { maxPriceEntry: UniversalisV2.components["schemas"]["MinimizedSaleView"] }) | undefined 
 {
@@ -236,7 +246,8 @@ const ventureItems: VentureItem[] = [];
 const universalisEnrichedVentureItems: UniversalisEnrichedVentureItem[] = [];
 const universalisMaxBuyEntries: UniversalisBuyEntryItem[] = [];
 const universalisEnrichedRecipes: UniversalisEnrichedRecipe[] = [];
-async function maybeGenerateVentureCalcs() {
+
+async function generateCsvs() {
     if (!ventures) {
         console.log('Not generating ventures stats');
         return;
@@ -379,7 +390,6 @@ async function maybeGenerateVentureCalcs() {
 
         const {
             minPricePerUnit,
-            maxPriceEntry,
             maxPricePerUnit,
             averagePricePerUnit,
             regularSaleVelocity,
@@ -401,47 +411,114 @@ async function maybeGenerateVentureCalcs() {
                 ...maybeEnrichedIngredientItem,
                 amount,
             });
-        
-            universalisEnrichedRecipes.push({
-                crafted: {
-                    name: craftedName,
-                    itemId: Number(craftedItemId),
-                    minPricePerUnit,
-                    maxPricePerUnit,
-                    averagePricePerUnit,
-                    regularSaleVelocity,
-                    universalisUrl,
-                    amount: recipeStrategy.amount,
-                },
-                ingredients: ingredientsEnriched,
-                craftingOutcomeInGil: Math.floor(averagePricePerUnit * recipeStrategy.amount) - ingredientsEnriched.reduce(
-                    (ingredientCostSum, ingredient) => ingredientCostSum +  Math.floor(ingredient.averagePricePerUnit * ingredient.amount)
-                , 0),
-            });
+        });
+
+        // TODO: I am not proud of this abomination
+        universalisEnrichedRecipes.push({
+            crafted_name: craftedName,
+            crafted_itemId: Number(craftedItemId),
+            crafted_minPricePerUnit: minPricePerUnit,
+            crafted_maxPricePerUnit: maxPricePerUnit,
+            crafted_averagePricePerUnit: averagePricePerUnit,
+            crafted_regularSaleVelocity: regularSaleVelocity,
+            crafted_universalisUrl: universalisUrl,
+            crafted_amount: recipeStrategy.amount,
+            
+            ingredientOne_name: ingredientsEnriched[0]?.name,
+            ingredientOne_itemId: ingredientsEnriched[0]?.itemId,
+            ingredientOne_minPricePerUnit: ingredientsEnriched[0]?.minPricePerUnit,
+            ingredientOne_maxPricePerUnit: ingredientsEnriched[0]?.maxPricePerUnit,
+            ingredientOne_averagePricePerUnit: ingredientsEnriched[0]?.averagePricePerUnit,
+            ingredientOne_regularSaleVelocity: ingredientsEnriched[0]?.regularSaleVelocity,
+            ingredientOne_universalisUrl: ingredientsEnriched[0]?.name,
+            ingredientOne_amount: ingredientsEnriched[0]?.amount,
+
+            ingredientTwo_name: ingredientsEnriched[1]?.name,
+            ingredientTwo_itemId: ingredientsEnriched[1]?.itemId,
+            ingredientTwo_minPricePerUnit: ingredientsEnriched[1]?.minPricePerUnit,
+            ingredientTwo_maxPricePerUnit: ingredientsEnriched[1]?.maxPricePerUnit,
+            ingredientTwo_averagePricePerUnit: ingredientsEnriched[1]?.averagePricePerUnit,
+            ingredientTwo_regularSaleVelocity: ingredientsEnriched[1]?.regularSaleVelocity,
+            ingredientTwo_universalisUrl: ingredientsEnriched[1]?.name,
+            ingredientTwo_amount: ingredientsEnriched[1]?.amount,
+
+            ingredientThree_name: ingredientsEnriched[2]?.name,
+            ingredientThree_itemId: ingredientsEnriched[2]?.itemId,
+            ingredientThree_minPricePerUnit: ingredientsEnriched[2]?.minPricePerUnit,
+            ingredientThree_maxPricePerUnit: ingredientsEnriched[2]?.maxPricePerUnit,
+            ingredientThree_averagePricePerUnit: ingredientsEnriched[2]?.averagePricePerUnit,
+            ingredientThree_regularSaleVelocity: ingredientsEnriched[2]?.regularSaleVelocity,
+            ingredientThree_universalisUrl: ingredientsEnriched[2]?.name,
+            ingredientThree_amount: ingredientsEnriched[2]?.amount,
+
+            ingredientFour_name: ingredientsEnriched[3]?.name,
+            ingredientFour_itemId: ingredientsEnriched[3]?.itemId,
+            ingredientFour_minPricePerUnit: ingredientsEnriched[3]?.minPricePerUnit,
+            ingredientFour_maxPricePerUnit: ingredientsEnriched[3]?.maxPricePerUnit,
+            ingredientFour_averagePricePerUnit: ingredientsEnriched[3]?.averagePricePerUnit,
+            ingredientFour_regularSaleVelocity: ingredientsEnriched[3]?.regularSaleVelocity,
+            ingredientFour_universalisUrl: ingredientsEnriched[3]?.name,
+            ingredientFour_amount: ingredientsEnriched[3]?.amount,
+
+            ingredientFive_name: ingredientsEnriched[4]?.name,
+            ingredientFive_itemId: ingredientsEnriched[4]?.itemId,
+            ingredientFive_minPricePerUnit: ingredientsEnriched[4]?.minPricePerUnit,
+            ingredientFive_maxPricePerUnit: ingredientsEnriched[4]?.maxPricePerUnit,
+            ingredientFive_averagePricePerUnit: ingredientsEnriched[4]?.averagePricePerUnit,
+            ingredientFive_regularSaleVelocity: ingredientsEnriched[4]?.regularSaleVelocity,
+            ingredientFive_universalisUrl: ingredientsEnriched[4]?.name,
+            ingredientFive_amount: ingredientsEnriched[4]?.amount,
+
+            ingredientSix_name: ingredientsEnriched[5]?.name,
+            ingredientSix_itemId: ingredientsEnriched[5]?.itemId,
+            ingredientSix_minPricePerUnit: ingredientsEnriched[5]?.minPricePerUnit,
+            ingredientSix_maxPricePerUnit: ingredientsEnriched[5]?.maxPricePerUnit,
+            ingredientSix_averagePricePerUnit: ingredientsEnriched[5]?.averagePricePerUnit,
+            ingredientSix_regularSaleVelocity: ingredientsEnriched[5]?.regularSaleVelocity,
+            ingredientSix_universalisUrl: ingredientsEnriched[5]?.name,
+            ingredientSix_amount: ingredientsEnriched[5]?.amount,
+
+            ingredientSeven_name: ingredientsEnriched[6]?.name,
+            ingredientSeven_itemId: ingredientsEnriched[6]?.itemId,
+            ingredientSeven_minPricePerUnit: ingredientsEnriched[6]?.minPricePerUnit,
+            ingredientSeven_maxPricePerUnit: ingredientsEnriched[6]?.maxPricePerUnit,
+            ingredientSeven_averagePricePerUnit: ingredientsEnriched[6]?.averagePricePerUnit,
+            ingredientSeven_regularSaleVelocity: ingredientsEnriched[6]?.regularSaleVelocity,
+            ingredientSeven_universalisUrl: ingredientsEnriched[6]?.name,
+            ingredientSeven_amount: ingredientsEnriched[6]?.amount,
+
+            ingredientEight_name: ingredientsEnriched[7]?.name,
+            ingredientEight_itemId: ingredientsEnriched[7]?.itemId,
+            ingredientEight_minPricePerUnit: ingredientsEnriched[7]?.minPricePerUnit,
+            ingredientEight_maxPricePerUnit: ingredientsEnriched[7]?.maxPricePerUnit,
+            ingredientEight_averagePricePerUnit: ingredientsEnriched[7]?.averagePricePerUnit,
+            ingredientEight_regularSaleVelocity: ingredientsEnriched[7]?.regularSaleVelocity,
+            ingredientEight_universalisUrl: ingredientsEnriched[7]?.name,
+            ingredientEight_amount: ingredientsEnriched[7]?.amount,
+
+            ingredientNine_name: ingredientsEnriched[8]?.name,
+            ingredientNine_itemId: ingredientsEnriched[8]?.itemId,
+            ingredientNine_minPricePerUnit: ingredientsEnriched[8]?.minPricePerUnit,
+            ingredientNine_maxPricePerUnit: ingredientsEnriched[8]?.maxPricePerUnit,
+            ingredientNine_averagePricePerUnit: ingredientsEnriched[8]?.averagePricePerUnit,
+            ingredientNine_regularSaleVelocity: ingredientsEnriched[8]?.regularSaleVelocity,
+            ingredientNine_universalisUrl: ingredientsEnriched[8]?.name,
+            ingredientNine_amount: ingredientsEnriched[8]?.amount,
+
+            craftingOutcomeInGil: Math.floor(averagePricePerUnit * recipeStrategy.amount) - ingredientsEnriched.reduce(
+                (ingredientCostSum, ingredient) => ingredientCostSum +  Math.floor(ingredient.averagePricePerUnit * ingredient.amount)
+            , 0),
         });
     });
 
     console.log(universalisEnrichedRecipes.length);
-    const headerHelperFunction = (objectPathPrefix: string) => ([
-        { id: `${objectPathPrefix}name`, title:  `${objectPathPrefix}name` },
-        { id: `${objectPathPrefix}itemId`, title:  `${objectPathPrefix}itemId` },
-        { id: `${objectPathPrefix}amount`, title:  `${objectPathPrefix}amount` },
-        { id: `${objectPathPrefix}minPricePerUnit`, title:  `${objectPathPrefix}minPricePerUnit` },
-        { id: `${objectPathPrefix}maxPriceEntry`, title:  `${objectPathPrefix}maxPriceEntry` },
-        { id: `${objectPathPrefix}averagePricePerUnit`, title:  `${objectPathPrefix}averagePricePerUnit` },
-        { id: `${objectPathPrefix}regularSaleVelocity`, title:  `${objectPathPrefix}regularSaleVelocity` },
-        { id: `${objectPathPrefix}universalisUrl`, title:  `${objectPathPrefix}universalisUrl` },
-    ]);
-    const indices: number[] = [];
-    for (let i = 0; i < 9; i++) {
-        indices.push(i);
-    }
+
+    const fieldNames: string[] = Object.keys(universalisEnrichedRecipes[0]);
     await writeCsvSync({
         path: 'dist/gh-pages/csv/recipe_item_stats.csv',
         header: [
             { id: 'craftingOutcomeInGil', title: `craftingOutcomeInGil` },
-            ...headerHelperFunction('crafted'),
-            ...(indices.map(index => headerHelperFunction(`ingredients[${index}].`)).flat()),
+            ...fieldNames.map(name => ({ id: name, title: name })),
         ]
     }, universalisEnrichedRecipes);
 
@@ -459,11 +536,11 @@ async function runGen() {
         console.log(`Directory structure already exists at ${distDirectoryPath}`);
       }
 
-    await maybeFetch();
-    await maybeRegenItems();
-    await maybeRegenRecipes();
+    // await maybeFetch();
+    // await maybeRegenItems();
+    // await maybeRegenRecipes();
     // await maybeGetRecipePrices();
-    await maybeGenerateVentureCalcs();
+    await generateCsvs();
     // UniversalClient.itemStats([34343,34344,34344]);
 
     const afterMemory = process.memoryUsage().heapUsed;
