@@ -388,7 +388,9 @@ async function maybeGenerateVentureCalcs() {
 
         // TODO: this stanks
         const ingredientsEnriched: UniversalisEnrichedItemAmount[] = [];
-        for (const [ingredientItemId, amount] of ingredientAmounts) {
+        Object.keys(ingredientAmounts).forEach((rawItemId) => {
+            const ingredientItemId = Number(rawItemId);
+            const amount = ingredientAmounts[ingredientItemId];
             const maybeEnrichedIngredientItem = universalisEntryEnrichedItem({ itemId: Number(craftedItemId), name: itemIdToNameMap[Number(ingredientItemId)] }, historyView);
 
             if (!maybeEnrichedIngredientItem) {
@@ -398,26 +400,26 @@ async function maybeGenerateVentureCalcs() {
             ingredientsEnriched.push({
                 ...maybeEnrichedIngredientItem,
                 amount,
-            })
-        }
+            });
         
-        universalisEnrichedRecipes.push({
-            crafted: {
-                name: craftedName,
-                itemId: Number(craftedItemId),
-                minPricePerUnit,
-                maxPricePerUnit,
-                averagePricePerUnit,
-                regularSaleVelocity,
-                universalisUrl,
-                amount: recipeStrategy.amount,
-            },
-            ingredients: ingredientsEnriched,
-            craftingOutcomeInGil: Math.floor(averagePricePerUnit * recipeStrategy.amount) - ingredientsEnriched.reduce(
-                (ingredientCostSum, ingredient) => ingredientCostSum +  Math.floor(ingredient.averagePricePerUnit * ingredient.amount)
-            , 0),
-        })
-    })
+            universalisEnrichedRecipes.push({
+                crafted: {
+                    name: craftedName,
+                    itemId: Number(craftedItemId),
+                    minPricePerUnit,
+                    maxPricePerUnit,
+                    averagePricePerUnit,
+                    regularSaleVelocity,
+                    universalisUrl,
+                    amount: recipeStrategy.amount,
+                },
+                ingredients: ingredientsEnriched,
+                craftingOutcomeInGil: Math.floor(averagePricePerUnit * recipeStrategy.amount) - ingredientsEnriched.reduce(
+                    (ingredientCostSum, ingredient) => ingredientCostSum +  Math.floor(ingredient.averagePricePerUnit * ingredient.amount)
+                , 0),
+            });
+        });
+    });
 
     console.log(universalisEnrichedRecipes.length);
     const headerHelperFunction = (objectPathPrefix: string) => ([

@@ -106,7 +106,7 @@ export function insertRecipe(
     });
 }
 
-export type IngredientAmounts = Map<number, number>;
+export type IngredientAmounts = Record<number, number>;
 export type RecipeStrategy = {
     amount: number;
     ingredientAmounts: IngredientAmounts;
@@ -117,7 +117,7 @@ export type RecipesIngredientsMetadata = {
     allItemIds: Set<number>;
 }
 export type RecipesIngredientsRow = {
-    amount: number;
+    ingredientAmount: number;
     ingredientId: number;
     craftedId: number;
     craftedAmount: number;
@@ -146,21 +146,20 @@ export function getAllRecipesIngredients(itemIdstoInclude: number[] = []): Promi
                 const recipesToIngredients: RecipeToIngredients = {};
                 let currentCraftedId = -1;
                 let currentCraftedAmount = -1;
-                let currentIngredientsAmounts: Map<number,number> = new Map();
+                let currentIngredientsAmounts: Record<number, number> = {};
                 rows.forEach((aRow, index) => {
-                    console.log(`next row ${aRow.craftedId} - ${aRow.ingredientId}`);
                     if (aRow.craftedId !== currentCraftedId) {
                         recipesToIngredients[currentCraftedId] = {
                             ingredientAmounts: currentIngredientsAmounts,
                             amount: currentCraftedAmount,
                         };
-                        currentIngredientsAmounts = new Map();
-                        currentIngredientsAmounts.set(aRow.ingredientId, aRow.amount);
+                        currentIngredientsAmounts = {};
+                        currentIngredientsAmounts[aRow.ingredientId] = aRow.ingredientAmount;
                         currentCraftedId = aRow.craftedId;
                         allItemIds.add(currentCraftedId);
                         Object.keys(currentIngredientsAmounts).forEach(ingredientId => allItemIds.add(Number(ingredientId)));
                     } else {
-                        currentIngredientsAmounts.set(aRow.ingredientId, aRow.amount);
+                        currentIngredientsAmounts[aRow.ingredientId] = aRow.ingredientAmount;
                         currentCraftedAmount = aRow.craftedAmount;
                     }
                 });
