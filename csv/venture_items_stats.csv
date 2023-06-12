@@ -1,843 +1,843 @@
-Item Name,Item ID,Universalis URL,Amount One,Amount Two,Amount Three,Amount Four,Amount Five,Daily Average Sold (Seven Day Window),Min Price Per Unit,Average Price Per Unit,Max Price Per Unit,Total Per Venture (min amount)
-Animal Skin,5291,https://universalis.app/market/5291,5,7,10,12,15,3.6785715,1,38846,2000000,194230
-Animal Sinew,5318,https://universalis.app/market/5318,5,7,10,12,15,4.321429,1,20,110,100
-Shriekshroom,4794,https://universalis.app/market/4794,5,7,10,12,15,0.75,1,1,10,5
-Honey,4850,https://universalis.app/market/4850,5,7,10,12,15,4.714286,1,22744,3000000,113720
-Ram Horn,5434,https://universalis.app/market/5434,5,7,10,12,15,4.607143,1,177,700,885
-Beastkin Blood,5492,https://universalis.app/market/5492,5,7,10,12,15,2.5357144,1,1,36,5
-Marmot Meat,4758,https://universalis.app/market/4758,5,7,10,12,15,0.78571427,1,17,100,85
-Animal Hide,5292,https://universalis.app/market/5292,5,7,10,12,15,4.357143,1,16,100,80
-Mutton Loin,4759,https://universalis.app/market/4759,5,7,10,12,15,0.21428572,1,1,1,5
-Bat Fang,5442,https://universalis.app/market/5442,5,7,10,12,15,5.178571,1,67,1500,335
-Red Landtrap Leaf,5548,https://universalis.app/market/5548,5,7,10,12,15,3.7142856,1,259,1494,1295
-Beast Sinew,5319,https://universalis.app/market/5319,5,7,10,12,15,7.464286,1,102,399,510
-Dodo Tenderloin,4760,https://universalis.app/market/4760,5,7,10,12,15,2.642857,1,56,310,280
-Jellyfish Cnida,5556,https://universalis.app/market/5556,5,7,10,12,15,2.7142856,1,1400,100000,7000
-Mole Meat,4761,https://universalis.app/market/4761,5,7,10,12,15,5.142857,1,122,1000,610
-Puk Wing,5550,https://universalis.app/market/5550,5,7,10,12,15,0.2857143,1,250000,2000000,1250000
-Viscous Secretions,5495,https://universalis.app/market/5495,5,7,10,12,15,2.607143,1,52,441,260
-Dodo Egg,4773,https://universalis.app/market/4773,5,7,10,12,15,4.178571,1,267,5000,1335
-Bat Wing,5551,https://universalis.app/market/5551,5,7,10,12,15,7.285714,1,81,495,405
-Antelope Horn,5435,https://universalis.app/market/5435,5,7,10,12,15,7.142857,1,411,2800,2055
-Goobbue Fang,5446,https://universalis.app/market/5446,5,7,10,12,15,1.7142857,1,4,25,20
-Yellow Yarzon Leg,5454,https://universalis.app/market/5454,5,7,10,12,15,2.1785715,1,29,100,145
-Imp Wing,5552,https://universalis.app/market/5552,5,7,10,12,15,1.1785715,1,17,101,85
-Jellyfish Umbrella,5557,https://universalis.app/market/5557,5,7,10,12,15,4.785714,1,75,300,375
-Aldgoat Skin,5296,https://universalis.app/market/5296,5,7,10,12,15,10.964286,1,597,2000,2985
-Dodo Feather,5355,https://universalis.app/market/5355,5,7,10,12,15,4.571429,1,135,600,675
-Green Megalocrab Shell,5456,https://universalis.app/market/5456,5,7,10,12,15,6.25,1,239,1000,1195
-Antelope Shank,4765,https://universalis.app/market/4765,5,7,10,12,15,2.2857144,1,270,1499,1350
-Megalocrab Leg,4771,https://universalis.app/market/4771,5,7,10,12,15,4.964286,1,544,3999,2720
-Acidic Secretions,5496,https://universalis.app/market/5496,5,7,10,12,15,7.964286,1,821,2499,4105
-Diremite Web,5345,https://universalis.app/market/5345,5,7,10,12,15,9.321428,1,444,2000,2220
-Aldgoat Horn,5436,https://universalis.app/market/5436,5,7,10,12,15,13.214286,1,445,10000,2225
-Scalekin Blood,5493,https://universalis.app/market/5493,5,7,10,12,15,3.4642856,1,464,1300,2320
-Wolf Fang,5444,https://universalis.app/market/5444,5,7,10,12,15,13.857142,1,460,5000,2300
-Treant Sap,5499,https://universalis.app/market/5499,5,7,10,12,15,2.642857,1,56,700,280
-Aldgoat Chuck,4766,https://universalis.app/market/4766,5,7,10,12,15,5.392857,1,92,350,460
-Diremite Sinew,5320,https://universalis.app/market/5320,5,7,10,12,15,6.714286,1,171,900,855
-Gigantoad Skin,5300,https://universalis.app/market/5300,5,7,10,12,15,8.535714,1,169,2500,845
-Bomb Ash,5528,https://universalis.app/market/5528,5,7,10,12,15,15.571428,1,165,800,825
-Puk Egg,4774,https://universalis.app/market/4774,5,7,10,12,15,1.6785715,1,621,2700,3105
-Night Milk,6149,https://universalis.app/market/6149,5,7,10,12,15,5.25,1,289,6969,1445
-Orobon Liver,4770,https://universalis.app/market/4770,5,7,10,12,15,0.35714287,1,1,1,5
-Blue Yarzon Leg,5455,https://universalis.app/market/5455,5,7,10,12,15,4.25,1,305,2099,1525
-Cactuar Needle,5468,https://universalis.app/market/5468,5,7,10,12,15,5.464286,1,2728,9999,13640
-Sandworm Fang,5447,https://universalis.app/market/5447,5,7,10,12,15,2.7857144,1,102,899,510
-Blue Landtrap Leaf,5549,https://universalis.app/market/5549,5,7,10,12,15,7.857143,1,269,999,1345
-Morbol Vine,5554,https://universalis.app/market/5554,5,7,10,12,15,4.571429,1,79,750,395
-Formic Acid,5497,https://universalis.app/market/5497,5,7,10,12,15,1.8928572,1,90,2000,450
-Raptor Shank,4767,https://universalis.app/market/4767,5,7,10,12,15,5.75,1,519,7999,2595
-Hippogryph Sinew,5321,https://universalis.app/market/5321,5,7,10,12,15,8.392858,1,281,1000,1405
-Boar Hide,5303,https://universalis.app/market/5303,5,7,10,12,15,11.142858,1,401,50000,2005
-Peiste Skin,5306,https://universalis.app/market/5306,5,7,10,12,15,9.5,1,675,1001,3375
-Fleece,5347,https://universalis.app/market/5347,5,7,10,12,15,17.535715,1,394,2000,1970
-Spoken Blood,5494,https://universalis.app/market/5494,5,7,10,12,15,8.535714,1,845,2000,4225
-Karakul Skin,5308,https://universalis.app/market/5308,5,7,10,12,15,4.285714,1,118,499,590
-Grenade Ash,5526,https://universalis.app/market/5526,5,7,10,12,15,9.357142,1,284,8999,1420
-Raptor Sinew,5322,https://universalis.app/market/5322,5,7,10,12,15,10.285714,1,552,5000,2760
-Ochu Vine,5555,https://universalis.app/market/5555,5,7,10,12,15,3.75,1,878,4499,4390
-Pudding Flesh,5558,https://universalis.app/market/5558,5,7,10,12,15,4.714286,249,764,9000,3820
-Basilisk Egg,5263,https://universalis.app/market/5263,5,7,10,12,15,7.107143,1,188,5000,940
-Buffalo Sirloin,4768,https://universalis.app/market/4768,5,7,10,12,15,2.5357144,1,763,46000,3815
-Apkallu Egg,4775,https://universalis.app/market/4775,5,7,10,12,15,3.1785715,1,178,999,890
-Apkallu Down,5348,https://universalis.app/market/5348,5,7,10,12,15,6.75,1,344,1000,1720
-Ahriman Wing,5553,https://universalis.app/market/5553,5,7,10,12,15,6.857143,1,566,2000,2830
-Eft Tail,4769,https://universalis.app/market/4769,5,7,10,12,15,4.285714,1,6806,800000,34030
-Raptor Skin,5310,https://universalis.app/market/5310,5,7,10,12,15,8.035714,1,5451,620000,27255
-Snurble Tufts,5349,https://universalis.app/market/5349,5,7,10,12,15,5.107143,1,622,3000,3110
-Ogre Horn,5439,https://universalis.app/market/5439,5,7,10,12,15,4.678571,1,9265,1200000,46325
-Copper Ore,5106,https://universalis.app/market/5106,15,20,30,40,50,8.107142,1,91,1000,1365
-Fire Shard,2,https://universalis.app/market/2,60,80,100,110,120,26.321428,1,69,400,4140
-Ice Shard,3,https://universalis.app/market/3,60,80,100,110,120,29.107143,30,72,150,4320
-Wind Shard,4,https://universalis.app/market/4,60,80,100,110,120,27.142857,20,70,450,4200
-Earth Shard,5,https://universalis.app/market/5,60,80,100,110,120,7.714286,11,62,211,3720
-Lightning Shard,6,https://universalis.app/market/6,60,80,100,110,120,10.25,1,72,120,4320
-Water Shard,7,https://universalis.app/market/7,60,80,100,110,120,13.892858,1,74,175,4440
-Muddy Water,5488,https://universalis.app/market/5488,15,20,30,40,50,2.357143,1,91,250,1365
-Bone Chip,5432,https://universalis.app/market/5432,15,20,30,40,50,4.321429,1,53,500,795
-Tin Ore,5107,https://universalis.app/market/5107,15,20,30,40,50,8.964286,1,103,301,1545
-Raw Sunstone,5128,https://universalis.app/market/5128,15,20,30,40,50,1.0357143,1,41,201,615
-Raw Lapis Lazuli,5133,https://universalis.app/market/5133,15,20,30,40,50,1.1428572,1,73,300,1095
-Soiled Femur,5433,https://universalis.app/market/5433,15,20,30,40,50,1.5,1,20,100,300
-Zinc Ore,5110,https://universalis.app/market/5110,15,20,30,40,50,4.107143,1,64,490,960
-Obsidian,5124,https://universalis.app/market/5124,15,20,30,40,50,1.6428572,1,17,190,255
-Potter's Clay,5513,https://universalis.app/market/5513,15,20,30,40,50,2.6785715,1,496,1800,7440
-Fine Sand,5267,https://universalis.app/market/5267,15,20,30,40,50,9.678572,1,5,39,75
-Copper Sand,5268,https://universalis.app/market/5268,15,20,30,40,50,1.0357143,1,48,250,720
-Rock Salt,5518,https://universalis.app/market/5518,15,20,30,40,50,6.714286,1,107,695,1605
-Ragstone,5228,https://universalis.app/market/5228,15,20,30,40,50,1.3928572,3,20,100,300
-Iron Ore,5111,https://universalis.app/market/5111,15,20,30,40,50,23.285715,1,68,540,1020
-Iron Sand,5269,https://universalis.app/market/5269,15,20,30,40,50,0.89285713,1,25,100,375
-Cinnabar,5519,https://universalis.app/market/5519,15,20,30,40,50,2.107143,1,67,1001,1005
-Raw Malachite,5130,https://universalis.app/market/5130,15,20,30,40,50,1.0357143,1,80,1001,1200
-Raw Sphene,5131,https://universalis.app/market/5131,15,20,30,40,50,0.5714286,1,157,1001,2355
-Raw Fluorite,5132,https://universalis.app/market/5132,15,20,30,40,50,0.8214286,2,42,90,630
-Limestone,5230,https://universalis.app/market/5230,15,20,30,40,50,7.714286,1,313,3000,4695
-Raw Danburite,5129,https://universalis.app/market/5129,15,20,30,40,50,1.0357143,1,47,101,705
-Sunrise Tellin,5465,https://universalis.app/market/5465,15,20,30,40,50,3.4642856,15,164,1000,2460
-Alumen,5524,https://universalis.app/market/5524,15,20,30,40,50,10.428572,10,169,800,2535
-Beryllium Ore,28717,https://universalis.app/market/28717,3,5,7,8,9,0.6785714,10,1035,1795,3105
-Mudstone,5229,https://universalis.app/market/5229,15,20,30,40,50,7.321429,1,96,500,1440
-Earth Rock,5155,https://universalis.app/market/5155,15,20,30,40,50,0.5714286,1,37,150,555
-Silver Sand,5270,https://universalis.app/market/5270,15,20,30,40,50,1.2857143,1,30,140,450
-Fire Rock,5152,https://universalis.app/market/5152,15,20,30,40,50,1.0357143,1,313,500,4695
-Ice Rock,5153,https://universalis.app/market/5153,15,20,30,40,50,1.4285715,1,141,375,2115
-Effervescent Water,5491,https://universalis.app/market/5491,15,20,30,40,50,9.321428,50,235,1800,3525
-Wind Rock,5154,https://universalis.app/market/5154,15,20,30,40,50,0.4642857,1,22,65,330
-Lightning Rock,5156,https://universalis.app/market/5156,15,20,30,40,50,0.42857143,1,307,1000,4605
-Silver Ore,5113,https://universalis.app/market/5113,15,20,30,40,50,19,1,238,2000,3570
-Water Rock,5157,https://universalis.app/market/5157,15,20,30,40,50,0.5714286,1,28,100,420
-Bomb Ash,5528,https://universalis.app/market/5528,15,20,30,40,50,15.571428,1,165,800,2475
-Fire Crystal,8,https://universalis.app/market/8,30,60,100,110,120,51.32143,1,90,500,2700
-Ice Crystal,9,https://universalis.app/market/9,30,60,100,110,120,15.142858,1,48,174,1440
-Wind Crystal,10,https://universalis.app/market/10,30,60,100,110,120,51.535713,1,88,175,2640
-Earth Crystal,11,https://universalis.app/market/11,30,60,100,110,120,12.714286,1,33,134,990
-Lightning Crystal,12,https://universalis.app/market/12,30,60,100,110,120,18.035715,1,67,998,2010
-Water Crystal,13,https://universalis.app/market/13,30,60,100,110,120,33.107143,41,90,300,2700
-Silex,5523,https://universalis.app/market/5523,15,20,30,40,50,9.321428,199,301,750,4515
-Wyvern Obsidian,5125,https://universalis.app/market/5125,15,20,30,40,50,3.1785715,1,73,2800,1095
-Blue Pigment,5814,https://universalis.app/market/5814,15,20,30,40,50,1.75,50,183,390,2745
-Red Pigment,5815,https://universalis.app/market/5815,15,20,30,40,50,2.4285715,1,208,600,3120
-Yellow Pigment,5816,https://universalis.app/market/5816,15,20,30,40,50,0.89285713,19,590,10000,8850
-Grey Pigment,5817,https://universalis.app/market/5817,15,20,30,40,50,2.6785715,1,217,1000,3255
-Brown Pigment,5818,https://universalis.app/market/5818,15,20,30,40,50,1.8571428,100,370,879,5550
-Green Pigment,5819,https://universalis.app/market/5819,15,20,30,40,50,1.4285715,2,658,10000,9870
-Purple Pigment,5820,https://universalis.app/market/5820,15,20,30,40,50,1.6071428,99,449,2000,6735
-Brimstone,5527,https://universalis.app/market/5527,15,20,30,40,50,1.7142857,29,95,300,1425
-Sandalwood Sap,28716,https://universalis.app/market/28716,3,5,7,8,9,0.8214286,249,1032,1500,3096
-Siltstone,5231,https://universalis.app/market/5231,15,20,30,40,50,5.785714,1,271,500,4065
-Grade 1 La Noscean Topsoil,7758,https://universalis.app/market/7758,5,7,10,12,15,0.32142857,30,76,100,380
-Grade 1 Shroud Topsoil,7761,https://universalis.app/market/7761,5,7,10,12,15,0.9285714,42,315,750,1575
-Grade 1 Thanalan Topsoil,7764,https://universalis.app/market/7764,5,7,10,12,15,0.78571427,2,75,140,375
-Raw Garnet,5134,https://universalis.app/market/5134,15,20,30,40,50,1.8214285,2,97,300,1455
-Granite,7008,https://universalis.app/market/7008,15,20,30,40,50,13.642858,1,311,1000,4665
-Raw Heliodor,5137,https://universalis.app/market/5137,15,20,30,40,50,0.96428573,1,160,2000,2400
-Raw Goshenite,5135,https://universalis.app/market/5135,15,20,30,40,50,0.4642857,1,82,249,1230
-Raw Peridot,5136,https://universalis.app/market/5136,15,20,30,40,50,0.8214286,1,55,100,825
-Mythril Sand,5271,https://universalis.app/market/5271,15,20,30,40,50,1.9285715,2,71,100,1065
-Mythril Ore,5114,https://universalis.app/market/5114,15,20,30,40,50,16.071428,55,193,459,2895
-Raw Amethyst,5138,https://universalis.app/market/5138,15,20,30,40,50,1.5,1,73,415,1095
-Raw Aquamarine,5139,https://universalis.app/market/5139,15,20,30,40,50,0.75,5,122,375,1830
-Raw Tourmaline,5142,https://universalis.app/market/5142,15,20,30,40,50,1.1785715,1,133,900,1995
-Raw Spinel,5144,https://universalis.app/market/5144,15,20,30,40,50,1.3928572,1,175,500,2625
-Raw Zircon,5141,https://universalis.app/market/5141,15,20,30,40,50,1.25,9,171,500,2565
-Jade,5168,https://universalis.app/market/5168,15,20,30,40,50,2.1785715,2,136,601,2040
-Black Alumen,5525,https://universalis.app/market/5525,15,20,30,40,50,5.464286,1,257,691,3855
-Grenade Ash,5526,https://universalis.app/market/5526,15,20,30,40,50,9.357142,1,284,8999,4260
-Grade 2 La Noscean Topsoil,7759,https://universalis.app/market/7759,1,2,3,4,5,0.10714286,600,696,750,696
-Grade 2 Shroud Topsoil,7762,https://universalis.app/market/7762,1,2,3,4,5,0.8214286,498,1231,2450,1231
-Grade 2 Thanalan Topsoil,7765,https://universalis.app/market/7765,1,2,3,4,5,0.14285715,941,969,998,969
-Raw Turquoise,5145,https://universalis.app/market/5145,15,20,30,40,50,1.4285715,1,55,179,825
-Electrum Sand,5272,https://universalis.app/market/5272,15,20,30,40,50,1.4642857,5,292,1300,4380
-Electrum Ore,5115,https://universalis.app/market/5115,15,20,30,40,50,15.392858,1,288,20000,4320
-Raw Amber,5143,https://universalis.app/market/5143,15,20,30,40,50,6.857143,1,316,1000,4740
-Raw Rubellite,5140,https://universalis.app/market/5140,15,20,30,40,50,1.6428572,5,121,700,1815
-Marble,7010,https://universalis.app/market/7010,15,20,30,40,50,3.6785715,5,116,500,1740
-Basilisk Egg,5263,https://universalis.app/market/5263,15,20,30,40,50,7.107143,1,188,5000,2820
-Cobalt Ore,5116,https://universalis.app/market/5116,15,20,30,40,50,23.607143,1,285,950,4275
-Adamantoise Shell,5458,https://universalis.app/market/5458,15,20,30,40,50,1.6071428,1,81,940,1215
-Ogre Horn,5439,https://universalis.app/market/5439,15,20,30,40,50,4.678571,1,9265,1200000,138975
-Latex,5509,https://universalis.app/market/5509,15,20,30,40,50,2,1,156,1000,2340
-Fire Shard,2,https://universalis.app/market/2,60,80,100,110,120,26.321428,1,69,400,4140
-Ice Shard,3,https://universalis.app/market/3,60,80,100,110,120,29.107143,30,72,150,4320
-Wind Shard,4,https://universalis.app/market/4,60,80,100,110,120,27.142857,20,70,450,4200
-Earth Shard,5,https://universalis.app/market/5,60,80,100,110,120,7.714286,11,62,211,3720
-Lightning Shard,6,https://universalis.app/market/6,60,80,100,110,120,10.25,1,72,120,4320
-Water Shard,7,https://universalis.app/market/7,60,80,100,110,120,13.892858,1,74,175,4440
-Allagan Snail,5050,https://universalis.app/market/5050,15,20,30,40,50,0.9285714,4,165,1001,2475
-Maple Sap,5498,https://universalis.app/market/5498,15,20,30,40,50,1.3928572,1,102,250,1530
-Maple Log,5380,https://universalis.app/market/5380,15,20,30,40,50,1.9642857,1,102,2000,1530
-Cinnamon,4828,https://universalis.app/market/4828,15,20,30,40,50,5.392857,3,108,699,1620
-Beehive Chip,5516,https://universalis.app/market/5516,15,20,30,40,50,1.7142857,1,183,1000,2745
-Maple Branch,5396,https://universalis.app/market/5396,15,20,30,40,50,1.3571428,1,108,449,1620
-Tinolqa Mistletoe,5534,https://universalis.app/market/5534,15,20,30,40,50,0.9285714,1,11,41,165
-Cock Feather,5351,https://universalis.app/market/5351,15,20,30,40,50,1.7142857,1,40,248,600
-La Noscean Orange,4809,https://universalis.app/market/4809,15,20,30,40,50,1.0714285,3,230,700,3450
-Ash Log,5383,https://universalis.app/market/5383,15,20,30,40,50,3.4642856,1,167,580,2505
-Ash Branch,5402,https://universalis.app/market/5402,15,20,30,40,50,2.8214285,1,200,3998,3000
-Kukuru Bean,4803,https://universalis.app/market/4803,15,20,30,40,50,1.0714285,3,63,299,945
-Crow Feather,5352,https://universalis.app/market/5352,15,20,30,40,50,2.892857,2,420,2000,6300
-Cloves,4831,https://universalis.app/market/4831,15,20,30,40,50,2.2857144,19,121,1245,1815
-Moko Grass,5341,https://universalis.app/market/5341,15,20,30,40,50,2.5357144,1,81,200,1215
-Yellow Ginseng,5538,https://universalis.app/market/5538,15,20,30,40,50,0.5,1,18,120,270
-Chanterelle,4795,https://universalis.app/market/4795,15,20,30,40,50,0.4642857,1,19,39,285
-Lowland Grapes,4808,https://universalis.app/market/4808,15,20,30,40,50,0.32142857,1,35,75,525
-Rye,4823,https://universalis.app/market/4823,15,20,30,40,50,0.32142857,3,155,299,2325
-Sunset Wheat,4824,https://universalis.app/market/4824,15,20,30,40,50,1.3571428,3,96,400,1440
-Garlean Garlic,4829,https://universalis.app/market/4829,15,20,30,40,50,7,3,563,2125,8445
-Elm Log,5385,https://universalis.app/market/5385,15,20,30,40,50,4.892857,1,335,1000,5025
-Wild Onion,4777,https://universalis.app/market/4777,15,20,30,40,50,1.5357143,4,115,670,1725
-Lavender,5539,https://universalis.app/market/5539,15,20,30,40,50,2.8214285,1,262,1000,3930
-Straw,5342,https://universalis.app/market/5342,15,20,30,40,50,5.678571,1,99,390,1485
-Grass Viper,5560,https://universalis.app/market/5560,15,20,30,40,50,1.3571428,6,186,499,2790
-Humus,5514,https://universalis.app/market/5514,15,20,30,40,50,3,10,361,1001,5415
-Coerthan Carrot,4778,https://universalis.app/market/4778,15,20,30,40,50,1.5,3,223,985,3345
-Ogre Pumpkin,4779,https://universalis.app/market/4779,15,20,30,40,50,0.39285713,1,4,10,60
-Carnation,5540,https://universalis.app/market/5540,15,20,30,40,50,1.3214285,1,24,364,360
-La Noscean Lettuce,4782,https://universalis.app/market/4782,15,20,30,40,50,0.85714287,12,65,100,975
-Cinderfoot Olive,4804,https://universalis.app/market/4804,15,20,30,40,50,1,1,173,999,2595
-Cotton Boll,5343,https://universalis.app/market/5343,15,20,30,40,50,5,7,154,6000,2310
-Cieldalaes Spinach,4783,https://universalis.app/market/4783,15,20,30,40,50,0.5714286,10,389,2000,5835
-Black Pepper,4830,https://universalis.app/market/4830,15,20,30,40,50,2.5357144,5,207,1000,3105
-Ruby Tomato,4780,https://universalis.app/market/4780,15,20,30,40,50,0.96428573,5,79,500,1185
-Alpine Parsnip,4781,https://universalis.app/market/4781,15,20,30,40,50,0.4642857,1,42,144,630
-Highland Parsley,4784,https://universalis.app/market/4784,15,20,30,40,50,1.1071428,50,262,999,3930
-Marjoram,4832,https://universalis.app/market/4832,15,20,30,40,50,1.5714285,1,26,65,390
-Paprika,4785,https://universalis.app/market/4785,15,20,30,40,50,1.3928572,9,108,700,1620
-Faerie Apple,4810,https://universalis.app/market/4810,15,20,30,40,50,2.0357144,10,148,500,2220
-Galago Mint,4834,https://universalis.app/market/4834,15,20,30,40,50,1.6071428,1,46,200,690
-Paprika Seeds,7715,https://universalis.app/market/7715,1,1,1,1,1,0.21428572,5,63,100,63
-Faerie Apple Seeds,7727,https://universalis.app/market/7727,1,1,1,1,1,0.35714287,1,24,199,24
-Sun Lemon,4811,https://universalis.app/market/4811,15,20,30,40,50,3.892857,20,76,200,1140
-Lalafellin Lentil,4820,https://universalis.app/market/4820,15,20,30,40,50,0.32142857,1,4,10,60
-Sun Lemon Seeds,7728,https://universalis.app/market/7728,1,1,1,1,1,0.035714287,10,10,10,10
-Belladonna,5541,https://universalis.app/market/5541,15,20,30,40,50,0.85714287,8,99,420,1485
-Nopales,4786,https://universalis.app/market/4786,15,20,30,40,50,0.60714287,5,8016,135000,120240
-Popoto,4787,https://universalis.app/market/4787,15,20,30,40,50,2.857143,1,140,500,2100
-Popoto Set,7720,https://universalis.app/market/7720,1,1,1,1,1,0.5,1,306,2000,306
-Yew Log,5386,https://universalis.app/market/5386,15,20,30,40,50,6.857143,1,287,500,4305
-Gil Bun,4796,https://universalis.app/market/4796,15,20,30,40,50,2.5357144,70,345,675,5175
-Yew Branch,5405,https://universalis.app/market/5405,15,20,30,40,50,3.5357144,20,223,1000,3345
-Island Seedling,7029,https://universalis.app/market/7029,15,20,30,40,50,2.642857,1,1579,6000,23685
-Shroud Seedling,7030,https://universalis.app/market/7030,15,20,30,40,50,5.321429,69,759,5000,11385
-Desert Seedling,7031,https://universalis.app/market/7031,15,20,30,40,50,1.5,100,476,4000,7140
-White Scorpion,5563,https://universalis.app/market/5563,15,20,30,40,50,1.1428572,1,138,850,2070
-Fireheart Cobalt,29968,https://universalis.app/market/29968,3,5,7,8,9,1.3928572,898,1152,1555,3456
-Pixie Plums,4812,https://universalis.app/market/4812,15,20,30,40,50,2.607143,20,337,3500,5055
-Gridanian Walnut,4806,https://universalis.app/market/4806,15,20,30,40,50,1.75,1,73,499,1095
-Pixie Plum Seeds,7729,https://universalis.app/market/7729,1,1,1,1,1,0.96428573,100,748,1299,748
-Button Mushroom,4797,https://universalis.app/market/4797,15,20,30,40,50,0.96428573,50,239,1001,3585
-Noble Grapes,6145,https://universalis.app/market/6145,15,20,30,40,50,2.357143,50,614,3000,9210
-Matron's Mistletoe,5535,https://universalis.app/market/5535,15,20,30,40,50,2.142857,10,124,701,1860
-Ala Mhigan Mustard,4835,https://universalis.app/market/4835,15,20,30,40,50,0.89285713,4,95,350,1425
-Ala Mhigan Mustard Seeds,7738,https://universalis.app/market/7738,1,1,1,1,1,0.14285715,80,110,150,110
-Walnut Log,5388,https://universalis.app/market/5388,15,20,30,40,50,7.535714,10,217,700,3255
-Chamomile,5542,https://universalis.app/market/5542,15,20,30,40,50,2.7142856,11,73,300,1095
-Pearl Ginger,4836,https://universalis.app/market/4836,15,20,30,40,50,2.2857144,10,307,1001,4605
-Chamomile Seeds,7740,https://universalis.app/market/7740,1,1,1,1,1,0.89285713,1799,6938,13000,6938
-Sticky Rice,4819,https://universalis.app/market/4819,15,20,30,40,50,0.78571427,10,141,300,2115
-Millioncorn,4821,https://universalis.app/market/4821,15,20,30,40,50,1.6071428,150,308,701,4620
-Millioncorn Seeds,7721,https://universalis.app/market/7721,1,1,1,1,1,0.53571427,5,811,1700,811
-Jade Peas,4822,https://universalis.app/market/4822,15,20,30,40,50,0.9285714,30,357,4001,5355
-Fire Crystal,8,https://universalis.app/market/8,30,60,100,110,120,51.32143,1,90,500,2700
-Ice Crystal,9,https://universalis.app/market/9,30,60,100,110,120,15.142858,1,48,174,1440
-Wind Crystal,10,https://universalis.app/market/10,30,60,100,110,120,51.535713,1,88,175,2640
-Earth Crystal,11,https://universalis.app/market/11,30,60,100,110,120,12.714286,1,33,134,990
-Lightning Crystal,12,https://universalis.app/market/12,30,60,100,110,120,18.035715,1,67,998,2010
-Water Crystal,13,https://universalis.app/market/13,30,60,100,110,120,33.107143,41,90,300,2700
-Wizard Eggplant,4788,https://universalis.app/market/4788,15,20,30,40,50,2.5,1,126,4000,1890
-Wizard Eggplant Seeds,7722,https://universalis.app/market/7722,1,1,1,1,1,0.39285713,50,741,1301,741
-Midland Cabbage,4789,https://universalis.app/market/4789,15,20,30,40,50,1.0714285,1,38,300,570
-Midland Cabbage Seeds,7723,https://universalis.app/market/7723,1,1,1,1,1,0.4642857,92,898,10000,898
-Blue Pigment,5814,https://universalis.app/market/5814,15,20,30,40,50,1.75,50,183,390,2745
-Red Pigment,5815,https://universalis.app/market/5815,15,20,30,40,50,2.4285715,1,208,600,3120
-Yellow Pigment,5816,https://universalis.app/market/5816,15,20,30,40,50,0.89285713,19,590,10000,8850
-Grey Pigment,5817,https://universalis.app/market/5817,15,20,30,40,50,2.6785715,1,217,1000,3255
-Brown Pigment,5818,https://universalis.app/market/5818,15,20,30,40,50,1.8571428,100,370,879,5550
-Green Pigment,5819,https://universalis.app/market/5819,15,20,30,40,50,1.4285715,2,658,10000,9870
-Purple Pigment,5820,https://universalis.app/market/5820,15,20,30,40,50,1.6071428,99,449,2000,6735
-Chocobo Feather,5359,https://universalis.app/market/5359,15,20,30,40,50,10.035714,1,3698,89999,55470
-Alligator Pear,4813,https://universalis.app/market/4813,15,20,30,40,50,1.8928572,11,311,2100,4665
-Moor Leech,5559,https://universalis.app/market/5559,15,20,30,40,50,0.60714287,10,109,750,1635
-Purpure Shell Chip,29970,https://universalis.app/market/29970,3,5,7,8,9,1.0714285,298,742,1095,2226
-Flax,5346,https://universalis.app/market/5346,15,20,30,40,50,15.142858,1,332,20000,4980
-Oak Branch,5409,https://universalis.app/market/5409,15,20,30,40,50,2,1,270,1500,4050
-Linseed,7741,https://universalis.app/market/7741,1,1,1,1,1,0.60714287,18,319,945,319
-Oak Log,5390,https://universalis.app/market/5390,15,20,30,40,50,4.75,45,236,500,3540
-Aloe,4790,https://universalis.app/market/4790,15,20,30,40,50,1.3928572,40,186,450,2790
-Midland Basil,4837,https://universalis.app/market/4837,15,20,30,40,50,2.5714285,20,77,800,1155
-Midland Basil Seeds,7742,https://universalis.app/market/7742,1,1,1,1,1,0.60714287,4,75,150,75
-Mandrake,5543,https://universalis.app/market/5543,15,20,30,40,50,2.3214285,15,59,400,885
-White Truffle,4798,https://universalis.app/market/4798,15,20,30,40,50,1.0357143,4,76,401,1140
-Mandrake Seeds,7743,https://universalis.app/market/7743,1,1,1,1,1,0.8214286,2400,4194,7100,4194
-Salt Leek,4791,https://universalis.app/market/4791,15,20,30,40,50,0.6785714,8,48,100,720
-Wildfowl Feather,5360,https://universalis.app/market/5360,15,20,30,40,50,4.642857,9,408,2000,6120
-Laurel,4839,https://universalis.app/market/4839,15,20,30,40,50,2.392857,20,477,2000,7155
-Tarantula,5562,https://universalis.app/market/5562,15,20,30,40,50,0.75,8,77,500,1155
-Dragon Pepper,4838,https://universalis.app/market/4838,15,20,30,40,50,0.96428573,5,262,3700,3930
-Desert Saffron,4843,https://universalis.app/market/4843,15,20,30,40,50,2,1,127,500,1905
-Blood Currants,4814,https://universalis.app/market/4814,15,20,30,40,50,2.5357144,5,88,799,1320
-Iron Acorn,4807,https://universalis.app/market/4807,15,20,30,40,50,1.0714285,20,92,350,1380
-Blood Currant Seeds,7730,https://universalis.app/market/7730,1,1,1,1,1,0.96428573,5,2422,3999,2422
-Mahogany Log,5391,https://universalis.app/market/5391,15,20,30,40,50,6.607143,1,125,750,1875
-Mugwort,4840,https://universalis.app/market/4840,15,20,30,40,50,1.2142857,10,286,500,4290
-Maiden Artichoke,4793,https://universalis.app/market/4793,15,20,30,40,50,0.78571427,4,40,250,600
-Ramhorn Zucchini,4792,https://universalis.app/market/4792,15,20,30,40,50,2.2142856,1,152,400,2280
-Thyme,4841,https://universalis.app/market/4841,15,20,30,40,50,0.5714286,5,32,85,480
-Nutmeg,4844,https://universalis.app/market/4844,15,20,30,40,50,2.4285715,4,209,1001,3135
-Almonds,4842,https://universalis.app/market/4842,15,20,30,40,50,2.607143,1,198,1000,2970
-Almond Seeds,7744,https://universalis.app/market/7744,1,1,1,1,1,1.5714285,300,1818,3000,1818
-Sagolii Sage,4845,https://universalis.app/market/4845,15,20,30,40,50,1.75,5,274,1000,4110
-Mirror Apple,6146,https://universalis.app/market/6146,15,20,30,40,50,6.321429,3,197,500,2955
-Black Scorpion,5564,https://universalis.app/market/5564,15,20,30,40,50,2.142857,1,59,300,885
-Mirror Apple Seeds,7731,https://universalis.app/market/7731,1,1,1,1,1,1.8214285,1,4529,9999,4529
-Rolanberry,4815,https://universalis.app/market/4815,15,20,30,40,50,4.357143,50,233,735,3495
-Rolanberry Seeds,7732,https://universalis.app/market/7732,1,1,1,1,1,0.71428573,5,91,200,91
-Mistletoe,5536,https://universalis.app/market/5536,15,20,30,40,50,6.642857,1,394,1045,5910
-Dart Frog,5054,https://universalis.app/market/5054,15,20,30,40,50,1.4642857,1,161,750,2415
-Rosewood Log,5393,https://universalis.app/market/5393,15,20,30,40,50,7.107143,1,337,1000,5055
-Rosewood Branch,5414,https://universalis.app/market/5414,15,20,30,40,50,5.035714,2,176,1000,2640
-Thanalan Tea Leaves,4846,https://universalis.app/market/4846,15,20,30,40,50,1.5,33,67,200,1005
-Lava Toad,5055,https://universalis.app/market/5055,15,20,30,40,50,2.25,1,1111440,70000000,16671600
-Maiden Grass,7012,https://universalis.app/market/7012,15,20,30,40,50,0.5714286,11,70,175,1050
-Ashen Alumen,29976,https://universalis.app/market/29976,3,5,7,8,9,1.5357143,400,906,1200,2718
-Crayfish,4925,https://universalis.app/market/4925,5,7,10,11,12,1.75,1,250,1000,1250
-Finger Shrimp,4871,https://universalis.app/market/4871,3,5,7,8,9,1.4642857,1,39,950,117
-White Coral,5460,https://universalis.app/market/5460,3,5,7,8,9,3.5357144,1,2053,9999,6159
-Princess Trout,4930,https://universalis.app/market/4930,3,5,7,8,9,2.8214285,1,2388,9000,7164
-Dusk Goby,4931,https://universalis.app/market/4931,5,7,10,11,12,0.78571427,1,253,1500,1265
-Pipira,4932,https://universalis.app/market/4932,5,7,10,11,12,0.75,1,106,330,530
-Crimson Crayfish,4933,https://universalis.app/market/4933,5,7,10,11,12,0.8214286,10,588,1500,2940
-Coral Butterfly,4876,https://universalis.app/market/4876,5,7,10,11,12,2.1785715,1,111,500,555
-Brass Loach,4935,https://universalis.app/market/4935,5,7,10,11,12,2.2142856,1,1016,8000,5080
-Maiden Carp,4936,https://universalis.app/market/4936,3,5,7,8,9,1.6071428,1,112,500,336
-Tiger Cod,4879,https://universalis.app/market/4879,5,7,10,11,12,1.5357143,1,49,400,245
-Helmet Crab,4880,https://universalis.app/market/4880,3,5,7,8,9,0.96428573,1,1513,4949,4539
-Rothlyt Oyster,4881,https://universalis.app/market/4881,3,5,7,8,9,1,1,404,2001,1212
-Navigator's Dagger,4882,https://universalis.app/market/4882,3,5,7,8,9,2.4642856,1,1680,2500,5040
-Bluebell Salmon,4949,https://universalis.app/market/4949,5,7,10,11,12,0.85714287,1000,3463,8000,17315
-Razor Clam,4884,https://universalis.app/market/4884,3,5,7,8,9,0.35714287,1,172,350,516
-Blowfish,4886,https://universalis.app/market/4886,5,7,10,11,12,1.25,1,219,300,1095
-Warmwater Trout,4955,https://universalis.app/market/4955,5,7,10,11,12,2.4285715,1,2727,10000,13635
-Black Eel,4958,https://universalis.app/market/4958,3,5,7,8,9,1.1428572,350,920,1998,2760
-Dark Bass,4959,https://universalis.app/market/4959,5,7,10,11,12,2,1,925,5000,4625
-Blue Coral,5461,https://universalis.app/market/5461,3,5,7,8,9,1.6785715,150,530,1000,1590
-Bianaq Bream,4891,https://universalis.app/market/4891,3,5,7,8,9,0.96428573,8,223,600,669
-Black Sole,4892,https://universalis.app/market/4892,3,5,7,8,9,1,250,1387,4000,4161
-Hammerhead Shark,4893,https://universalis.app/market/4893,1,2,3,4,5,3.392857,999,2113,5000,2113
-Indigo Herring,4895,https://universalis.app/market/4895,3,5,7,8,9,1.7857143,1,2224,13500,6672
-Ash Tuna,4896,https://universalis.app/market/4896,5,7,10,11,12,1.3571428,1,934,8000,4670
-Fullmoon Sardine,4898,https://universalis.app/market/4898,3,5,7,8,9,3.857143,100,2028,4000,6084
-Whitelip Oyster,4900,https://universalis.app/market/4900,3,5,7,8,9,1.1428572,300,6756,10000,20268
-Velodyna Carp,4982,https://universalis.app/market/4982,5,7,10,11,12,1.1428572,150,736,4997,3680
-Red Coral,5462,https://universalis.app/market/5462,3,5,7,8,9,4.964286,1,1460,4000,4380
-Silver Shark,4903,https://universalis.app/market/4903,1,2,3,4,5,2.5,190,840,2000,840
-Raincaller,4905,https://universalis.app/market/4905,1,2,3,4,5,4.357143,1,1922,4600,1922
-Blacklip Oyster,5466,https://universalis.app/market/5466,3,5,7,8,9,1.5714285,1401,4016,10000,12048
-Northern Pike,4997,https://universalis.app/market/4997,5,7,10,11,12,1.0714285,18,99,300,495
-Cloud Cutter,5040,https://universalis.app/market/5040,3,5,7,8,9,3.0714285,72,375,2000,1125
-Gastornis Egg,12871,https://universalis.app/market/12871,5,7,10,12,15,2.7857144,2,295,1002,1475
-Yak Milk,12888,https://universalis.app/market/12888,5,7,10,12,15,12.071428,2,567,2000,2835
-Archaeornis Skin,12568,https://universalis.app/market/12568,5,7,10,12,15,5.571429,2,699,1200,3495
-Gelato Flesh,12635,https://universalis.app/market/12635,5,7,10,12,15,5.964286,2,655,2997,3275
-Icetrap Leaf,12637,https://universalis.app/market/12637,5,7,10,12,15,3.357143,5,743,2000,3715
-Loaghtan Chump,12873,https://universalis.app/market/12873,5,7,10,12,15,1.8928572,2,492,3000,2460
-Yeti Fang,12575,https://universalis.app/market/12575,5,7,10,12,15,3.0714285,2,475,1500,2375
-Bear Fat,12609,https://universalis.app/market/12609,5,7,10,12,15,7.785714,150,1573,160000,7865
-Deepeye Tears,12628,https://universalis.app/market/12628,5,7,10,12,15,11,2,772,5000,3860
-Wyvern Skin,12569,https://universalis.app/market/12569,5,7,10,12,15,5.75,2,696,2000,3480
-Wyvern Wing,12636,https://universalis.app/market/12636,5,7,10,12,15,5.25,1,632,1400,3160
-Dhalmel Meat,12874,https://universalis.app/market/12874,5,7,10,12,15,1.7857143,1,65,155,325
-Dhalmel Hide,12570,https://universalis.app/market/12570,5,7,10,12,15,4.928571,3,561,1000,2805
-Drake Scales,5449,https://universalis.app/market/5449,5,7,10,12,15,2.142857,2,651,900,3255
-Biast Scales,5448,https://universalis.app/market/5448,5,7,10,12,15,1.9642857,350,757,6999,3785
-Dhalmel Saliva,12629,https://universalis.app/market/12629,5,7,10,12,15,6.821429,2,731,2500,3655
-Okeanis Egg,12872,https://universalis.app/market/12872,5,7,10,12,15,1.1428572,1,158,419,790
-Dragon Skin,12571,https://universalis.app/market/12571,5,7,10,12,15,4.642857,70,338,999,1690
-Dragon Fang,12576,https://universalis.app/market/12576,5,7,10,12,15,1.2857143,1,17,120,85
-Okeanis Tail,12875,https://universalis.app/market/12875,5,7,10,12,15,1.3571428,100,527,2000,2635
-Cockatrice Thigh,12876,https://universalis.app/market/12876,5,7,10,12,15,1.4642857,2,408,1000,2040
-Crawler Cocoon,12600,https://universalis.app/market/12600,5,7,10,12,15,4.535714,1,621,3499,3105
-Dragon Scale,12627,https://universalis.app/market/12627,5,7,10,12,15,3.857143,2,264,1029,1320
-Dragon Blood,12630,https://universalis.app/market/12630,5,7,10,12,15,3.7142856,2,280,650,1400
-Amphiptere Skin,12572,https://universalis.app/market/12572,5,7,10,12,15,4.071429,2,360,1000,1800
-Griffin Hide,12573,https://universalis.app/market/12573,5,7,10,12,15,0.39285713,100,407,788,2035
-Griffin Talon,12577,https://universalis.app/market/12577,5,7,10,12,15,0.60714287,3,13,63,65
-Chimera Mane,12599,https://universalis.app/market/12599,5,7,10,12,15,3.2857144,200,708,3000,3540
-Dragon Obsidian,5126,https://universalis.app/market/5126,15,20,30,40,50,0.9285714,1,117,1000,1755
-Mythrite Sand,12531,https://universalis.app/market/12531,15,20,30,40,50,21.964285,2,256,950,3840
-Raw Agate,12553,https://universalis.app/market/12553,15,20,30,40,50,1.8571428,92,254,1000,3810
-Raw Tiger's Eye,12552,https://universalis.app/market/12552,15,20,30,40,50,1.1785715,50,249,400,3735
-Raw Larimar,12551,https://universalis.app/market/12551,15,20,30,40,50,2.7142856,100,409,1000,6135
-Dravanian Spring Water,12631,https://universalis.app/market/12631,15,20,30,40,50,5.678571,20,239,900,3585
-Raw Mormorion,12559,https://universalis.app/market/12559,15,20,30,40,50,1.1071428,10,151,575,2265
-Raw Star Sapphire,12555,https://universalis.app/market/12555,15,20,30,40,50,2,3,202,503,3030
-Raw Star Ruby,12554,https://universalis.app/market/12554,15,20,30,40,50,1.4285715,1,207,4998,3105
-Hardsilver Sand,12532,https://universalis.app/market/12532,15,20,30,40,50,7.25,2,289,900,4335
-Raw Opal,12556,https://universalis.app/market/12556,15,20,30,40,50,1.5714285,200,341,500,5115
-Abalathian Spring Water,12632,https://universalis.app/market/12632,15,20,30,40,50,2.607143,2,220,300,3300
-Cloud Mica,12539,https://universalis.app/market/12539,15,20,30,40,50,8.178572,2,354,1700,5310
-Raw Carnelian,12560,https://universalis.app/market/12560,15,20,30,40,50,0.8214286,200,402,799,6030
-Raw Citrine,12557,https://universalis.app/market/12557,15,20,30,40,50,0.64285713,100,229,398,3435
-Aurum Regis Sand,12533,https://universalis.app/market/12533,15,20,30,40,50,4.178571,2,305,1000,4575
-Raw Chrysolite,12558,https://universalis.app/market/12558,15,20,30,40,50,0.78571427,3,132,399,1980
-Wyrm Obsidian,5127,https://universalis.app/market/5127,15,20,30,40,50,1.7142857,8,87,249,1305
-Cedar Branch,5403,https://universalis.app/market/5403,15,20,30,40,50,2.8214285,2,274,700,4110
-Cedar Log,5384,https://universalis.app/market/5384,15,20,30,40,50,6.178571,3,197,490,2955
-Rainbow Cotton Boll,12597,https://universalis.app/market/12597,15,20,30,40,50,5.678571,101,400,4000,6000
-Mist Dill,12883,https://universalis.app/market/12883,15,20,30,40,50,2.5,25,423,1500,6345
-Highland Wheat,12880,https://universalis.app/market/12880,15,20,30,40,50,1.9642857,1,404,750,6060
-Stalk of Ramie,12598,https://universalis.app/market/12598,15,20,30,40,50,3.3214285,3,206,335,3090
-Dark Chestnut Log,12578,https://universalis.app/market/12578,15,20,30,40,50,9,3,350,1000,5250
-Dark Chestnut Branch,12585,https://universalis.app/market/12585,15,20,30,40,50,2.8214285,1,33,700,495
-Magma Beet,12885,https://universalis.app/market/12885,15,20,30,40,50,1.1071428,3,69,400,1035
-Coneflower,12638,https://universalis.app/market/12638,15,20,30,40,50,0.9285714,4,189,289,2835
-Sesame Seeds,12887,https://universalis.app/market/12887,15,20,30,40,50,1.75,50,450,1000,6750
-Cow Bitter,12639,https://universalis.app/market/12639,15,20,30,40,50,0.96428573,90,250,448,3750
-Birch Branch,12586,https://universalis.app/market/12586,15,20,30,40,50,1.6428572,1,16,400,240
-Rue,12642,https://universalis.app/market/12642,15,20,30,40,50,4.392857,2,353,500,5295
-Coriander,12643,https://universalis.app/market/12643,15,20,30,40,50,1.0357143,25,178,309,2670
-Dandelion,12640,https://universalis.app/market/12640,15,20,30,40,50,2.25,4,213,500,3195
-Birch Sap,12891,https://universalis.app/market/12891,15,20,30,40,50,2.3214285,1,310,499,4650
-Gaelicatnip,12641,https://universalis.app/market/12641,15,20,30,40,50,1.3571428,80,302,899,4530
-Ice Faerie,12715,https://universalis.app/market/12715,5,7,10,11,12,0.60714287,25,72,144,360
-Fanged Clam,12719,https://universalis.app/market/12719,5,7,10,11,12,0.6785714,183,1326,1695,6630
-Ogre Horn Snail,12725,https://universalis.app/market/12725,5,7,10,11,12,0.071428575,143,143,144,715
-Whilom Catfish,12721,https://universalis.app/market/12721,5,7,10,11,12,0.5,840,1214,1950,6070
-Maiboi,12728,https://universalis.app/market/12728,5,7,10,11,12,0.17857143,1004,4180,5000,20900
-Seema Patrician,12737,https://universalis.app/market/12737,5,7,10,11,12,0.5714286,500,6966,15999,34830
-Bubble Eye,12739,https://universalis.app/market/12739,5,7,10,11,12,0.25,500,5939,17999,29695
-Marble Oscar,12750,https://universalis.app/market/12750,5,7,10,11,12,0.32142857,2800,10467,17500,52335
-Vanuhead,12749,https://universalis.app/market/12749,5,7,10,11,12,0.035714287,199,199,199,995
-Mercy Staff,12765,https://universalis.app/market/12765,5,7,10,11,12,0.10714286,3000,3356,4000,16780
-Orn Butterfly,12781,https://universalis.app/market/12781,5,7,10,11,12,0.32142857,3000,12333,14999,61665
-Philosopher's Stone,12790,https://universalis.app/market/12790,5,7,10,11,12,0.14285715,1970,2117,2500,10585
-Battle Galley,12817,https://universalis.app/market/12817,5,7,10,11,12,0.42857143,1000,3273,3500,16365
-Cherry Trout,12824,https://universalis.app/market/12824,5,7,10,11,12,0.10714286,99,99,100,495
-Hinterlands Perch,12819,https://universalis.app/market/12819,5,7,10,11,12,1.1785715,799,2871,7000,14355
-Saltpeter,5521,https://universalis.app/market/5521,15,20,30,40,50,0.78571427,5,33,120,495
-Blueclaw Shrimp,12722,https://universalis.app/market/12722,5,7,10,11,12,0.35714287,20,202,1198,1010
-Mogpom,12758,https://universalis.app/market/12758,5,7,10,11,12,3.7142856,200,2401,5000,12005
-Sweetfish,12780,https://universalis.app/market/12780,5,7,10,11,12,1.3214285,1500,8782,59995,43910
-Blue Cloud Coral,12736,https://universalis.app/market/12736,5,7,10,11,12,1.4642857,500,1412,1500,7060
-Grade 3 La Noscean Topsoil,7760,https://universalis.app/market/7760,1,1,1,1,1,1.6428572,745,1108,1607,1108
-Grade 3 Shroud Topsoil,7763,https://universalis.app/market/7763,1,1,1,1,1,16.357143,970,1760,6666,1760
-Grade 3 Thanalan Topsoil,7766,https://universalis.app/market/7766,1,1,1,1,1,19.142857,5,980,2092,980
-Gold Ore,5118,https://universalis.app/market/5118,3,6,9,10,11,17.392857,1,275,8990,825
-Darksteel Ore,5121,https://universalis.app/market/5121,3,6,9,10,11,21.071428,60,497,1500,1491
-Volcanic Rock Salt,6152,https://universalis.app/market/6152,3,6,9,10,11,8.428572,1,372,2700,1116
-Astral Rock,5158,https://universalis.app/market/5158,3,6,9,10,11,1.9642857,1,152,370,456
-Raw Ruby,5146,https://universalis.app/market/5146,1,3,5,6,7,0.21428572,3,6,15,6
-Ferberite,7588,https://universalis.app/market/7588,1,3,5,6,7,3.892857,1,125,350,125
-Native Gold,7589,https://universalis.app/market/7589,1,3,5,6,7,0.78571427,1,23,63,23
-Spruce Log,5395,https://universalis.app/market/5395,3,6,9,10,11,9.964286,5,553,1700,1659
-Thavnairian Mistletoe,5537,https://universalis.app/market/5537,3,6,9,10,11,0.89285713,9,37,99,111
-Silkworm Cocoon,5350,https://universalis.app/market/5350,3,6,9,10,11,6.107143,79,570,2000,1710
-Trillium,5545,https://universalis.app/market/5545,3,6,9,10,11,2.357143,170,452,2000,1356
-Trillium Bulb,5546,https://universalis.app/market/5546,3,6,9,10,11,3.642857,130,797,2001,2391
-Black Truffle,4800,https://universalis.app/market/4800,3,6,9,10,11,0.14285715,9,22,50,66
-Dzemael Tomato Seeds,7724,https://universalis.app/market/7724,1,1,1,1,1,0.5714286,1,493,1000,493
-Honey Lemon Seeds,7733,https://universalis.app/market/7733,1,1,1,1,1,0.9285714,1,1425,4201,1425
-Prickly Pineapple Seeds,7734,https://universalis.app/market/7734,1,1,1,1,1,0.85714287,1,1609,2500,1609
-Scarlet Sap,7590,https://universalis.app/market/7590,1,3,5,6,7,4.464286,1,854,2300,854
-Shroud Tea Leaves,7591,https://universalis.app/market/7591,1,3,5,6,7,0.35714287,1,42,145,42
-Young Cieldalaes Spinach,7594,https://universalis.app/market/7594,1,3,5,6,7,0.9285714,72,160,202,160
-Blood Orange,7595,https://universalis.app/market/7595,1,3,5,6,7,0.071428575,2,2,3,2
-Raw Diamond,5147,https://universalis.app/market/5147,1,3,5,6,7,0.071428575,1,1,1,1
-Raw Emerald,5148,https://universalis.app/market/5148,1,3,5,6,7,0.14285715,2,2,5,2
-Raw Topaz,5149,https://universalis.app/market/5149,1,3,5,6,7,1.1785715,20,791,8000,791
-Raw Iolite,5150,https://universalis.app/market/5150,1,3,5,6,7,0.5714286,10,83,333,83
-Raw Sapphire,5151,https://universalis.app/market/5151,1,3,5,6,7,0.25,9,11,20,11
-Bamboo Stick,5365,https://universalis.app/market/5365,1,3,5,6,7,4.928571,199,789,5550,789
-Waterfowl Feather,8024,https://universalis.app/market/8024,1,3,5,6,7,1.6785715,100,1644,5000,1644
-Platinum Ore,5120,https://universalis.app/market/5120,1,3,5,6,7,3.392857,1,496,5000,496
-Ebony Log,5394,https://universalis.app/market/5394,1,3,5,6,7,0.89285713,6,72,249,72
-Pumice,9519,https://universalis.app/market/9519,1,3,5,6,7,1.3571428,99,483,1500,483
-Cypress Log,9518,https://universalis.app/market/9518,1,3,5,6,7,3.75,5,262,1000,262
-Black Limestone,10092,https://universalis.app/market/10092,7,15,20,25,30,1.0714285,299,1123,4000,7861
-Virgin Basilisk Egg,10093,https://universalis.app/market/10093,1,3,5,6,7,0.85714287,1,42,151,42
-Rosemary,10096,https://universalis.app/market/10096,1,3,5,6,7,4.178571,10,530,2650,530
-Gregarious Worm,10095,https://universalis.app/market/10095,1,2,3,4,5,1.75,1,656,1500,656
-Mazlaya Greens,10098,https://universalis.app/market/10098,1,2,3,4,5,1.4642857,5,899,5000,899
-Mythrite Ore,12534,https://universalis.app/market/12534,7,15,20,25,30,11.642858,1,306,1750,2142
-Titanium Ore,12537,https://universalis.app/market/12537,7,15,20,25,30,9.785714,10,370,502,2590
-Hardsilver Ore,12535,https://universalis.app/market/12535,7,15,20,25,30,5.392857,2,349,1000,2443
-Cyclops Onion,12878,https://universalis.app/market/12878,7,15,20,25,30,5.285714,5,524,2000,3668
-Dark Chestnut,12893,https://universalis.app/market/12893,7,15,20,25,30,2.5357144,3,621,2000,4347
-Emerald Beans,12879,https://universalis.app/market/12879,7,15,20,25,30,1.6071428,140,1770,10000,12390
-Birch Log,12579,https://universalis.app/market/12579,7,15,20,25,30,7.357143,3,402,5000,2814
-Gold Sand,5273,https://universalis.app/market/5273,3,6,9,10,11,0.60714287,1,29,150,87
-Tree Toad,5051,https://universalis.app/market/5051,15,20,30,40,50,0.5714286,1,324,1994,4860
-Lowland Grape Seeds,7726,https://universalis.app/market/7726,1,1,1,1,1,1.6071428,1,14831,35000,14831
-Garlic Cloves,7735,https://universalis.app/market/7735,1,1,1,1,1,0.035714287,9,9,9,9
-Buffalo Beans,4818,https://universalis.app/market/4818,15,20,30,40,50,0.5,99,262,500,3930
-Wild Onion Set,7716,https://universalis.app/market/7716,1,1,1,1,1,0.21428572,1,1,2,1
-Lavender Seeds,7736,https://universalis.app/market/7736,1,1,1,1,1,0.5,95,105,125,105
-Coerthan Carrot Seeds,7717,https://universalis.app/market/7717,1,1,1,1,1,0.39285713,2,258,1801,258
-La Noscean Lettuce Seeds,7718,https://universalis.app/market/7718,1,1,1,1,1,0.78571427,100,1003,10000,1003
-Gridanian Chestnut,4805,https://universalis.app/market/4805,15,20,30,40,50,0.96428573,1,68,199,1020
-Black Pepper Seeds,7737,https://universalis.app/market/7737,1,1,1,1,1,0.035714287,1,1,1,1
-Dzemael Tomato,6148,https://universalis.app/market/6148,3,6,9,10,11,1.7857143,1,37,500,111
-Vampire Plant,5547,https://universalis.app/market/5547,3,6,9,10,11,0.75,7,17,30,51
-Honey Lemon,6147,https://universalis.app/market/6147,3,6,9,10,11,0.85714287,1,30,149,90
-Prickly Pineapple,4816,https://universalis.app/market/4816,3,6,9,10,11,2.142857,1,380,1000,1140
-Apricot,7592,https://universalis.app/market/7592,15,20,30,40,50,2.0357144,1,198,400,2970
-La Noscean Leek,7593,https://universalis.app/market/7593,15,20,30,40,50,0.35714287,1,33,100,495
-Unaspected Crystal,10099,https://universalis.app/market/10099,1,3,5,6,7,2.142857,9,245,1640,245
-Unaspected Crystal,10099,https://universalis.app/market/10099,1,3,5,6,7,2.142857,9,245,1640,245
-Dark Matter Cluster,10335,https://universalis.app/market/10335,3,5,7,8,9,18.464285,10,799,1500,2397
-Dark Matter Cluster,10335,https://universalis.app/market/10335,3,5,7,8,9,18.464285,10,799,1500,2397
-Adamantite Ore,12538,https://universalis.app/market/12538,3,5,7,8,9,9.035714,100,486,1002,1458
-Yellow Copper Ore,5108,https://universalis.app/market/5108,15,20,30,40,50,0.2857143,2,7,22,105
-Pyrite,5109,https://universalis.app/market/5109,15,20,30,40,50,0.4642857,1,21,140,315
-Yellow Quartz,5162,https://universalis.app/market/5162,15,20,30,40,50,0.14285715,101,175,200,2625
-Chalcocite,12941,https://universalis.app/market/12941,15,20,30,40,50,0.5714286,2,16,85,240
-Limonite,5112,https://universalis.app/market/5112,15,20,30,40,50,0.10714286,2,17,49,255
-Green Quartz,5161,https://universalis.app/market/5161,15,20,30,40,50,0.21428572,100,190,222,2850
-Abalathian Rock Salt,12901,https://universalis.app/market/12901,3,5,7,8,9,4.107143,2,826,2000,2478
-Light Kidney Ore,5117,https://universalis.app/market/5117,15,20,30,40,50,0.4642857,6,42,100,630
-Red Quartz,5159,https://universalis.app/market/5159,3,5,7,8,9,2.4642856,2,434,1000,1302
-Cuprite,12942,https://universalis.app/market/12942,15,20,30,40,50,0.10714286,5,6,9,90
-Aurum Regis Ore,12536,https://universalis.app/market/12536,3,5,7,8,9,0.17857143,11,16,20,48
-Sun Mica,12540,https://universalis.app/market/12540,3,5,7,8,9,0.14285715,14,35,99,105
-Red Alumen,12945,https://universalis.app/market/12945,3,5,7,8,9,0.035714287,3,3,3,9
-Astral Moraine,5226,https://universalis.app/market/5226,3,5,7,8,9,2.6785715,200,791,5000,2373
-Violet Quartz,5163,https://universalis.app/market/5163,3,5,7,8,9,0.071428575,5,22,39,66
-Blue Quartz,5160,https://universalis.app/market/5160,3,5,7,8,9,0.071428575,3,3,4,9
-Chysahl Greens,12900,https://universalis.app/market/12900,3,5,7,8,9,3.4285715,4,211,1000,633
-Old World Fig,12896,https://universalis.app/market/12896,3,5,7,8,9,1.6071428,1,10,150,30
-Porcini,12899,https://universalis.app/market/12899,3,5,7,8,9,1.8214285,2,157,694,471
-Pearl Sprouts,12877,https://universalis.app/market/12877,3,5,7,8,9,1.75,3,679,3495,2037
-Coerthan Tea Leaves,12882,https://universalis.app/market/12882,3,5,7,8,9,5.214286,2,563,1002,1689
-Dravanian Mistletoe,12943,https://universalis.app/market/12943,3,5,7,8,9,4.357143,99,594,1500,1782
-Chives,12884,https://universalis.app/market/12884,3,5,7,8,9,0.8214286,20,318,999,954
-Heavens Lemon,12889,https://universalis.app/market/12889,3,5,7,8,9,1.2142857,69,136,500,408
-Abalathian Mistletoe,12944,https://universalis.app/market/12944,3,5,7,8,9,3.642857,62,498,2000,1494
-Cloud Banana,12897,https://universalis.app/market/12897,3,5,7,8,9,3.5357144,44,2822,9999,8466
-Morel,12898,https://universalis.app/market/12898,3,5,7,8,9,1.5714285,2,40,299,120
-Seventh Heaven,12634,https://universalis.app/market/12634,3,5,7,8,9,1.1071428,50,178,690,534
-Wattle Bark,12587,https://universalis.app/market/12587,3,5,7,8,9,0.2857143,183,236,321,708
-Dravanian Paprika,12903,https://universalis.app/market/12903,3,5,7,8,9,0.071428575,24,82,140,246
-Snurbleberry,12904,https://universalis.app/market/12904,3,5,7,8,9,0.2857143,50,81,102,243
-Old World Fig Seeds,13765,https://universalis.app/market/13765,3,5,7,8,9,3.0714285,501,1098,1900,3294
-Pearl Sprout Seeds,13767,https://universalis.app/market/13767,3,5,7,8,9,0.42857143,2,201,2000,603
-Coerthan Tea Seeds,13768,https://universalis.app/market/13768,3,5,7,8,9,0.96428573,20,600,5002,1800
-Frost Cotton Boll,14154,https://universalis.app/market/14154,3,5,7,8,9,0.25,89,112,199,336
-Whitefrost Cotton Boll,14956,https://universalis.app/market/14956,15,20,30,40,50,1.3214285,25,155,500,2325
-Camphorwood Log,14159,https://universalis.app/market/14159,15,20,30,40,50,0.21428572,2,11,49,165
-Camphorwood Branch,14160,https://universalis.app/market/14160,15,20,30,40,50,0.25,400,453,500,6795
-Old-growth Camphorwood Log,14957,https://universalis.app/market/14957,3,5,7,8,9,3.642857,2,741,1000,2223
-Lumythrite Sand,14955,https://universalis.app/market/14955,15,20,30,40,50,0.35714287,10,99,140,1485
-Smithsonite Ore,14151,https://universalis.app/market/14151,3,5,7,8,9,0.78571427,300,856,2399,2568
-Beastkin Horn,14190,https://universalis.app/market/14190,15,20,30,40,50,0.21428572,1,4,10,60
-Meteorite,15646,https://universalis.app/market/15646,3,5,7,8,9,0.75,200,394,500,1182
-Crystallized Sap,15647,https://universalis.app/market/15647,3,5,7,8,9,0.5,178,736,2000,2208
-Firelight Seeds,15865,https://universalis.app/market/15865,15,20,30,40,50,1.7142857,150,501,1098,7515
-Icelight Seeds,15866,https://universalis.app/market/15866,15,20,30,40,50,0.8214286,400,1278,10001,19170
-Windlight Seeds,15867,https://universalis.app/market/15867,15,20,30,40,50,1.6428572,100,300,600,4500
-Earthlight Seeds,15868,https://universalis.app/market/15868,15,20,30,40,50,0.85714287,1,143,250,2145
-Levinlight Seeds,15869,https://universalis.app/market/15869,15,20,30,40,50,0.5714286,299,671,1875,10065
-Waterlight Seeds,15870,https://universalis.app/market/15870,15,20,30,40,50,1.1785715,300,518,1100,7770
-Teak Log,5392,https://universalis.app/market/5392,3,5,7,8,9,1.3571428,20,224,594,672
-Star Cotton Boll,16721,https://universalis.app/market/16721,3,5,7,8,9,0.2857143,50,178,249,534
-Luminium Ore,16725,https://universalis.app/market/16725,3,5,7,8,9,0.35714287,65,104,150,312
-Zeolite Ore,16726,https://universalis.app/market/16726,3,5,7,8,9,0.53571427,50,97,200,291
-Gyr Abanian Alumen,19910,https://universalis.app/market/19910,15,20,30,40,50,2.9642856,100,253,1040,3795
-Raw Triphane,19968,https://universalis.app/market/19968,3,5,7,8,9,2.4642856,4,134,804,402
-Gyr Abanian Mineral Water,19871,https://universalis.app/market/19871,15,20,30,40,50,2.9642856,94,297,700,4455
-Raw Kyanite,19969,https://universalis.app/market/19969,15,20,30,40,50,1.3571428,1,60,500,900
-Koppranickel Ore,19951,https://universalis.app/market/19951,15,20,30,40,50,2.9285715,3,303,783,4545
-Crescent Spring Water,19872,https://universalis.app/market/19872,15,20,30,40,50,4.678571,50,391,850,5865
-Raw Star Spinel,19970,https://universalis.app/market/19970,3,5,7,8,9,0.60714287,1,8,39,24
-Doman Iron Ore,19953,https://universalis.app/market/19953,15,20,30,40,50,4.714286,203,455,1003,6825
-Raw Azurite,19971,https://universalis.app/market/19971,3,5,7,8,9,2.0714285,5,146,887,438
-Durium Ore,19954,https://universalis.app/market/19954,15,20,30,40,50,2.7857144,14,123,350,1845
-Raw Imperial Jade,19972,https://universalis.app/market/19972,3,5,7,8,9,0.8214286,4,12,40,36
-Molybdenum Ore,19957,https://universalis.app/market/19957,15,20,30,40,50,6.678571,50,331,1500,4965
-Raw Rhodonite,19973,https://universalis.app/market/19973,3,5,7,8,9,7.571429,199,839,2749,2517
-Stiperstone,5232,https://universalis.app/market/5232,15,20,30,40,50,7.714286,23,193,1000,2895
-Koppranickel Sand,19950,https://universalis.app/market/19950,15,20,30,40,50,4.714286,250,365,500,5475
-Slate,20007,https://universalis.app/market/20007,15,20,30,40,50,2.0714285,3,285,500,4275
-Diatomite,20006,https://universalis.app/market/20006,15,20,30,40,50,1.75,242,404,1200,6060
-Durium Sand,19952,https://universalis.app/market/19952,15,20,30,40,50,2.9642856,3,431,1003,6465
-Doman Iron Sand,19955,https://universalis.app/market/19955,15,20,30,40,50,2.8214285,44,240,800,3600
-Palladium Sand,19956,https://universalis.app/market/19956,15,20,30,40,50,2.3214285,100,345,850,5175
-Ala Mhigan Salt Crystal,19907,https://universalis.app/market/19907,3,5,7,8,9,5.642857,104,515,9999,1545
-Beech Branch,19936,https://universalis.app/market/19936,15,20,30,40,50,0.71428573,50,500,1000,7500
-Loquat,19851,https://universalis.app/market/19851,15,20,30,40,50,1.5357143,4,251,750,3765
-Beech Log,19930,https://universalis.app/market/19930,15,20,30,40,50,4.392857,2,244,600,3660
-Larch Log,19931,https://universalis.app/market/19931,15,20,30,40,50,3.857143,79,312,990,4680
-Pine Resin,19908,https://universalis.app/market/19908,15,20,30,40,50,1.3928572,60,211,1400,3165
-Pine Log,5389,https://universalis.app/market/5389,15,20,30,40,50,1.5,90,227,499,3405
-Bamboo Shoot,19860,https://universalis.app/market/19860,3,5,7,8,9,0.17857143,5,9,20,27
-Shiitake Mushroom,19863,https://universalis.app/market/19863,15,20,30,40,50,0.9285714,197,570,5000,8550
-Persimmon Leaf,19870,https://universalis.app/market/19870,15,20,30,40,50,1.75,6,237,1000,3555
-Persimmon,19869,https://universalis.app/market/19869,15,20,30,40,50,2.142857,2,302,1000,4530
-Persimmon Log,19932,https://universalis.app/market/19932,15,20,30,40,50,3.2142856,1,52,200,780
-Zelkova Log,19933,https://universalis.app/market/19933,15,20,30,40,50,5.75,1,134,500,2010
-Othardian Plum,19852,https://universalis.app/market/19852,3,5,7,8,9,0.5714286,1,30,150,90
-Gyr Abanian Wheat,19868,https://universalis.app/market/19868,15,20,30,40,50,0.96428573,80,220,455,3300
-Bloodhemp,19976,https://universalis.app/market/19976,15,20,30,40,50,1.3571428,120,321,502,4815
-Buckwheat Kernels,19850,https://universalis.app/market/19850,15,20,30,40,50,0.8214286,200,368,500,5520
-Mountain Popoto,19861,https://universalis.app/market/19861,15,20,30,40,50,0.75,190,425,1000,6375
-Gem Algae,19881,https://universalis.app/market/19881,15,20,30,40,50,3.892857,3,853,3040,12795
-Holy Basil,19917,https://universalis.app/market/19917,15,20,30,40,50,4.25,6,342,2849,5130
-Ruby Cotton Boll,19979,https://universalis.app/market/19979,15,20,30,40,50,3.2857144,119,390,700,5850
-Sugar Beet,19856,https://universalis.app/market/19856,15,20,30,40,50,1.7142857,6,518,2000,7770
-Green Leek,19859,https://universalis.app/market/19859,15,20,30,40,50,0.60714287,196,470,1006,7050
-Soybeans,19862,https://universalis.app/market/19862,15,20,30,40,50,0.21428572,5,33,82,495
-Ama Nori,19879,https://universalis.app/market/19879,15,20,30,40,50,0.5714286,92,148,200,2220
-Kudzu Root,19853,https://universalis.app/market/19853,15,20,30,40,50,11.285714,8,287,500,4305
-Cumin Seeds,19864,https://universalis.app/market/19864,15,20,30,40,50,1.0357143,75,142,500,2130
-Kudzu Vine,19982,https://universalis.app/market/19982,15,20,30,40,50,2.0357144,4,176,498,2640
-Daikon Radish,19855,https://universalis.app/market/19855,15,20,30,40,50,0.8214286,6,306,495,4590
-Gyr Abanian Carrot,19858,https://universalis.app/market/19858,15,20,30,40,50,0.17857143,189,219,250,3285
-Lotus Root,19865,https://universalis.app/market/19865,3,5,7,8,9,1,3,6,16,18
-Sun Cabbage,19866,https://universalis.app/market/19866,15,20,30,40,50,0.71428573,1,341,550,5115
-Fennel,19867,https://universalis.app/market/19867,15,20,30,40,50,0.9285714,3,165,353,2475
-Ruby Tide Kelp,19880,https://universalis.app/market/19880,15,20,30,40,50,0.35714287,10,123,1000,1845
-Jhammel Ginger,19857,https://universalis.app/market/19857,3,5,7,8,9,1.25,1,8,45,24
-Yanxian Parsley,19911,https://universalis.app/market/19911,15,20,30,40,50,1.1785715,250,536,1000,8040
-Alyssum,19912,https://universalis.app/market/19912,15,20,30,40,50,1.3571428,65,119,324,1785
-Nagxian Cudweed,19913,https://universalis.app/market/19913,15,20,30,40,50,2.1785715,104,210,500,3150
-Chickweed,19914,https://universalis.app/market/19914,15,20,30,40,50,1.5,4,341,700,5115
-Nipplewort,19915,https://universalis.app/market/19915,15,20,30,40,50,1.1785715,4,303,500,4545
-Doman Eggplant,19854,https://universalis.app/market/19854,15,20,30,40,50,1.9642857,94,254,1000,3810
-Twincoon,19989,https://universalis.app/market/19989,15,20,30,40,50,2.5714285,58,237,499,3555
-Hallowed Basil,19918,https://universalis.app/market/19918,3,5,7,8,9,0.6785714,1,3,14,9
-Gagana Egg,19877,https://universalis.app/market/19877,5,7,10,12,15,4.928571,1,135,898,675
-Muud Suud Horn,19919,https://universalis.app/market/19919,5,7,10,12,15,3.607143,1,94,2000,470
-Moth Scales,19922,https://universalis.app/market/19922,5,7,10,12,15,5.642857,4,327,2000,1635
-Rhino Beetle Carapace,19924,https://universalis.app/market/19924,5,7,10,12,15,6.392857,1,248,697,1240
-Gagana Skin,19999,https://universalis.app/market/19999,5,7,10,12,15,7.892857,4,108,290,540
-Hornbill Tenderloin,19874,https://universalis.app/market/19874,5,7,10,12,15,0.10714286,2,2,2,10
-Bombfish Spine,19923,https://universalis.app/market/19923,5,7,10,12,15,0.35714287,1,2,4,10
-Gyuki Hide,20000,https://universalis.app/market/20000,5,7,10,12,15,6.857143,1,154,900,770
-Dzo Horn,19921,https://universalis.app/market/19921,5,7,10,12,15,3.1785715,1,28,79,140
-Dzo Chuck,19873,https://universalis.app/market/19873,5,7,10,12,15,3.142857,1,134,3000,670
-Steppe Milk,19878,https://universalis.app/market/19878,5,7,10,12,15,5.25,1,271,900,1355
-Tiger Skin,20001,https://universalis.app/market/20001,5,7,10,12,15,11.535714,5,243,850,1215
-Gazelle Horn,19920,https://universalis.app/market/19920,5,7,10,12,15,4.785714,4,273,2300,1365
-Halgai Mane,19985,https://universalis.app/market/19985,5,7,10,12,15,8.571428,1,185,1002,925
-Manzasiri Hair,19986,https://universalis.app/market/19986,5,7,10,12,15,7.035714,1,274,800,1370
-Marid Hide,20002,https://universalis.app/market/20002,5,7,10,12,15,5.107143,5,170,498,850
-Jhammel Haunch,19875,https://universalis.app/market/19875,5,7,10,12,15,1,1,20,200,100
-Twincoon,19989,https://universalis.app/market/19989,5,7,10,12,15,2.5714285,58,237,499,1185
-Gazelle Hide,20003,https://universalis.app/market/20003,5,7,10,12,15,5.714286,5,359,1000,1795
-True Griffin Hide,20004,https://universalis.app/market/20004,5,7,10,12,15,1.0714285,1,174,1280,870
-Highland Perch,20090,https://universalis.app/market/20090,3,5,7,8,9,1.3928572,30,804,2800,2412
-Heather Charr,20050,https://universalis.app/market/20050,5,7,10,11,12,0.10714286,2300,2365,2400,11825
-Eastern Sea Pickle,20165,https://universalis.app/market/20165,10,15,20,22,25,1,36,221,666,2210
-Gauntlet Crab,20176,https://universalis.app/market/20176,10,15,20,22,25,0.42857143,6,224,350,2240
-Curtain Pleco,20138,https://universalis.app/market/20138,1,2,3,4,5,1,100,944,2000,944
-Steppe Bullfrog,20191,https://universalis.app/market/20191,10,15,20,22,25,0.39285713,50,1946,6990,19460
-Sea Lamp,20198,https://universalis.app/market/20198,10,15,20,22,25,1.3214285,6,563,2000,5630
-Spiny Lobster,20209,https://universalis.app/market/20209,5,7,10,11,12,1.2142857,50,1024,6777,5120
-Koromo Octopus,20105,https://universalis.app/market/20105,3,5,7,8,9,1.25,75,644,1398,1932
-Motley Beakfish,20226,https://universalis.app/market/20226,5,7,10,11,12,0.17857143,90,316,1000,1580
-Lumythrite Ore,14148,https://universalis.app/market/14148,3,5,7,8,9,3.7142856,649,1332,9980,3996
-Palladium Ore,19958,https://universalis.app/market/19958,3,5,7,8,9,0.64285713,299,475,747,1425
-Chromite Ore,19959,https://universalis.app/market/19959,3,5,7,8,9,1.6785715,650,1061,3000,3183
-Torreya Log,19934,https://universalis.app/market/19934,3,5,7,8,9,5.892857,180,486,1100,1458
-Rhea,19991,https://universalis.app/market/19991,3,5,7,8,9,0.14285715,359,385,402,1155
-Gyr Abanian Spring Water,21085,https://universalis.app/market/21085,3,5,7,8,9,0.10714286,38,56,88,168
-Silvergrace Ore,22418,https://universalis.app/market/22418,3,5,7,8,9,0.21428572,35,60,90,180
-Black Willow Log,22419,https://universalis.app/market/22419,3,5,7,8,9,0.60714287,50,357,970,1071
-Hingan Flax,22420,https://universalis.app/market/22420,3,5,7,8,9,0.17857143,490,530,681,1590
-Usuginu Octopus,22393,https://universalis.app/market/22393,3,5,7,8,9,0.035714287,2007,2007,2007,6021
-Hawk's Eye,23179,https://universalis.app/market/23179,3,5,7,8,9,0.96428573,599,931,1650,2793
-Hardened Veteran Tree Sap,23180,https://universalis.app/market/23180,3,5,7,8,9,0.85714287,500,1027,2499,3081
-Azim Spring Water,24255,https://universalis.app/market/24255,3,5,7,8,9,0.4642857,10,503,1000,1509
-Gyr Abanian Ore,24240,https://universalis.app/market/24240,3,5,7,8,9,0.42857143,180,303,490,909
-Evergleam Ore,24241,https://universalis.app/market/24241,3,5,7,8,9,1.5357143,374,1545,5000,4635
-Urunday Log,24242,https://universalis.app/market/24242,3,5,7,8,9,0.035714287,22,22,22,66
-Yanxian Cotton Boll,24243,https://universalis.app/market/24243,3,5,7,8,9,0.035714287,69,69,69,207
-Island Wolf Fang,27798,https://universalis.app/market/27798,5,7,10,12,15,1.8214285,4,195,620,975
-Smilodon Skin,27732,https://universalis.app/market/27732,5,7,10,12,15,10.714286,34,296,1000,1480
-Hoptrap Leaf,27763,https://universalis.app/market/27763,5,7,10,12,15,10.392858,5,994,6969,4970
-Silkmoth Scales,27764,https://universalis.app/market/27764,5,7,10,12,15,1.4642857,500,1164,1500,5820
-Rail Tenderloin,27850,https://universalis.app/market/27850,5,7,10,12,15,3.7142856,3,295,500,1475
-Green Glider Skin,27733,https://universalis.app/market/27733,5,7,10,12,15,4.75,200,687,1190,3435
-Lorikeet Down,27797,https://universalis.app/market/27797,5,7,10,12,15,5.428571,150,565,1200,2825
-Lorikeet Egg,27851,https://universalis.app/market/27851,5,7,10,12,15,4.357143,1,57,299,285
-Atrociraptor Skin,27734,https://universalis.app/market/27734,5,7,10,12,15,6.535714,300,707,1100,3535
-Vampire Cup Vine,27773,https://universalis.app/market/27773,5,7,10,12,15,10.321428,5,307,1000,1535
-Vampire Vine Sap,27774,https://universalis.app/market/27774,5,7,10,12,15,9,400,1016,6000,5080
-Ovim Meat,27852,https://universalis.app/market/27852,5,7,10,12,15,8.357142,4,707,2500,3535
-Zonure Skin,27735,https://universalis.app/market/27735,5,7,10,12,15,10.178572,5,288,1599,1440
-Ovim Fleece,27756,https://universalis.app/market/27756,5,7,10,12,15,5.857143,2,130,1100,650
-Sea Swallow Skin,27736,https://universalis.app/market/27736,5,7,10,12,15,15.642858,5,491,1500,2455
-Cubus Flesh,27799,https://universalis.app/market/27799,5,7,10,12,15,12.714286,5,313,2000,1565
-Hydrozoan Umbrella,27800,https://universalis.app/market/27800,5,7,10,12,15,1.4642857,5,467,1000,2335
-Raw Hematite,27726,https://universalis.app/market/27726,3,5,7,8,9,0.4642857,3,8,15,24
-Raw Diaspore,27727,https://universalis.app/market/27727,3,5,7,8,9,0.64285713,5,33,100,99
-Truegold Ore,27697,https://universalis.app/market/27697,15,20,30,40,50,8.678572,13,216,1100,3240
-Highland Spring Water,27968,https://universalis.app/market/27968,15,20,30,40,50,5,50,315,1000,4725
-Raw Lazurite,27728,https://universalis.app/market/27728,3,5,7,8,9,0.39285713,1,5,15,15
-Bluespirit Ore,27698,https://universalis.app/market/27698,15,20,30,40,50,8.857142,5,326,1250,4890
-Extra Effervescent Water,27776,https://universalis.app/market/27776,15,20,30,40,50,0.60714287,25,195,400,2925
-Raw Triplite,27729,https://universalis.app/market/27729,3,5,7,8,9,0.6785714,4,7,14,21
-Titancopper Ore,27701,https://universalis.app/market/27701,15,20,30,40,50,4.678571,4,169,500,2535
-Underground Spring Water,27782,https://universalis.app/market/27782,15,20,30,40,50,36.07143,5,407,1300,6105
-Raw Petalite,27730,https://universalis.app/market/27730,3,5,7,8,9,2.4642856,5,130,1879,390
-Dimythrite Ore,27703,https://universalis.app/market/27703,15,20,30,40,50,22.607143,1,351,1500,5265
-Yellow Alumen,27817,https://universalis.app/market/27817,15,20,30,40,50,7.571429,50,254,500,3810
-Coarse Saltpeter,27954,https://universalis.app/market/27954,15,20,30,40,50,0.14285715,24,32,50,480
-Hard Mudstone,27801,https://universalis.app/market/27801,15,20,30,40,50,3.7857144,1,41,200,615
-Truegold Sand,27696,https://universalis.app/market/27696,15,20,30,40,50,9,13,232,900,3480
-Manasilver Sand,27699,https://universalis.app/market/27699,15,20,30,40,50,6.285714,3,96,700,1440
-Volcanic Tuff,27803,https://universalis.app/market/27803,15,20,30,40,50,4.035714,4,293,555,4395
-Titancopper Sand,27700,https://universalis.app/market/27700,15,20,30,40,50,3.142857,15,75,217,1125
-Dimythrite Sand,27702,https://universalis.app/market/27702,15,20,30,40,50,8.821428,4,271,800,4065
-Frantoio,27820,https://universalis.app/market/27820,15,20,30,40,50,14.5,2,804,5526,12060
-Pixie Apple,27831,https://universalis.app/market/27831,15,20,30,40,50,1.25,65,409,750,6135
-White Oak Log,27683,https://universalis.app/market/27683,15,20,30,40,50,4.285714,2,35,1000,525
-Miracle Apple Log,27684,https://universalis.app/market/27684,15,20,30,40,50,2.9285715,2,14,50,210
-White Ash Log,27685,https://universalis.app/market/27685,15,20,30,40,50,6.678571,50,155,497,2325
-Gianthive Chip,27834,https://universalis.app/market/27834,15,20,30,40,50,8.464286,25,535,5000,8025
-Amber Cloves,27821,https://universalis.app/market/27821,15,20,30,40,50,1.4642857,99,725,5000,10875
-Sandteak Log,27686,https://universalis.app/market/27686,15,20,30,40,50,8.357142,2,178,990,2670
-Harcot,27819,https://universalis.app/market/27819,15,20,30,40,50,1.3214285,20,133,500,1995
-Lignum Vitae Log,27687,https://universalis.app/market/27687,15,20,30,40,50,13.142858,2,357,2000,5355
-Night Pepper,27827,https://universalis.app/market/27827,15,20,30,40,50,1.5714285,50,193,1000,2895
-Blood Tomato,27825,https://universalis.app/market/27825,15,20,30,40,50,26.214285,7,647,2500,9705
-Bright Flax,27747,https://universalis.app/market/27747,15,20,30,40,50,3.7142856,2,305,500,4575
-Purple Carrot,27818,https://universalis.app/market/27818,15,20,30,40,50,4.357143,25,396,4789,5940
-Curly Parsley,27823,https://universalis.app/market/27823,15,20,30,40,50,1.9285715,7,309,3339,4635
-Broad Beans,27833,https://universalis.app/market/27833,3,5,7,8,9,0.6785714,1,25,50,75
-Garden Beet,27824,https://universalis.app/market/27824,15,20,30,40,50,5.214286,10,153,330,2295
-Iridescent Cocoon,27750,https://universalis.app/market/27750,15,20,30,40,50,2.392857,4,226,528,3390
-Upland Wheat,27832,https://universalis.app/market/27832,15,20,30,40,50,17.678572,2,489,1500,7335
-Peppermint,27836,https://universalis.app/market/27836,3,5,7,8,9,5.642857,3,176,600,528
-Pixie Floss Boll,27753,https://universalis.app/market/27753,15,20,30,40,50,5,2,134,299,2010
-Creamtop Mushroom,27829,https://universalis.app/market/27829,15,20,30,40,50,2.4642856,95,660,1989,9900
-Royal Grapes,27826,https://universalis.app/market/27826,15,20,30,40,50,1.7857143,5,254,400,3810
-Russet Popoto,27822,https://universalis.app/market/27822,3,5,7,8,9,2.5357144,4,20,57,60
-Sweet Alyssum,27779,https://universalis.app/market/27779,15,20,30,40,50,27.107143,120,363,2500,5445
-Fernleaf Lavender,27780,https://universalis.app/market/27780,15,20,30,40,50,17.392857,4,363,2999,5445
-Coffee Beans,27837,https://universalis.app/market/27837,15,20,30,40,50,2.9642856,2,315,1000,4725
-Bomba Rice,27830,https://universalis.app/market/27830,15,20,30,40,50,4.285714,2,448,1000,6720
-Lime Basil,27783,https://universalis.app/market/27783,15,20,30,40,50,18.107143,4,422,2495,6330
-Tiger Lily,27784,https://universalis.app/market/27784,15,20,30,40,50,16.214285,5,457,1800,6855
-Light Gerbera,27785,https://universalis.app/market/27785,15,20,30,40,50,34.67857,100,440,5005,6600
-Mist Spinach,27828,https://universalis.app/market/27828,3,5,7,8,9,4.892857,6,118,525,354
-Dwarven Cotton Boll,27759,https://universalis.app/market/27759,15,20,30,40,50,8.392858,78,353,2000,5295
-Sand Egg,27462,https://universalis.app/market/27462,5,7,10,11,12,2.5714285,100,330,750,1650
-Spearhead Squid,27457,https://universalis.app/market/27457,5,7,10,11,12,0.64285713,800,2498,5000,12490
-Cherry Herring,27473,https://universalis.app/market/27473,5,7,10,11,12,2.5714285,36,114,199,570
-Lemonfish,27475,https://universalis.app/market/27475,5,7,10,11,12,2.6785715,60,214,1100,1070
-Black Tri-star,27483,https://universalis.app/market/27483,5,7,10,11,12,0.89285713,449,1273,3008,6365
-Little Flirt,27540,https://universalis.app/market/27540,10,15,20,22,25,3.9642856,80,430,1999,4300
-Gourmand Crab,27571,https://universalis.app/market/27571,10,15,20,22,25,3,44,105,418,1050
-Megapiranha,27576,https://universalis.app/market/27576,10,15,20,22,25,0.6785714,8,485,2996,4850
-Rose Shrimp,27451,https://universalis.app/market/27451,5,7,10,11,12,1,99,213,332,1065
-Sweetflesh Oyster,27513,https://universalis.app/market/27513,5,7,10,11,12,3.2857144,30,173,994,865
-Raw Onyx,27731,https://universalis.app/market/27731,3,5,7,8,9,1.4285715,1,2019,4500,6057
-Prismstone,27705,https://universalis.app/market/27705,3,5,7,8,9,3.4642856,400,2368,6500,7104
-Tungsten Ore,27704,https://universalis.app/market/27704,3,5,7,8,9,0.89285713,348,531,865,1593
-Lemonette,27835,https://universalis.app/market/27835,3,5,7,8,9,12.678572,5,530,1000,1590
-Sandalwood Log,27688,https://universalis.app/market/27688,3,5,7,8,9,1.25,228,398,1500,1194
-Ethereal Cocoon,27761,https://universalis.app/market/27761,3,5,7,8,9,0.4642857,49,217,302,651
-Merbau Log,29972,https://universalis.app/market/29972,3,5,7,8,9,1.25,499,658,888,1974
-Duskblooms,29974,https://universalis.app/market/29974,3,5,7,8,9,1.2142857,250,899,1717,2697
-Imperial Fern,29978,https://universalis.app/market/29978,3,5,7,8,9,0.4642857,75,333,490,999
-Brashgold Ore,30486,https://universalis.app/market/30486,3,5,7,8,9,1.25,620,901,2000,2703
-Tender Dill,30485,https://universalis.app/market/30485,3,5,7,8,9,1.3928572,195,703,1000,2109
-Blue Crab,30487,https://universalis.app/market/30487,1,2,3,4,5,0.6785714,500,777,1932,777
-Tektite,13759,https://universalis.app/market/13759,15,20,30,40,50,0.32142857,2,98,202,1470
-Eventide Jade,13760,https://universalis.app/market/13760,15,20,30,40,50,0.39285713,1,3,10,45
-Fossilized Dragon Bone,13761,https://universalis.app/market/13761,15,20,30,40,50,0.71428573,50,188,500,2820
-Periwinkle,13762,https://universalis.app/market/13762,15,20,30,40,50,0.75,1,56,190,840
-Cloud Mushroom,13763,https://universalis.app/market/13763,15,20,30,40,50,0.9285714,5,479,4997,7185
-Wind Widow,13764,https://universalis.app/market/13764,15,20,30,40,50,0.64285713,1,45,250,675
-White Oak Branch,27816,https://universalis.app/market/27816,15,20,30,40,50,0.53571427,85,1891,2998,28365
-Silver Beech Log,32950,https://universalis.app/market/32950,3,5,7,8,9,0.071428575,1,49,98,147
-Dolomite,32951,https://universalis.app/market/32951,3,5,7,8,9,0.32142857,156,282,444,846
-Solstice Stone,32952,https://universalis.app/market/32952,3,5,7,8,9,0.53571427,100,234,399,702
-Raindrop Cotton Boll,32953,https://universalis.app/market/32953,3,5,7,8,9,1.7142857,61,308,719,924
-Wattle Petribark,32954,https://universalis.app/market/32954,3,5,7,8,9,0.8214286,1,146,200,438
-Hard Water,32955,https://universalis.app/market/32955,3,5,7,8,9,0.42857143,1,70,105,210
-Raw Ametrine,36174,https://universalis.app/market/36174,15,20,30,40,50,12.178572,4,108,332,1620
-Sharlayan Rock Salt,36084,https://universalis.app/market/36084,15,20,30,40,50,6.75,104,258,1000,3870
-High Durium Sand,36162,https://universalis.app/market/36162,15,20,30,40,50,17.928572,4,419,4500,6285
-Chloroschist,36180,https://universalis.app/market/36180,15,20,30,40,50,11.035714,1,82,650,1230
-High Durium Ore,36163,https://universalis.app/market/36163,15,20,30,40,50,15.821428,4,242,1000,3630
-Pewter Ore,36175,https://universalis.app/market/36175,15,20,30,40,50,16.821428,1,166,500,2490
-Phrygian Gold Ore,36176,https://universalis.app/market/36176,15,20,30,40,50,20.571428,3,171,3750,2565
-Eblan Alumen,36241,https://universalis.app/market/36241,15,20,30,40,50,25.714285,5,396,1500,5940
-Bismuth Ore,36164,https://universalis.app/market/36164,15,20,30,40,50,26.071428,1,243,1760,3645
-Manganese Ore,36165,https://universalis.app/market/36165,15,20,30,40,50,34.42857,3,154,3000,2310
-Raw Blue Zircon,36177,https://universalis.app/market/36177,15,20,30,40,50,8.785714,1,17,105,255
-Annite,36181,https://universalis.app/market/36181,15,20,30,40,50,45.42857,4,241,1004,3615
-Ambrosial Water,36263,https://universalis.app/market/36263,15,20,30,40,50,57.214287,5,365,1000,5475
-Chondrite,36166,https://universalis.app/market/36166,15,20,30,40,50,59.785713,4,410,8703,6150
-Raw Star Quartz,36178,https://universalis.app/market/36178,15,20,30,40,50,38.42857,5,205,999,3075
-Horse Chestnut Log,36190,https://universalis.app/market/36190,15,20,30,40,50,14.464286,1,163,1000,2445
-Dark Hemp,36202,https://universalis.app/market/36202,15,20,30,40,50,12.25,114,319,1231,4785
-Dark Rye,36083,https://universalis.app/market/36083,15,20,30,40,50,10.071428,1,183,450,2745
-Iceberg Lettuce,36088,https://universalis.app/market/36088,15,20,30,40,50,3.9642856,7,209,750,3135
-Palm Log,36191,https://universalis.app/market/36191,15,20,30,40,50,18.285715,1,373,1200,5595
-Palm Syrup,36086,https://universalis.app/market/36086,15,20,30,40,50,36.32143,4,393,1000,5895
-Coconut,36087,https://universalis.app/market/36087,15,20,30,40,50,7.142857,1,155,700,2325
-Thavnairian Perilla Leaf,36085,https://universalis.app/market/36085,15,20,30,40,50,12.571428,250,526,1299,7890
-Thavnairian Paprika,36098,https://universalis.app/market/36098,15,20,30,40,50,6.535714,187,693,2221,10395
-Cucumber,36091,https://universalis.app/market/36091,15,20,30,40,50,5.785714,49,255,850,3825
-Eblan Lentils,36092,https://universalis.app/market/36092,15,20,30,40,50,2.142857,49,307,997,4605
-Red Pine Log,36192,https://universalis.app/market/36192,15,20,30,40,50,25.25,2,426,10000,6390
-Snow Flax,36204,https://universalis.app/market/36204,15,20,30,40,50,23.571428,1,204,2000,3060
-Beet,36093,https://universalis.app/market/36093,15,20,30,40,50,2.8214285,75,403,2000,6045
-Carrot of Happiness,36090,https://universalis.app/market/36090,15,20,30,40,50,5.642857,100,452,997,6780
-Ironwood Log,36193,https://universalis.app/market/36193,15,20,30,40,50,17.607143,2,215,1000,3225
-Scarlet Moko Grass,36205,https://universalis.app/market/36205,15,20,30,40,50,14.178572,1,192,800,2880
-Sykon,36096,https://universalis.app/market/36096,15,20,30,40,50,21.964285,3,271,900,4065
-Giant Popoto,36089,https://universalis.app/market/36089,15,20,30,40,50,31.821428,97,522,2388,7830
-Elder Nutmeg Seeds,36095,https://universalis.app/market/36095,15,20,30,40,50,31.964285,4,427,1998,6405
-Sideritis Leaves,36094,https://universalis.app/market/36094,15,20,30,40,50,30.75,9,127,750,1905
-Integral Log,36194,https://universalis.app/market/36194,15,20,30,40,50,60.892857,2,409,1997,6135
-AR-Caean Cotton Boll,36206,https://universalis.app/market/36206,15,20,30,40,50,53,1,360,1800,5400
-Alien Onion,36097,https://universalis.app/market/36097,15,20,30,40,50,25.071428,1,82,700,1230
-Gaja Hide,36242,https://universalis.app/market/36242,5,7,10,12,15,42.75,4,352,2445,1760
-Hamsa Tenderloin,36253,https://universalis.app/market/36253,5,7,10,12,15,2,3,102,450,510
-Amra,36264,https://universalis.app/market/36264,5,7,10,12,15,3.4285715,25,271,1000,1355
-Luncheon Toad Skin,36243,https://universalis.app/market/36243,5,7,10,12,15,9.357142,5,709,10000,3545
-Almasty Fur,36203,https://universalis.app/market/36203,5,7,10,12,15,30.678572,2,767,10000,3835
-Saiga Hide,36244,https://universalis.app/market/36244,5,7,10,12,15,31.607143,4,136,1000,680
-Ovibos Milk,36255,https://universalis.app/market/36255,5,7,10,12,15,64.28571,20,844,1500,4220
-Yakow Chuck,36254,https://universalis.app/market/36254,5,7,10,12,15,3.9285715,125,450,1700,2250
-Lunatender Blossom,36258,https://universalis.app/market/36258,5,7,10,12,15,37.964287,5,729,10000,3645
-Mousse Flesh,36257,https://universalis.app/market/36257,5,7,10,12,15,7.821429,5,724,4899,3620
-Dynamite Ash,36259,https://universalis.app/market/36259,5,7,10,12,15,1.8214285,1,157,480,785
-Kumbhira Skin,36245,https://universalis.app/market/36245,5,7,10,12,15,25.285715,2,85,773,425
-Egg of Elpis,36256,https://universalis.app/market/36256,5,7,10,12,15,28.357143,1,280,747,1400
-Petalouda Scales,36260,https://universalis.app/market/36260,5,7,10,12,15,21.107143,5,639,1200,3195
-Ophiotauros Hide,36246,https://universalis.app/market/36246,5,7,10,12,15,64.28571,5,549,3985,2745
-Berkanan Sap,36261,https://universalis.app/market/36261,5,7,10,12,15,64.28571,5,669,2205,3345
-Dynamis Crystal,36262,https://universalis.app/market/36262,5,7,10,12,15,19.321428,2,178,5000,890
-Bird of Elpis Breast,36630,https://universalis.app/market/36630,5,7,10,12,15,2.5357144,1,86,450,430
-Northern Herring,36386,https://universalis.app/market/36386,2,3,5,7,9,3.7142856,408,1049,2500,2098
-Spiny King Crab,36523,https://universalis.app/market/36523,5,7,9,12,15,0.8214286,85,478,4000,2390
-Icepike,36459,https://universalis.app/market/36459,2,3,5,7,9,0.2857143,8,175,300,350
-Grey Mullet,36569,https://universalis.app/market/36569,5,7,9,12,15,2.25,100,1104,2500,5520
-Shallows Cod,36536,https://universalis.app/market/36536,5,7,9,12,15,0.42857143,105,482,698,2410
-Ruby-spotted Crab,36551,https://universalis.app/market/36551,5,7,9,12,15,1.0357143,1400,2262,7000,11310
-Macrobrachium Lar,36409,https://universalis.app/market/36409,2,3,5,7,9,0.96428573,4001,9795,18996,19590
-Dream Pickle,36555,https://universalis.app/market/36555,5,7,9,12,15,1.8214285,2000,4628,9000,23140
-Protomyke #987,36471,https://universalis.app/market/36471,2,3,5,7,9,1.1785715,3000,6469,10001,12938
-Rummy-nosed Tetra,36541,https://universalis.app/market/36541,5,7,9,12,15,1.25,700,5525,7500,27625
-Stonehard Water,36215,https://universalis.app/market/36215,3,5,7,8,9,0.39285713,5,54,74,162
-Rime Dolomite,36216,https://universalis.app/market/36216,3,5,7,8,9,1.2142857,5,91,548,273
-Lunar Adamantite Ore,36167,https://universalis.app/market/36167,3,5,7,8,9,2.9642856,4,231,996,693
-Rhodium Sand,36179,https://universalis.app/market/36179,3,5,7,8,9,1.9285715,4,119,250,357
-Potent Spice,36214,https://universalis.app/market/36214,3,5,7,8,9,1.3571428,1,49,139,147
-Mempisang Log,36195,https://universalis.app/market/36195,3,5,7,8,9,2.857143,2,132,494,396
-Golden Cocoon,36207,https://universalis.app/market/36207,3,5,7,8,9,1.9642857,2,103,302,309
-Double-edged Herb,36217,https://universalis.app/market/36217,3,5,7,8,9,1.6785715,4,222,1689,666
-Raw Eblan Danburite,37279,https://universalis.app/market/37279,3,5,7,8,9,1.5,5,60,394,180
-Thavnairian Corn,37278,https://universalis.app/market/37278,3,5,7,8,9,1.7857143,4,67,245,201
-Raw Rutilated Quartz,37817,https://universalis.app/market/37817,3,5,7,8,9,12.428572,2,370,999,1110
-Ilmenite,37820,https://universalis.app/market/37820,3,5,7,8,9,41.142857,1,1067,4000,3201
-Ash Diatomite,37822,https://universalis.app/market/37822,3,5,7,8,9,1.3928572,1,137,390,411
-Paldao Log,37818,https://universalis.app/market/37818,3,5,7,8,9,23.678572,50,383,1580,1149
-Haritaki,37819,https://universalis.app/market/37819,3,5,7,8,9,19.535715,1,363,1500,1089
-Bayberry,37821,https://universalis.app/market/37821,3,5,7,8,9,29.428572,5,857,2000,2571
+Item Name,Item ID,Universalis URL,Amount One,Amount Two,Amount Three,Amount Four,Amount Five,Daily Average Sold (Seven Day Window),Average Price Per Unit,Total Per Venture (min amount)
+Animal Skin,5291,https://universalis.app/market/5291,5,7,10,12,15,3.607143,7,35
+Animal Sinew,5318,https://universalis.app/market/5318,5,7,10,12,15,4.25,14,70
+Shriekshroom,4794,https://universalis.app/market/4794,5,7,10,12,15,0.71428573,1,5
+Honey,4850,https://universalis.app/market/4850,5,7,10,12,15,4.428571,10,50
+Ram Horn,5434,https://universalis.app/market/5434,5,7,10,12,15,4.607143,147,735
+Beastkin Blood,5492,https://universalis.app/market/5492,5,7,10,12,15,2.4642856,1,5
+Marmot Meat,4758,https://universalis.app/market/4758,5,7,10,12,15,0.78571427,9,45
+Animal Hide,5292,https://universalis.app/market/5292,5,7,10,12,15,4.357143,11,55
+Mutton Loin,4759,https://universalis.app/market/4759,5,7,10,12,15,0.21428572,1,5
+Bat Fang,5442,https://universalis.app/market/5442,5,7,10,12,15,5.178571,45,225
+Red Landtrap Leaf,5548,https://universalis.app/market/5548,5,7,10,12,15,3.7142856,191,955
+Beast Sinew,5319,https://universalis.app/market/5319,5,7,10,12,15,7.357143,90,450
+Dodo Tenderloin,4760,https://universalis.app/market/4760,5,7,10,12,15,2.6785715,50,250
+Jellyfish Cnida,5556,https://universalis.app/market/5556,5,7,10,12,15,2.7142856,50,250
+Mole Meat,4761,https://universalis.app/market/4761,5,7,10,12,15,5.035714,118,590
+Puk Wing,5550,https://universalis.app/market/5550,5,7,10,12,15,0.2857143,1,5
+Viscous Secretions,5495,https://universalis.app/market/5495,5,7,10,12,15,2.607143,25,125
+Dodo Egg,4773,https://universalis.app/market/4773,5,7,10,12,15,4.107143,187,935
+Bat Wing,5551,https://universalis.app/market/5551,5,7,10,12,15,7.285714,70,350
+Antelope Horn,5435,https://universalis.app/market/5435,5,7,10,12,15,7.178571,364,1820
+Goobbue Fang,5446,https://universalis.app/market/5446,5,7,10,12,15,1.7142857,3,15
+Yellow Yarzon Leg,5454,https://universalis.app/market/5454,5,7,10,12,15,2.1785715,23,115
+Imp Wing,5552,https://universalis.app/market/5552,5,7,10,12,15,1.1785715,9,45
+Jellyfish Umbrella,5557,https://universalis.app/market/5557,5,7,10,12,15,4.75,75,375
+Aldgoat Skin,5296,https://universalis.app/market/5296,5,7,10,12,15,11.785714,539,2695
+Dodo Feather,5355,https://universalis.app/market/5355,5,7,10,12,15,4.535714,107,535
+Green Megalocrab Shell,5456,https://universalis.app/market/5456,5,7,10,12,15,6.5,218,1090
+Antelope Shank,4765,https://universalis.app/market/4765,5,7,10,12,15,2.25,227,1135
+Megalocrab Leg,4771,https://universalis.app/market/4771,5,7,10,12,15,5.178571,381,1905
+Acidic Secretions,5496,https://universalis.app/market/5496,5,7,10,12,15,8.107142,788,3940
+Diremite Web,5345,https://universalis.app/market/5345,5,7,10,12,15,9.428572,416,2080
+Aldgoat Horn,5436,https://universalis.app/market/5436,5,7,10,12,15,13.321428,429,2145
+Scalekin Blood,5493,https://universalis.app/market/5493,5,7,10,12,15,3.3214285,486,2430
+Wolf Fang,5444,https://universalis.app/market/5444,5,7,10,12,15,13.928572,346,1730
+Treant Sap,5499,https://universalis.app/market/5499,5,7,10,12,15,2.642857,33,165
+Aldgoat Chuck,4766,https://universalis.app/market/4766,5,7,10,12,15,5.321429,66,330
+Diremite Sinew,5320,https://universalis.app/market/5320,5,7,10,12,15,6.642857,146,730
+Gigantoad Skin,5300,https://universalis.app/market/5300,5,7,10,12,15,8.25,105,525
+Bomb Ash,5528,https://universalis.app/market/5528,5,7,10,12,15,15.678572,163,815
+Puk Egg,4774,https://universalis.app/market/4774,5,7,10,12,15,1.6428572,513,2565
+Night Milk,6149,https://universalis.app/market/6149,5,7,10,12,15,5.178571,258,1290
+Orobon Liver,4770,https://universalis.app/market/4770,5,7,10,12,15,0.35714287,1,5
+Blue Yarzon Leg,5455,https://universalis.app/market/5455,5,7,10,12,15,3.9285715,232,1160
+Cactuar Needle,5468,https://universalis.app/market/5468,5,7,10,12,15,5.535714,2186,10930
+Sandworm Fang,5447,https://universalis.app/market/5447,5,7,10,12,15,2.7857144,50,250
+Blue Landtrap Leaf,5549,https://universalis.app/market/5549,5,7,10,12,15,7.892857,237,1185
+Morbol Vine,5554,https://universalis.app/market/5554,5,7,10,12,15,4.5,54,270
+Formic Acid,5497,https://universalis.app/market/5497,5,7,10,12,15,1.8928572,34,170
+Raptor Shank,4767,https://universalis.app/market/4767,5,7,10,12,15,6.107143,250,1250
+Hippogryph Sinew,5321,https://universalis.app/market/5321,5,7,10,12,15,8.25,278,1390
+Boar Hide,5303,https://universalis.app/market/5303,5,7,10,12,15,11,222,1110
+Peiste Skin,5306,https://universalis.app/market/5306,5,7,10,12,15,9.535714,700,3500
+Fleece,5347,https://universalis.app/market/5347,5,7,10,12,15,17.678572,344,1720
+Spoken Blood,5494,https://universalis.app/market/5494,5,7,10,12,15,8.642858,804,4020
+Karakul Skin,5308,https://universalis.app/market/5308,5,7,10,12,15,4.285714,99,495
+Grenade Ash,5526,https://universalis.app/market/5526,5,7,10,12,15,9.785714,184,920
+Raptor Sinew,5322,https://universalis.app/market/5322,5,7,10,12,15,10.25,503,2515
+Ochu Vine,5555,https://universalis.app/market/5555,5,7,10,12,15,3.75,803,4015
+Pudding Flesh,5558,https://universalis.app/market/5558,5,7,10,12,15,4.678571,624,3120
+Basilisk Egg,5263,https://universalis.app/market/5263,5,7,10,12,15,6.928571,135,675
+Buffalo Sirloin,4768,https://universalis.app/market/4768,5,7,10,12,15,2.5357144,112,560
+Apkallu Egg,4775,https://universalis.app/market/4775,5,7,10,12,15,3.1785715,158,790
+Apkallu Down,5348,https://universalis.app/market/5348,5,7,10,12,15,6.678571,325,1625
+Ahriman Wing,5553,https://universalis.app/market/5553,5,7,10,12,15,6.678571,569,2845
+Eft Tail,4769,https://universalis.app/market/4769,5,7,10,12,15,4.357143,116,580
+Raptor Skin,5310,https://universalis.app/market/5310,5,7,10,12,15,7.964286,241,1205
+Snurble Tufts,5349,https://universalis.app/market/5349,5,7,10,12,15,5.178571,569,2845
+Ogre Horn,5439,https://universalis.app/market/5439,5,7,10,12,15,4.571429,96,480
+Copper Ore,5106,https://universalis.app/market/5106,15,20,30,40,50,8,61,915
+Fire Shard,2,https://universalis.app/market/2,60,80,100,110,120,26.821428,68,4080
+Ice Shard,3,https://universalis.app/market/3,60,80,100,110,120,28.928572,71,4260
+Wind Shard,4,https://universalis.app/market/4,60,80,100,110,120,26.035715,69,4140
+Earth Shard,5,https://universalis.app/market/5,60,80,100,110,120,7.964286,60,3600
+Lightning Shard,6,https://universalis.app/market/6,60,80,100,110,120,9.714286,71,4260
+Water Shard,7,https://universalis.app/market/7,60,80,100,110,120,13.785714,74,4440
+Muddy Water,5488,https://universalis.app/market/5488,15,20,30,40,50,2.2857144,86,1290
+Bone Chip,5432,https://universalis.app/market/5432,15,20,30,40,50,4.285714,44,660
+Tin Ore,5107,https://universalis.app/market/5107,15,20,30,40,50,8.928572,95,1425
+Raw Sunstone,5128,https://universalis.app/market/5128,15,20,30,40,50,1.0357143,29,435
+Raw Lapis Lazuli,5133,https://universalis.app/market/5133,15,20,30,40,50,1.1428572,61,915
+Soiled Femur,5433,https://universalis.app/market/5433,15,20,30,40,50,1.5,16,240
+Zinc Ore,5110,https://universalis.app/market/5110,15,20,30,40,50,3.9642856,49,735
+Obsidian,5124,https://universalis.app/market/5124,15,20,30,40,50,1.5714285,11,165
+Potter's Clay,5513,https://universalis.app/market/5513,15,20,30,40,50,2.5357144,472,7080
+Fine Sand,5267,https://universalis.app/market/5267,15,20,30,40,50,9.678572,4,60
+Copper Sand,5268,https://universalis.app/market/5268,15,20,30,40,50,1,35,525
+Rock Salt,5518,https://universalis.app/market/5518,15,20,30,40,50,6.535714,90,1350
+Ragstone,5228,https://universalis.app/market/5228,15,20,30,40,50,1.3214285,15,225
+Iron Ore,5111,https://universalis.app/market/5111,15,20,30,40,50,24.25,53,795
+Iron Sand,5269,https://universalis.app/market/5269,15,20,30,40,50,0.89285713,17,255
+Cinnabar,5519,https://universalis.app/market/5519,15,20,30,40,50,2.0357144,41,615
+Raw Malachite,5130,https://universalis.app/market/5130,15,20,30,40,50,1.0357143,46,690
+Raw Sphene,5131,https://universalis.app/market/5131,15,20,30,40,50,0.5714286,42,630
+Raw Fluorite,5132,https://universalis.app/market/5132,15,20,30,40,50,0.78571427,43,645
+Limestone,5230,https://universalis.app/market/5230,15,20,30,40,50,7.678571,301,4515
+Raw Danburite,5129,https://universalis.app/market/5129,15,20,30,40,50,1.0357143,46,690
+Sunrise Tellin,5465,https://universalis.app/market/5465,15,20,30,40,50,3.4285715,145,2175
+Alumen,5524,https://universalis.app/market/5524,15,20,30,40,50,10.392858,154,2310
+Beryllium Ore,28717,https://universalis.app/market/28717,3,5,7,8,9,0.6785714,1045,3135
+Mudstone,5229,https://universalis.app/market/5229,15,20,30,40,50,7.071429,99,1485
+Earth Rock,5155,https://universalis.app/market/5155,15,20,30,40,50,0.5714286,25,375
+Silver Sand,5270,https://universalis.app/market/5270,15,20,30,40,50,1.2857143,24,360
+Fire Rock,5152,https://universalis.app/market/5152,15,20,30,40,50,1.0357143,327,4905
+Ice Rock,5153,https://universalis.app/market/5153,15,20,30,40,50,1.3928572,135,2025
+Effervescent Water,5491,https://universalis.app/market/5491,15,20,30,40,50,9.107142,210,3150
+Wind Rock,5154,https://universalis.app/market/5154,15,20,30,40,50,0.4642857,20,300
+Lightning Rock,5156,https://universalis.app/market/5156,15,20,30,40,50,0.42857143,268,4020
+Silver Ore,5113,https://universalis.app/market/5113,15,20,30,40,50,18,234,3510
+Water Rock,5157,https://universalis.app/market/5157,15,20,30,40,50,0.5714286,23,345
+Bomb Ash,5528,https://universalis.app/market/5528,15,20,30,40,50,15.678572,163,2445
+Fire Crystal,8,https://universalis.app/market/8,30,60,100,110,120,51.214287,88,2640
+Ice Crystal,9,https://universalis.app/market/9,30,60,100,110,120,14.607142,41,1230
+Wind Crystal,10,https://universalis.app/market/10,30,60,100,110,120,50.25,87,2610
+Earth Crystal,11,https://universalis.app/market/11,30,60,100,110,120,12.178572,29,870
+Lightning Crystal,12,https://universalis.app/market/12,30,60,100,110,120,18.178572,63,1890
+Water Crystal,13,https://universalis.app/market/13,30,60,100,110,120,32.392857,89,2670
+Silex,5523,https://universalis.app/market/5523,15,20,30,40,50,9.285714,299,4485
+Wyvern Obsidian,5125,https://universalis.app/market/5125,15,20,30,40,50,2.9642856,36,540
+Blue Pigment,5814,https://universalis.app/market/5814,15,20,30,40,50,1.5714285,174,2610
+Red Pigment,5815,https://universalis.app/market/5815,15,20,30,40,50,2.2142856,204,3060
+Yellow Pigment,5816,https://universalis.app/market/5816,15,20,30,40,50,0.71428573,201,3015
+Grey Pigment,5817,https://universalis.app/market/5817,15,20,30,40,50,2.8214285,202,3030
+Brown Pigment,5818,https://universalis.app/market/5818,15,20,30,40,50,1.8214285,371,5565
+Green Pigment,5819,https://universalis.app/market/5819,15,20,30,40,50,1.2142857,469,7035
+Purple Pigment,5820,https://universalis.app/market/5820,15,20,30,40,50,1.4285715,439,6585
+Brimstone,5527,https://universalis.app/market/5527,15,20,30,40,50,1.6785715,79,1185
+Sandalwood Sap,28716,https://universalis.app/market/28716,3,5,7,8,9,0.75,1100,3300
+Siltstone,5231,https://universalis.app/market/5231,15,20,30,40,50,5.571429,276,4140
+Grade 1 La Noscean Topsoil,7758,https://universalis.app/market/7758,5,7,10,12,15,0.32142857,79,395
+Grade 1 Shroud Topsoil,7761,https://universalis.app/market/7761,5,7,10,12,15,0.9285714,301,1505
+Grade 1 Thanalan Topsoil,7764,https://universalis.app/market/7764,5,7,10,12,15,0.78571427,76,380
+Raw Garnet,5134,https://universalis.app/market/5134,15,20,30,40,50,1.8214285,85,1275
+Granite,7008,https://universalis.app/market/7008,15,20,30,40,50,13.5,307,4605
+Raw Heliodor,5137,https://universalis.app/market/5137,15,20,30,40,50,0.89285713,84,1260
+Raw Goshenite,5135,https://universalis.app/market/5135,15,20,30,40,50,0.4642857,74,1110
+Raw Peridot,5136,https://universalis.app/market/5136,15,20,30,40,50,0.8214286,57,855
+Mythril Sand,5271,https://universalis.app/market/5271,15,20,30,40,50,1.8928572,73,1095
+Mythril Ore,5114,https://universalis.app/market/5114,15,20,30,40,50,16.285715,191,2865
+Raw Amethyst,5138,https://universalis.app/market/5138,15,20,30,40,50,1.5,53,795
+Raw Aquamarine,5139,https://universalis.app/market/5139,15,20,30,40,50,0.6785714,84,1260
+Raw Tourmaline,5142,https://universalis.app/market/5142,15,20,30,40,50,1.1785715,100,1500
+Raw Spinel,5144,https://universalis.app/market/5144,15,20,30,40,50,1.3928572,158,2370
+Raw Zircon,5141,https://universalis.app/market/5141,15,20,30,40,50,1.25,157,2355
+Jade,5168,https://universalis.app/market/5168,15,20,30,40,50,2.0714285,112,1680
+Black Alumen,5525,https://universalis.app/market/5525,15,20,30,40,50,5.321429,237,3555
+Grenade Ash,5526,https://universalis.app/market/5526,15,20,30,40,50,9.785714,184,2760
+Grade 2 La Noscean Topsoil,7759,https://universalis.app/market/7759,1,2,3,4,5,0.10714286,696,696
+Grade 2 Shroud Topsoil,7762,https://universalis.app/market/7762,1,2,3,4,5,0.78571427,1243,1243
+Grade 2 Thanalan Topsoil,7765,https://universalis.app/market/7765,1,2,3,4,5,0.14285715,969,969
+Raw Turquoise,5145,https://universalis.app/market/5145,15,20,30,40,50,1.4285715,49,735
+Electrum Sand,5272,https://universalis.app/market/5272,15,20,30,40,50,1.3571428,231,3465
+Electrum Ore,5115,https://universalis.app/market/5115,15,20,30,40,50,15,235,3525
+Raw Amber,5143,https://universalis.app/market/5143,15,20,30,40,50,6.321429,321,4815
+Raw Rubellite,5140,https://universalis.app/market/5140,15,20,30,40,50,1.6428572,77,1155
+Marble,7010,https://universalis.app/market/7010,15,20,30,40,50,3.642857,109,1635
+Basilisk Egg,5263,https://universalis.app/market/5263,15,20,30,40,50,6.928571,135,2025
+Cobalt Ore,5116,https://universalis.app/market/5116,15,20,30,40,50,23.285715,282,4230
+Adamantoise Shell,5458,https://universalis.app/market/5458,15,20,30,40,50,1.4642857,16,240
+Ogre Horn,5439,https://universalis.app/market/5439,15,20,30,40,50,4.571429,96,1440
+Latex,5509,https://universalis.app/market/5509,15,20,30,40,50,1.9642857,107,1605
+Fire Shard,2,https://universalis.app/market/2,60,80,100,110,120,26.821428,68,4080
+Ice Shard,3,https://universalis.app/market/3,60,80,100,110,120,28.928572,71,4260
+Wind Shard,4,https://universalis.app/market/4,60,80,100,110,120,26.035715,69,4140
+Earth Shard,5,https://universalis.app/market/5,60,80,100,110,120,7.964286,60,3600
+Lightning Shard,6,https://universalis.app/market/6,60,80,100,110,120,9.714286,71,4260
+Water Shard,7,https://universalis.app/market/7,60,80,100,110,120,13.785714,74,4440
+Allagan Snail,5050,https://universalis.app/market/5050,15,20,30,40,50,0.9285714,84,1260
+Maple Sap,5498,https://universalis.app/market/5498,15,20,30,40,50,1.3571428,99,1485
+Maple Log,5380,https://universalis.app/market/5380,15,20,30,40,50,1.9285715,49,735
+Cinnamon,4828,https://universalis.app/market/4828,15,20,30,40,50,5.535714,88,1320
+Beehive Chip,5516,https://universalis.app/market/5516,15,20,30,40,50,1.7142857,119,1785
+Maple Branch,5396,https://universalis.app/market/5396,15,20,30,40,50,1.3571428,88,1320
+Tinolqa Mistletoe,5534,https://universalis.app/market/5534,15,20,30,40,50,0.9285714,9,135
+Cock Feather,5351,https://universalis.app/market/5351,15,20,30,40,50,1.7142857,25,375
+La Noscean Orange,4809,https://universalis.app/market/4809,15,20,30,40,50,1.0357143,209,3135
+Ash Log,5383,https://universalis.app/market/5383,15,20,30,40,50,3.4642856,147,2205
+Ash Branch,5402,https://universalis.app/market/5402,15,20,30,40,50,2.75,109,1635
+Kukuru Bean,4803,https://universalis.app/market/4803,15,20,30,40,50,1.1071428,46,690
+Crow Feather,5352,https://universalis.app/market/5352,15,20,30,40,50,2.892857,333,4995
+Cloves,4831,https://universalis.app/market/4831,15,20,30,40,50,2.357143,99,1485
+Moko Grass,5341,https://universalis.app/market/5341,15,20,30,40,50,2.5714285,85,1275
+Yellow Ginseng,5538,https://universalis.app/market/5538,15,20,30,40,50,0.5,11,165
+Chanterelle,4795,https://universalis.app/market/4795,15,20,30,40,50,0.42857143,16,240
+Lowland Grapes,4808,https://universalis.app/market/4808,15,20,30,40,50,0.32142857,34,510
+Rye,4823,https://universalis.app/market/4823,15,20,30,40,50,0.32142857,156,2340
+Sunset Wheat,4824,https://universalis.app/market/4824,15,20,30,40,50,1.4642857,95,1425
+Garlean Garlic,4829,https://universalis.app/market/4829,15,20,30,40,50,7.035714,428,6420
+Elm Log,5385,https://universalis.app/market/5385,15,20,30,40,50,4.892857,310,4650
+Wild Onion,4777,https://universalis.app/market/4777,15,20,30,40,50,1.5357143,88,1320
+Lavender,5539,https://universalis.app/market/5539,15,20,30,40,50,2.7142856,251,3765
+Straw,5342,https://universalis.app/market/5342,15,20,30,40,50,5.821429,84,1260
+Grass Viper,5560,https://universalis.app/market/5560,15,20,30,40,50,1.3571428,176,2640
+Humus,5514,https://universalis.app/market/5514,15,20,30,40,50,2.607143,373,5595
+Coerthan Carrot,4778,https://universalis.app/market/4778,15,20,30,40,50,1.4285715,184,2760
+Ogre Pumpkin,4779,https://universalis.app/market/4779,15,20,30,40,50,0.32142857,4,60
+Carnation,5540,https://universalis.app/market/5540,15,20,30,40,50,1.3214285,9,135
+La Noscean Lettuce,4782,https://universalis.app/market/4782,15,20,30,40,50,0.85714287,66,990
+Cinderfoot Olive,4804,https://universalis.app/market/4804,15,20,30,40,50,0.96428573,140,2100
+Cotton Boll,5343,https://universalis.app/market/5343,15,20,30,40,50,4.75,98,1470
+Cieldalaes Spinach,4783,https://universalis.app/market/4783,15,20,30,40,50,0.60714287,232,3480
+Black Pepper,4830,https://universalis.app/market/4830,15,20,30,40,50,2.5,157,2355
+Ruby Tomato,4780,https://universalis.app/market/4780,15,20,30,40,50,0.89285713,44,660
+Alpine Parsnip,4781,https://universalis.app/market/4781,15,20,30,40,50,0.42857143,30,450
+Highland Parsley,4784,https://universalis.app/market/4784,15,20,30,40,50,1.0714285,216,3240
+Marjoram,4832,https://universalis.app/market/4832,15,20,30,40,50,1.5357143,25,375
+Paprika,4785,https://universalis.app/market/4785,15,20,30,40,50,1.3928572,71,1065
+Faerie Apple,4810,https://universalis.app/market/4810,15,20,30,40,50,2.107143,137,2055
+Galago Mint,4834,https://universalis.app/market/4834,15,20,30,40,50,1.8571428,29,435
+Paprika Seeds,7715,https://universalis.app/market/7715,1,1,1,1,1,0.21428572,68,68
+Faerie Apple Seeds,7727,https://universalis.app/market/7727,1,1,1,1,1,0.35714287,5,5
+Sun Lemon,4811,https://universalis.app/market/4811,15,20,30,40,50,4.178571,71,1065
+Lalafellin Lentil,4820,https://universalis.app/market/4820,15,20,30,40,50,0.32142857,4,60
+Sun Lemon Seeds,7728,https://universalis.app/market/7728,1,1,1,1,1,0.035714287,10,10
+Belladonna,5541,https://universalis.app/market/5541,15,20,30,40,50,0.53571427,82,1230
+Nopales,4786,https://universalis.app/market/4786,15,20,30,40,50,0.5714286,87,1305
+Popoto,4787,https://universalis.app/market/4787,15,20,30,40,50,2.892857,117,1755
+Popoto Set,7720,https://universalis.app/market/7720,1,1,1,1,1,0.5,190,190
+Yew Log,5386,https://universalis.app/market/5386,15,20,30,40,50,6.964286,276,4140
+Gil Bun,4796,https://universalis.app/market/4796,15,20,30,40,50,2.5,339,5085
+Yew Branch,5405,https://universalis.app/market/5405,15,20,30,40,50,3.5714285,199,2985
+Island Seedling,7029,https://universalis.app/market/7029,15,20,30,40,50,2.642857,1201,18015
+Shroud Seedling,7030,https://universalis.app/market/7030,15,20,30,40,50,5.357143,726,10890
+Desert Seedling,7031,https://universalis.app/market/7031,15,20,30,40,50,1.4285715,345,5175
+White Scorpion,5563,https://universalis.app/market/5563,15,20,30,40,50,1.1428572,73,1095
+Fireheart Cobalt,29968,https://universalis.app/market/29968,3,5,7,8,9,1.8571428,1310,3930
+Pixie Plums,4812,https://universalis.app/market/4812,15,20,30,40,50,2.7142856,308,4620
+Gridanian Walnut,4806,https://universalis.app/market/4806,15,20,30,40,50,1.7142857,54,810
+Pixie Plum Seeds,7729,https://universalis.app/market/7729,1,1,1,1,1,0.96428573,748,748
+Button Mushroom,4797,https://universalis.app/market/4797,15,20,30,40,50,1,205,3075
+Noble Grapes,6145,https://universalis.app/market/6145,15,20,30,40,50,2.4642856,536,8040
+Matron's Mistletoe,5535,https://universalis.app/market/5535,15,20,30,40,50,2.142857,111,1665
+Ala Mhigan Mustard,4835,https://universalis.app/market/4835,15,20,30,40,50,0.85714287,83,1245
+Ala Mhigan Mustard Seeds,7738,https://universalis.app/market/7738,1,1,1,1,1,0.14285715,110,110
+Walnut Log,5388,https://universalis.app/market/5388,15,20,30,40,50,7.107143,205,3075
+Chamomile,5542,https://universalis.app/market/5542,15,20,30,40,50,2.642857,58,870
+Pearl Ginger,4836,https://universalis.app/market/4836,15,20,30,40,50,2.2857144,284,4260
+Chamomile Seeds,7740,https://universalis.app/market/7740,1,1,1,1,1,0.6785714,8399,8399
+Sticky Rice,4819,https://universalis.app/market/4819,15,20,30,40,50,0.78571427,138,2070
+Millioncorn,4821,https://universalis.app/market/4821,15,20,30,40,50,1.75,284,4260
+Millioncorn Seeds,7721,https://universalis.app/market/7721,1,1,1,1,1,0.53571427,815,815
+Jade Peas,4822,https://universalis.app/market/4822,15,20,30,40,50,0.9285714,188,2820
+Fire Crystal,8,https://universalis.app/market/8,30,60,100,110,120,51.214287,88,2640
+Ice Crystal,9,https://universalis.app/market/9,30,60,100,110,120,14.607142,41,1230
+Wind Crystal,10,https://universalis.app/market/10,30,60,100,110,120,50.25,87,2610
+Earth Crystal,11,https://universalis.app/market/11,30,60,100,110,120,12.178572,29,870
+Lightning Crystal,12,https://universalis.app/market/12,30,60,100,110,120,18.178572,63,1890
+Water Crystal,13,https://universalis.app/market/13,30,60,100,110,120,32.392857,89,2670
+Wizard Eggplant,4788,https://universalis.app/market/4788,15,20,30,40,50,2.4285715,54,810
+Wizard Eggplant Seeds,7722,https://universalis.app/market/7722,1,1,1,1,1,0.39285713,756,756
+Midland Cabbage,4789,https://universalis.app/market/4789,15,20,30,40,50,1.0714285,19,285
+Midland Cabbage Seeds,7723,https://universalis.app/market/7723,1,1,1,1,1,0.4642857,144,144
+Blue Pigment,5814,https://universalis.app/market/5814,15,20,30,40,50,1.5714285,174,2610
+Red Pigment,5815,https://universalis.app/market/5815,15,20,30,40,50,2.2142856,204,3060
+Yellow Pigment,5816,https://universalis.app/market/5816,15,20,30,40,50,0.71428573,201,3015
+Grey Pigment,5817,https://universalis.app/market/5817,15,20,30,40,50,2.8214285,202,3030
+Brown Pigment,5818,https://universalis.app/market/5818,15,20,30,40,50,1.8214285,371,5565
+Green Pigment,5819,https://universalis.app/market/5819,15,20,30,40,50,1.2142857,469,7035
+Purple Pigment,5820,https://universalis.app/market/5820,15,20,30,40,50,1.4285715,439,6585
+Chocobo Feather,5359,https://universalis.app/market/5359,15,20,30,40,50,10.142858,1188,17820
+Alligator Pear,4813,https://universalis.app/market/4813,15,20,30,40,50,2.0714285,242,3630
+Moor Leech,5559,https://universalis.app/market/5559,15,20,30,40,50,0.64285713,64,960
+Purpure Shell Chip,29970,https://universalis.app/market/29970,3,5,7,8,9,1.0714285,768,2304
+Flax,5346,https://universalis.app/market/5346,15,20,30,40,50,15.321428,272,4080
+Oak Branch,5409,https://universalis.app/market/5409,15,20,30,40,50,2.0357144,231,3465
+Linseed,7741,https://universalis.app/market/7741,1,1,1,1,1,0.60714287,270,270
+Oak Log,5390,https://universalis.app/market/5390,15,20,30,40,50,4.785714,232,3480
+Aloe,4790,https://universalis.app/market/4790,15,20,30,40,50,1.3928572,181,2715
+Midland Basil,4837,https://universalis.app/market/4837,15,20,30,40,50,2.642857,62,930
+Midland Basil Seeds,7742,https://universalis.app/market/7742,1,1,1,1,1,0.60714287,75,75
+Mandrake,5543,https://universalis.app/market/5543,15,20,30,40,50,2.25,47,705
+White Truffle,4798,https://universalis.app/market/4798,15,20,30,40,50,1.0357143,63,945
+Mandrake Seeds,7743,https://universalis.app/market/7743,1,1,1,1,1,0.8214286,4072,4072
+Salt Leek,4791,https://universalis.app/market/4791,15,20,30,40,50,0.6785714,46,690
+Wildfowl Feather,5360,https://universalis.app/market/5360,15,20,30,40,50,4.571429,366,5490
+Laurel,4839,https://universalis.app/market/4839,15,20,30,40,50,2.357143,356,5340
+Tarantula,5562,https://universalis.app/market/5562,15,20,30,40,50,0.75,56,840
+Dragon Pepper,4838,https://universalis.app/market/4838,15,20,30,40,50,1,97,1455
+Desert Saffron,4843,https://universalis.app/market/4843,15,20,30,40,50,2,112,1680
+Blood Currants,4814,https://universalis.app/market/4814,15,20,30,40,50,2.5,65,975
+Iron Acorn,4807,https://universalis.app/market/4807,15,20,30,40,50,1.0357143,77,1155
+Blood Currant Seeds,7730,https://universalis.app/market/7730,1,1,1,1,1,0.96428573,2375,2375
+Mahogany Log,5391,https://universalis.app/market/5391,15,20,30,40,50,6.5,117,1755
+Mugwort,4840,https://universalis.app/market/4840,15,20,30,40,50,1.1785715,295,4425
+Maiden Artichoke,4793,https://universalis.app/market/4793,15,20,30,40,50,0.71428573,28,420
+Ramhorn Zucchini,4792,https://universalis.app/market/4792,15,20,30,40,50,2.1785715,149,2235
+Thyme,4841,https://universalis.app/market/4841,15,20,30,40,50,0.5714286,32,480
+Nutmeg,4844,https://universalis.app/market/4844,15,20,30,40,50,2.392857,170,2550
+Almonds,4842,https://universalis.app/market/4842,15,20,30,40,50,2.607143,140,2100
+Almond Seeds,7744,https://universalis.app/market/7744,1,1,1,1,1,1.5714285,1850,1850
+Sagolii Sage,4845,https://universalis.app/market/4845,15,20,30,40,50,1.7142857,213,3195
+Mirror Apple,6146,https://universalis.app/market/6146,15,20,30,40,50,6.285714,186,2790
+Black Scorpion,5564,https://universalis.app/market/5564,15,20,30,40,50,2.142857,54,810
+Mirror Apple Seeds,7731,https://universalis.app/market/7731,1,1,1,1,1,1.8214285,4546,4546
+Rolanberry,4815,https://universalis.app/market/4815,15,20,30,40,50,4.357143,224,3360
+Rolanberry Seeds,7732,https://universalis.app/market/7732,1,1,1,1,1,0.71428573,89,89
+Mistletoe,5536,https://universalis.app/market/5536,15,20,30,40,50,6.535714,378,5670
+Dart Frog,5054,https://universalis.app/market/5054,15,20,30,40,50,1.4642857,134,2010
+Rosewood Log,5393,https://universalis.app/market/5393,15,20,30,40,50,6.535714,326,4890
+Rosewood Branch,5414,https://universalis.app/market/5414,15,20,30,40,50,5,130,1950
+Thanalan Tea Leaves,4846,https://universalis.app/market/4846,15,20,30,40,50,1.5357143,63,945
+Lava Toad,5055,https://universalis.app/market/5055,15,20,30,40,50,2.392857,181,2715
+Maiden Grass,7012,https://universalis.app/market/7012,15,20,30,40,50,0.71428573,78,1170
+Ashen Alumen,29976,https://universalis.app/market/29976,3,5,7,8,9,1.6071428,946,2838
+Crayfish,4925,https://universalis.app/market/4925,5,7,10,11,12,1.75,184,920
+Finger Shrimp,4871,https://universalis.app/market/4871,3,5,7,8,9,1.4642857,13,39
+White Coral,5460,https://universalis.app/market/5460,3,5,7,8,9,3.4642856,1829,5487
+Princess Trout,4930,https://universalis.app/market/4930,3,5,7,8,9,2.75,2318,6954
+Dusk Goby,4931,https://universalis.app/market/4931,5,7,10,11,12,0.89285713,90,450
+Pipira,4932,https://universalis.app/market/4932,5,7,10,11,12,0.78571427,89,445
+Crimson Crayfish,4933,https://universalis.app/market/4933,5,7,10,11,12,0.89285713,469,2345
+Coral Butterfly,4876,https://universalis.app/market/4876,5,7,10,11,12,2.1785715,87,435
+Brass Loach,4935,https://universalis.app/market/4935,5,7,10,11,12,2.357143,790,3950
+Maiden Carp,4936,https://universalis.app/market/4936,3,5,7,8,9,1.5714285,96,288
+Tiger Cod,4879,https://universalis.app/market/4879,5,7,10,11,12,1.5714285,38,190
+Helmet Crab,4880,https://universalis.app/market/4880,3,5,7,8,9,0.89285713,1454,4362
+Rothlyt Oyster,4881,https://universalis.app/market/4881,3,5,7,8,9,1,258,774
+Navigator's Dagger,4882,https://universalis.app/market/4882,3,5,7,8,9,2.5714285,1688,5064
+Bluebell Salmon,4949,https://universalis.app/market/4949,5,7,10,11,12,0.75,3480,17400
+Razor Clam,4884,https://universalis.app/market/4884,3,5,7,8,9,0.35714287,171,513
+Blowfish,4886,https://universalis.app/market/4886,5,7,10,11,12,1.25,235,1175
+Warmwater Trout,4955,https://universalis.app/market/4955,5,7,10,11,12,2.357143,2571,12855
+Black Eel,4958,https://universalis.app/market/4958,3,5,7,8,9,1.1071428,936,2808
+Dark Bass,4959,https://universalis.app/market/4959,5,7,10,11,12,1.9285715,793,3965
+Blue Coral,5461,https://universalis.app/market/5461,3,5,7,8,9,1.6785715,515,1545
+Bianaq Bream,4891,https://universalis.app/market/4891,3,5,7,8,9,0.96428573,210,630
+Black Sole,4892,https://universalis.app/market/4892,3,5,7,8,9,1,1312,3936
+Hammerhead Shark,4893,https://universalis.app/market/4893,1,2,3,4,5,3.4285715,2078,2078
+Indigo Herring,4895,https://universalis.app/market/4895,3,5,7,8,9,1.6428572,1316,3948
+Ash Tuna,4896,https://universalis.app/market/4896,5,7,10,11,12,1.3214285,696,3480
+Fullmoon Sardine,4898,https://universalis.app/market/4898,3,5,7,8,9,3.892857,2008,6024
+Whitelip Oyster,4900,https://universalis.app/market/4900,3,5,7,8,9,1.25,6670,20010
+Velodyna Carp,4982,https://universalis.app/market/4982,5,7,10,11,12,1.1071428,594,2970
+Red Coral,5462,https://universalis.app/market/5462,3,5,7,8,9,4.892857,1444,4332
+Silver Shark,4903,https://universalis.app/market/4903,1,2,3,4,5,2.4642856,798,798
+Raincaller,4905,https://universalis.app/market/4905,1,2,3,4,5,4.25,1779,1779
+Blacklip Oyster,5466,https://universalis.app/market/5466,3,5,7,8,9,1.75,3585,10755
+Northern Pike,4997,https://universalis.app/market/4997,5,7,10,11,12,1.0714285,84,420
+Cloud Cutter,5040,https://universalis.app/market/5040,3,5,7,8,9,3.25,331,993
+Gastornis Egg,12871,https://universalis.app/market/12871,5,7,10,12,15,3.0714285,274,1370
+Yak Milk,12888,https://universalis.app/market/12888,5,7,10,12,15,12.285714,560,2800
+Archaeornis Skin,12568,https://universalis.app/market/12568,5,7,10,12,15,5.214286,707,3535
+Gelato Flesh,12635,https://universalis.app/market/12635,5,7,10,12,15,6.142857,609,3045
+Icetrap Leaf,12637,https://universalis.app/market/12637,5,7,10,12,15,3.357143,753,3765
+Loaghtan Chump,12873,https://universalis.app/market/12873,5,7,10,12,15,2.107143,383,1915
+Yeti Fang,12575,https://universalis.app/market/12575,5,7,10,12,15,3.0357144,469,2345
+Bear Fat,12609,https://universalis.app/market/12609,5,7,10,12,15,7.678571,685,3425
+Deepeye Tears,12628,https://universalis.app/market/12628,5,7,10,12,15,11.035714,712,3560
+Wyvern Skin,12569,https://universalis.app/market/12569,5,7,10,12,15,5.5,668,3340
+Wyvern Wing,12636,https://universalis.app/market/12636,5,7,10,12,15,5.321429,626,3130
+Dhalmel Meat,12874,https://universalis.app/market/12874,5,7,10,12,15,2,67,335
+Dhalmel Hide,12570,https://universalis.app/market/12570,5,7,10,12,15,5.107143,562,2810
+Drake Scales,5449,https://universalis.app/market/5449,5,7,10,12,15,2.142857,664,3320
+Biast Scales,5448,https://universalis.app/market/5448,5,7,10,12,15,1.9642857,583,2915
+Dhalmel Saliva,12629,https://universalis.app/market/12629,5,7,10,12,15,6.785714,694,3470
+Okeanis Egg,12872,https://universalis.app/market/12872,5,7,10,12,15,1.2142857,134,670
+Dragon Skin,12571,https://universalis.app/market/12571,5,7,10,12,15,4.857143,305,1525
+Dragon Fang,12576,https://universalis.app/market/12576,5,7,10,12,15,1.5,6,30
+Okeanis Tail,12875,https://universalis.app/market/12875,5,7,10,12,15,1.3571428,488,2440
+Cockatrice Thigh,12876,https://universalis.app/market/12876,5,7,10,12,15,1.3928572,373,1865
+Crawler Cocoon,12600,https://universalis.app/market/12600,5,7,10,12,15,4.071429,625,3125
+Dragon Scale,12627,https://universalis.app/market/12627,5,7,10,12,15,3.9285715,242,1210
+Dragon Blood,12630,https://universalis.app/market/12630,5,7,10,12,15,3.5,229,1145
+Amphiptere Skin,12572,https://universalis.app/market/12572,5,7,10,12,15,4.071429,321,1605
+Griffin Hide,12573,https://universalis.app/market/12573,5,7,10,12,15,0.5,328,1640
+Griffin Talon,12577,https://universalis.app/market/12577,5,7,10,12,15,0.6785714,10,50
+Chimera Mane,12599,https://universalis.app/market/12599,5,7,10,12,15,3.2142856,564,2820
+Dragon Obsidian,5126,https://universalis.app/market/5126,15,20,30,40,50,1.1428572,79,1185
+Mythrite Sand,12531,https://universalis.app/market/12531,15,20,30,40,50,21.928572,254,3810
+Raw Agate,12553,https://universalis.app/market/12553,15,20,30,40,50,1.8571428,238,3570
+Raw Tiger's Eye,12552,https://universalis.app/market/12552,15,20,30,40,50,1.1071428,250,3750
+Raw Larimar,12551,https://universalis.app/market/12551,15,20,30,40,50,2.75,386,5790
+Dravanian Spring Water,12631,https://universalis.app/market/12631,15,20,30,40,50,5.928571,223,3345
+Raw Mormorion,12559,https://universalis.app/market/12559,15,20,30,40,50,1.3928572,129,1935
+Raw Star Sapphire,12555,https://universalis.app/market/12555,15,20,30,40,50,2.0714285,188,2820
+Raw Star Ruby,12554,https://universalis.app/market/12554,15,20,30,40,50,1.4285715,84,1260
+Hardsilver Sand,12532,https://universalis.app/market/12532,15,20,30,40,50,7.285714,288,4320
+Raw Opal,12556,https://universalis.app/market/12556,15,20,30,40,50,1.6428572,333,4995
+Abalathian Spring Water,12632,https://universalis.app/market/12632,15,20,30,40,50,2.607143,222,3330
+Cloud Mica,12539,https://universalis.app/market/12539,15,20,30,40,50,8.035714,324,4860
+Raw Carnelian,12560,https://universalis.app/market/12560,15,20,30,40,50,0.8214286,390,5850
+Raw Citrine,12557,https://universalis.app/market/12557,15,20,30,40,50,0.9285714,216,3240
+Aurum Regis Sand,12533,https://universalis.app/market/12533,15,20,30,40,50,4.035714,279,4185
+Raw Chrysolite,12558,https://universalis.app/market/12558,15,20,30,40,50,1.1428572,117,1755
+Wyrm Obsidian,5127,https://universalis.app/market/5127,15,20,30,40,50,1.7142857,80,1200
+Cedar Branch,5403,https://universalis.app/market/5403,15,20,30,40,50,2.9285715,266,3990
+Cedar Log,5384,https://universalis.app/market/5384,15,20,30,40,50,6.142857,196,2940
+Rainbow Cotton Boll,12597,https://universalis.app/market/12597,15,20,30,40,50,5.321429,346,5190
+Mist Dill,12883,https://universalis.app/market/12883,15,20,30,40,50,2.5,418,6270
+Highland Wheat,12880,https://universalis.app/market/12880,15,20,30,40,50,1.8928572,418,6270
+Stalk of Ramie,12598,https://universalis.app/market/12598,15,20,30,40,50,3.357143,206,3090
+Dark Chestnut Log,12578,https://universalis.app/market/12578,15,20,30,40,50,9.357142,321,4815
+Dark Chestnut Branch,12585,https://universalis.app/market/12585,15,20,30,40,50,2.8214285,20,300
+Magma Beet,12885,https://universalis.app/market/12885,15,20,30,40,50,1.1428572,66,990
+Coneflower,12638,https://universalis.app/market/12638,15,20,30,40,50,0.89285713,181,2715
+Sesame Seeds,12887,https://universalis.app/market/12887,15,20,30,40,50,1.7857143,424,6360
+Cow Bitter,12639,https://universalis.app/market/12639,15,20,30,40,50,0.96428573,246,3690
+Birch Branch,12586,https://universalis.app/market/12586,15,20,30,40,50,1.5714285,5,75
+Rue,12642,https://universalis.app/market/12642,15,20,30,40,50,4.357143,370,5550
+Coriander,12643,https://universalis.app/market/12643,15,20,30,40,50,1.0357143,180,2700
+Dandelion,12640,https://universalis.app/market/12640,15,20,30,40,50,2.5357144,186,2790
+Birch Sap,12891,https://universalis.app/market/12891,15,20,30,40,50,2.0714285,281,4215
+Gaelicatnip,12641,https://universalis.app/market/12641,15,20,30,40,50,1.3571428,259,3885
+Ice Faerie,12715,https://universalis.app/market/12715,5,7,10,11,12,0.60714287,71,355
+Fanged Clam,12719,https://universalis.app/market/12719,5,7,10,11,12,0.6785714,1401,7005
+Ogre Horn Snail,12725,https://universalis.app/market/12725,5,7,10,11,12,0.071428575,143,715
+Whilom Catfish,12721,https://universalis.app/market/12721,5,7,10,11,12,0.5,1184,5920
+Maiboi,12728,https://universalis.app/market/12728,5,7,10,11,12,0.17857143,4966,24830
+Seema Patrician,12737,https://universalis.app/market/12737,5,7,10,11,12,0.60714287,7230,36150
+Bubble Eye,12739,https://universalis.app/market/12739,5,7,10,11,12,0.25,4616,23080
+Marble Oscar,12750,https://universalis.app/market/12750,5,7,10,11,12,0.32142857,10557,52785
+Vanuhead,12749,https://universalis.app/market/12749,5,7,10,11,12,0.035714287,199,995
+Mercy Staff,12765,https://universalis.app/market/12765,5,7,10,11,12,0.10714286,3356,16780
+Orn Butterfly,12781,https://universalis.app/market/12781,5,7,10,11,12,0.2857143,13166,65830
+Philosopher's Stone,12790,https://universalis.app/market/12790,5,7,10,11,12,0.14285715,2117,10585
+Battle Galley,12817,https://universalis.app/market/12817,5,7,10,11,12,0.42857143,3477,17385
+Cherry Trout,12824,https://universalis.app/market/12824,5,7,10,11,12,0.10714286,99,495
+Hinterlands Perch,12819,https://universalis.app/market/12819,5,7,10,11,12,1.1785715,2643,13215
+Saltpeter,5521,https://universalis.app/market/5521,15,20,30,40,50,0.78571427,28,420
+Blueclaw Shrimp,12722,https://universalis.app/market/12722,5,7,10,11,12,0.35714287,101,505
+Mogpom,12758,https://universalis.app/market/12758,5,7,10,11,12,3.8214285,2233,11165
+Sweetfish,12780,https://universalis.app/market/12780,5,7,10,11,12,1.5,6995,34975
+Blue Cloud Coral,12736,https://universalis.app/market/12736,5,7,10,11,12,1.4642857,1461,7305
+Grade 3 La Noscean Topsoil,7760,https://universalis.app/market/7760,1,1,1,1,1,1.5357143,1073,1073
+Grade 3 Shroud Topsoil,7763,https://universalis.app/market/7763,1,1,1,1,1,16.464285,1724,1724
+Grade 3 Thanalan Topsoil,7766,https://universalis.app/market/7766,1,1,1,1,1,19.142857,948,948
+Gold Ore,5118,https://universalis.app/market/5118,3,6,9,10,11,17.571428,238,714
+Darksteel Ore,5121,https://universalis.app/market/5121,3,6,9,10,11,21.035715,496,1488
+Volcanic Rock Salt,6152,https://universalis.app/market/6152,3,6,9,10,11,8.5,305,915
+Astral Rock,5158,https://universalis.app/market/5158,3,6,9,10,11,1.7142857,154,462
+Raw Ruby,5146,https://universalis.app/market/5146,1,3,5,6,7,0.14285715,7,7
+Ferberite,7588,https://universalis.app/market/7588,1,3,5,6,7,3.892857,122,122
+Native Gold,7589,https://universalis.app/market/7589,1,3,5,6,7,0.71428573,18,18
+Spruce Log,5395,https://universalis.app/market/5395,3,6,9,10,11,10.107142,537,1611
+Thavnairian Mistletoe,5537,https://universalis.app/market/5537,3,6,9,10,11,0.78571427,29,87
+Silkworm Cocoon,5350,https://universalis.app/market/5350,3,6,9,10,11,5.428571,595,1785
+Trillium,5545,https://universalis.app/market/5545,3,6,9,10,11,2.357143,397,1191
+Trillium Bulb,5546,https://universalis.app/market/5546,3,6,9,10,11,3.642857,738,2214
+Black Truffle,4800,https://universalis.app/market/4800,3,6,9,10,11,0.14285715,22,66
+Dzemael Tomato Seeds,7724,https://universalis.app/market/7724,1,1,1,1,1,0.5714286,484,484
+Honey Lemon Seeds,7733,https://universalis.app/market/7733,1,1,1,1,1,0.9285714,1318,1318
+Prickly Pineapple Seeds,7734,https://universalis.app/market/7734,1,1,1,1,1,0.85714287,1686,1686
+Scarlet Sap,7590,https://universalis.app/market/7590,1,3,5,6,7,4.392857,815,815
+Shroud Tea Leaves,7591,https://universalis.app/market/7591,1,3,5,6,7,0.35714287,35,35
+Young Cieldalaes Spinach,7594,https://universalis.app/market/7594,1,3,5,6,7,0.9285714,167,167
+Blood Orange,7595,https://universalis.app/market/7595,1,3,5,6,7,0.071428575,2,2
+Raw Diamond,5147,https://universalis.app/market/5147,1,3,5,6,7,0.071428575,1,1
+Raw Emerald,5148,https://universalis.app/market/5148,1,3,5,6,7,0.14285715,2,2
+Raw Topaz,5149,https://universalis.app/market/5149,1,3,5,6,7,1.1785715,540,540
+Raw Iolite,5150,https://universalis.app/market/5150,1,3,5,6,7,0.5714286,65,65
+Raw Sapphire,5151,https://universalis.app/market/5151,1,3,5,6,7,0.25,10,10
+Bamboo Stick,5365,https://universalis.app/market/5365,1,3,5,6,7,4.714286,526,526
+Waterfowl Feather,8024,https://universalis.app/market/8024,1,3,5,6,7,1.6785715,1648,1648
+Platinum Ore,5120,https://universalis.app/market/5120,1,3,5,6,7,3.642857,422,422
+Ebony Log,5394,https://universalis.app/market/5394,1,3,5,6,7,0.89285713,68,68
+Pumice,9519,https://universalis.app/market/9519,1,3,5,6,7,1.2857143,375,375
+Cypress Log,9518,https://universalis.app/market/9518,1,3,5,6,7,3.7142856,227,227
+Black Limestone,10092,https://universalis.app/market/10092,7,15,20,25,30,1.0357143,991,6937
+Virgin Basilisk Egg,10093,https://universalis.app/market/10093,1,3,5,6,7,0.8214286,32,32
+Rosemary,10096,https://universalis.app/market/10096,1,3,5,6,7,4.178571,476,476
+Gregarious Worm,10095,https://universalis.app/market/10095,1,2,3,4,5,1.7142857,670,670
+Mazlaya Greens,10098,https://universalis.app/market/10098,1,2,3,4,5,1.2857143,441,441
+Mythrite Ore,12534,https://universalis.app/market/12534,7,15,20,25,30,11.964286,312,2184
+Titanium Ore,12537,https://universalis.app/market/12537,7,15,20,25,30,9.821428,370,2590
+Hardsilver Ore,12535,https://universalis.app/market/12535,7,15,20,25,30,5.357143,345,2415
+Cyclops Onion,12878,https://universalis.app/market/12878,7,15,20,25,30,5,469,3283
+Dark Chestnut,12893,https://universalis.app/market/12893,7,15,20,25,30,2.5357144,623,4361
+Emerald Beans,12879,https://universalis.app/market/12879,7,15,20,25,30,1.5357143,1191,8337
+Birch Log,12579,https://universalis.app/market/12579,7,15,20,25,30,7.071429,311,2177
+Gold Sand,5273,https://universalis.app/market/5273,3,6,9,10,11,0.5714286,13,39
+Tree Toad,5051,https://universalis.app/market/5051,15,20,30,40,50,0.5714286,200,3000
+Lowland Grape Seeds,7726,https://universalis.app/market/7726,1,1,1,1,1,1.4642857,14205,14205
+Garlic Cloves,7735,https://universalis.app/market/7735,1,1,1,1,1,0.035714287,9,9
+Buffalo Beans,4818,https://universalis.app/market/4818,15,20,30,40,50,0.5,256,3840
+Wild Onion Set,7716,https://universalis.app/market/7716,1,1,1,1,1,0.21428572,1,1
+Lavender Seeds,7736,https://universalis.app/market/7736,1,1,1,1,1,0.5,104,104
+Coerthan Carrot Seeds,7717,https://universalis.app/market/7717,1,1,1,1,1,0.39285713,116,116
+La Noscean Lettuce Seeds,7718,https://universalis.app/market/7718,1,1,1,1,1,0.78571427,568,568
+Gridanian Chestnut,4805,https://universalis.app/market/4805,15,20,30,40,50,0.9285714,61,915
+Black Pepper Seeds,7737,https://universalis.app/market/7737,1,1,1,1,1,0.035714287,1,1
+Dzemael Tomato,6148,https://universalis.app/market/6148,3,6,9,10,11,1.8214285,23,69
+Vampire Plant,5547,https://universalis.app/market/5547,3,6,9,10,11,0.5714286,21,63
+Honey Lemon,6147,https://universalis.app/market/6147,3,6,9,10,11,0.85714287,24,72
+Prickly Pineapple,4816,https://universalis.app/market/4816,3,6,9,10,11,2.107143,351,1053
+Apricot,7592,https://universalis.app/market/7592,15,20,30,40,50,2.0357144,195,2925
+La Noscean Leek,7593,https://universalis.app/market/7593,15,20,30,40,50,0.32142857,30,450
+Unaspected Crystal,10099,https://universalis.app/market/10099,1,3,5,6,7,2.142857,156,156
+Unaspected Crystal,10099,https://universalis.app/market/10099,1,3,5,6,7,2.142857,156,156
+Dark Matter Cluster,10335,https://universalis.app/market/10335,3,5,7,8,9,18.035715,809,2427
+Dark Matter Cluster,10335,https://universalis.app/market/10335,3,5,7,8,9,18.035715,809,2427
+Adamantite Ore,12538,https://universalis.app/market/12538,3,5,7,8,9,9.107142,488,1464
+Yellow Copper Ore,5108,https://universalis.app/market/5108,15,20,30,40,50,0.53571427,7,105
+Pyrite,5109,https://universalis.app/market/5109,15,20,30,40,50,0.4642857,12,180
+Yellow Quartz,5162,https://universalis.app/market/5162,15,20,30,40,50,0.14285715,175,2625
+Chalcocite,12941,https://universalis.app/market/12941,15,20,30,40,50,0.5714286,12,180
+Limonite,5112,https://universalis.app/market/5112,15,20,30,40,50,0.10714286,17,255
+Green Quartz,5161,https://universalis.app/market/5161,15,20,30,40,50,0.42857143,196,2940
+Abalathian Rock Salt,12901,https://universalis.app/market/12901,3,5,7,8,9,4.285714,808,2424
+Light Kidney Ore,5117,https://universalis.app/market/5117,15,20,30,40,50,0.4642857,40,600
+Red Quartz,5159,https://universalis.app/market/5159,3,5,7,8,9,2.607143,442,1326
+Cuprite,12942,https://universalis.app/market/12942,15,20,30,40,50,0.10714286,6,90
+Aurum Regis Ore,12536,https://universalis.app/market/12536,3,5,7,8,9,0.17857143,16,48
+Sun Mica,12540,https://universalis.app/market/12540,3,5,7,8,9,0.14285715,35,105
+Red Alumen,12945,https://universalis.app/market/12945,3,5,7,8,9,0.035714287,3,9
+Astral Moraine,5226,https://universalis.app/market/5226,3,5,7,8,9,2.607143,731,2193
+Violet Quartz,5163,https://universalis.app/market/5163,3,5,7,8,9,0.14285715,18,54
+Blue Quartz,5160,https://universalis.app/market/5160,3,5,7,8,9,0.071428575,3,9
+Chysahl Greens,12900,https://universalis.app/market/12900,3,5,7,8,9,3.357143,184,552
+Old World Fig,12896,https://universalis.app/market/12896,3,5,7,8,9,1.6071428,6,18
+Porcini,12899,https://universalis.app/market/12899,3,5,7,8,9,1.7857143,134,402
+Pearl Sprouts,12877,https://universalis.app/market/12877,3,5,7,8,9,1.8214285,508,1524
+Coerthan Tea Leaves,12882,https://universalis.app/market/12882,3,5,7,8,9,5.25,559,1677
+Dravanian Mistletoe,12943,https://universalis.app/market/12943,3,5,7,8,9,4.321429,571,1713
+Chives,12884,https://universalis.app/market/12884,3,5,7,8,9,0.8214286,274,822
+Heavens Lemon,12889,https://universalis.app/market/12889,3,5,7,8,9,1.4285715,125,375
+Abalathian Mistletoe,12944,https://universalis.app/market/12944,3,5,7,8,9,3.6785715,455,1365
+Cloud Banana,12897,https://universalis.app/market/12897,3,5,7,8,9,3.5357144,2263,6789
+Morel,12898,https://universalis.app/market/12898,3,5,7,8,9,1.1071428,31,93
+Seventh Heaven,12634,https://universalis.app/market/12634,3,5,7,8,9,1.1071428,154,462
+Wattle Bark,12587,https://universalis.app/market/12587,3,5,7,8,9,0.5,207,621
+Dravanian Paprika,12903,https://universalis.app/market/12903,3,5,7,8,9,0.035714287,24,72
+Snurbleberry,12904,https://universalis.app/market/12904,3,5,7,8,9,0.25,88,264
+Old World Fig Seeds,13765,https://universalis.app/market/13765,3,5,7,8,9,3.0714285,1067,3201
+Pearl Sprout Seeds,13767,https://universalis.app/market/13767,3,5,7,8,9,0.42857143,41,123
+Coerthan Tea Seeds,13768,https://universalis.app/market/13768,3,5,7,8,9,0.96428573,315,945
+Frost Cotton Boll,14154,https://universalis.app/market/14154,3,5,7,8,9,0.25,100,300
+Whitefrost Cotton Boll,14956,https://universalis.app/market/14956,15,20,30,40,50,1.9642857,373,5595
+Camphorwood Log,14159,https://universalis.app/market/14159,15,20,30,40,50,0.21428572,4,60
+Camphorwood Branch,14160,https://universalis.app/market/14160,15,20,30,40,50,0.2857143,453,6795
+Old-growth Camphorwood Log,14957,https://universalis.app/market/14957,3,5,7,8,9,3.392857,747,2241
+Lumythrite Sand,14955,https://universalis.app/market/14955,15,20,30,40,50,0.35714287,105,1575
+Smithsonite Ore,14151,https://universalis.app/market/14151,3,5,7,8,9,0.78571427,802,2406
+Beastkin Horn,14190,https://universalis.app/market/14190,15,20,30,40,50,0.17857143,3,45
+Meteorite,15646,https://universalis.app/market/15646,3,5,7,8,9,0.89285713,403,1209
+Crystallized Sap,15647,https://universalis.app/market/15647,3,5,7,8,9,0.5,677,2031
+Firelight Seeds,15865,https://universalis.app/market/15865,15,20,30,40,50,1.75,493,7395
+Icelight Seeds,15866,https://universalis.app/market/15866,15,20,30,40,50,0.8214286,874,13110
+Windlight Seeds,15867,https://universalis.app/market/15867,15,20,30,40,50,1.5357143,309,4635
+Earthlight Seeds,15868,https://universalis.app/market/15868,15,20,30,40,50,0.89285713,140,2100
+Levinlight Seeds,15869,https://universalis.app/market/15869,15,20,30,40,50,0.5714286,532,7980
+Waterlight Seeds,15870,https://universalis.app/market/15870,15,20,30,40,50,1.1785715,503,7545
+Teak Log,5392,https://universalis.app/market/5392,3,5,7,8,9,1.3571428,209,627
+Star Cotton Boll,16721,https://universalis.app/market/16721,3,5,7,8,9,0.2857143,188,564
+Luminium Ore,16725,https://universalis.app/market/16725,3,5,7,8,9,0.35714287,103,309
+Zeolite Ore,16726,https://universalis.app/market/16726,3,5,7,8,9,0.53571427,95,285
+Gyr Abanian Alumen,19910,https://universalis.app/market/19910,15,20,30,40,50,3,237,3555
+Raw Triphane,19968,https://universalis.app/market/19968,3,5,7,8,9,2.4642856,124,372
+Gyr Abanian Mineral Water,19871,https://universalis.app/market/19871,15,20,30,40,50,2.9285715,276,4140
+Raw Kyanite,19969,https://universalis.app/market/19969,15,20,30,40,50,1.6785715,32,480
+Koppranickel Ore,19951,https://universalis.app/market/19951,15,20,30,40,50,2.9285715,305,4575
+Crescent Spring Water,19872,https://universalis.app/market/19872,15,20,30,40,50,4.678571,363,5445
+Raw Star Spinel,19970,https://universalis.app/market/19970,3,5,7,8,9,0.5714286,5,15
+Doman Iron Ore,19953,https://universalis.app/market/19953,15,20,30,40,50,4.285714,442,6630
+Raw Azurite,19971,https://universalis.app/market/19971,3,5,7,8,9,2,121,363
+Durium Ore,19954,https://universalis.app/market/19954,15,20,30,40,50,2.7857144,121,1815
+Raw Imperial Jade,19972,https://universalis.app/market/19972,3,5,7,8,9,0.8214286,11,33
+Molybdenum Ore,19957,https://universalis.app/market/19957,15,20,30,40,50,6.607143,318,4770
+Raw Rhodonite,19973,https://universalis.app/market/19973,3,5,7,8,9,7.571429,827,2481
+Stiperstone,5232,https://universalis.app/market/5232,15,20,30,40,50,7.892857,184,2760
+Koppranickel Sand,19950,https://universalis.app/market/19950,15,20,30,40,50,5.035714,370,5550
+Slate,20007,https://universalis.app/market/20007,15,20,30,40,50,2.0714285,294,4410
+Diatomite,20006,https://universalis.app/market/20006,15,20,30,40,50,1.75,392,5880
+Durium Sand,19952,https://universalis.app/market/19952,15,20,30,40,50,3.3214285,422,6330
+Doman Iron Sand,19955,https://universalis.app/market/19955,15,20,30,40,50,2.7857144,253,3795
+Palladium Sand,19956,https://universalis.app/market/19956,15,20,30,40,50,2.2142856,333,4995
+Ala Mhigan Salt Crystal,19907,https://universalis.app/market/19907,3,5,7,8,9,5.5,388,1164
+Beech Branch,19936,https://universalis.app/market/19936,15,20,30,40,50,0.71428573,499,7485
+Loquat,19851,https://universalis.app/market/19851,15,20,30,40,50,1.5357143,238,3570
+Beech Log,19930,https://universalis.app/market/19930,15,20,30,40,50,4.392857,234,3510
+Larch Log,19931,https://universalis.app/market/19931,15,20,30,40,50,4.142857,310,4650
+Pine Resin,19908,https://universalis.app/market/19908,15,20,30,40,50,1.2857143,171,2565
+Pine Log,5389,https://universalis.app/market/5389,15,20,30,40,50,1.8214285,209,3135
+Bamboo Shoot,19860,https://universalis.app/market/19860,3,5,7,8,9,0.17857143,7,21
+Shiitake Mushroom,19863,https://universalis.app/market/19863,15,20,30,40,50,0.9285714,396,5940
+Persimmon Leaf,19870,https://universalis.app/market/19870,15,20,30,40,50,1.7142857,220,3300
+Persimmon,19869,https://universalis.app/market/19869,15,20,30,40,50,2.107143,296,4440
+Persimmon Log,19932,https://universalis.app/market/19932,15,20,30,40,50,3.5714285,50,750
+Zelkova Log,19933,https://universalis.app/market/19933,15,20,30,40,50,6,126,1890
+Othardian Plum,19852,https://universalis.app/market/19852,3,5,7,8,9,0.60714287,22,66
+Gyr Abanian Wheat,19868,https://universalis.app/market/19868,15,20,30,40,50,0.89285713,197,2955
+Bloodhemp,19976,https://universalis.app/market/19976,15,20,30,40,50,1.3571428,322,4830
+Buckwheat Kernels,19850,https://universalis.app/market/19850,15,20,30,40,50,0.8214286,367,5505
+Mountain Popoto,19861,https://universalis.app/market/19861,15,20,30,40,50,0.75,402,6030
+Gem Algae,19881,https://universalis.app/market/19881,15,20,30,40,50,4,701,10515
+Holy Basil,19917,https://universalis.app/market/19917,15,20,30,40,50,4.214286,329,4935
+Ruby Cotton Boll,19979,https://universalis.app/market/19979,15,20,30,40,50,3.25,402,6030
+Sugar Beet,19856,https://universalis.app/market/19856,15,20,30,40,50,1.6428572,459,6885
+Green Leek,19859,https://universalis.app/market/19859,15,20,30,40,50,0.60714287,429,6435
+Soybeans,19862,https://universalis.app/market/19862,15,20,30,40,50,0.21428572,29,435
+Ama Nori,19879,https://universalis.app/market/19879,15,20,30,40,50,0.53571427,153,2295
+Kudzu Root,19853,https://universalis.app/market/19853,15,20,30,40,50,11.607142,283,4245
+Cumin Seeds,19864,https://universalis.app/market/19864,15,20,30,40,50,1.0714285,120,1800
+Kudzu Vine,19982,https://universalis.app/market/19982,15,20,30,40,50,1.9642857,152,2280
+Daikon Radish,19855,https://universalis.app/market/19855,15,20,30,40,50,0.75,317,4755
+Gyr Abanian Carrot,19858,https://universalis.app/market/19858,15,20,30,40,50,0.17857143,218,3270
+Lotus Root,19865,https://universalis.app/market/19865,3,5,7,8,9,1.1428572,8,24
+Sun Cabbage,19866,https://universalis.app/market/19866,15,20,30,40,50,0.78571427,348,5220
+Fennel,19867,https://universalis.app/market/19867,15,20,30,40,50,0.9285714,156,2340
+Ruby Tide Kelp,19880,https://universalis.app/market/19880,15,20,30,40,50,0.4642857,24,360
+Jhammel Ginger,19857,https://universalis.app/market/19857,3,5,7,8,9,1.6071428,19,57
+Yanxian Parsley,19911,https://universalis.app/market/19911,15,20,30,40,50,1.1785715,522,7830
+Alyssum,19912,https://universalis.app/market/19912,15,20,30,40,50,1.3571428,105,1575
+Nagxian Cudweed,19913,https://universalis.app/market/19913,15,20,30,40,50,1.8928572,203,3045
+Chickweed,19914,https://universalis.app/market/19914,15,20,30,40,50,1.4285715,345,5175
+Nipplewort,19915,https://universalis.app/market/19915,15,20,30,40,50,1.1071428,307,4605
+Doman Eggplant,19854,https://universalis.app/market/19854,15,20,30,40,50,1.8928572,237,3555
+Twincoon,19989,https://universalis.app/market/19989,15,20,30,40,50,2.5357144,216,3240
+Hallowed Basil,19918,https://universalis.app/market/19918,3,5,7,8,9,0.6785714,2,6
+Gagana Egg,19877,https://universalis.app/market/19877,5,7,10,12,15,4.892857,93,465
+Muud Suud Horn,19919,https://universalis.app/market/19919,5,7,10,12,15,3.5714285,33,165
+Moth Scales,19922,https://universalis.app/market/19922,5,7,10,12,15,5.285714,294,1470
+Rhino Beetle Carapace,19924,https://universalis.app/market/19924,5,7,10,12,15,6.357143,232,1160
+Gagana Skin,19999,https://universalis.app/market/19999,5,7,10,12,15,7.821429,103,515
+Hornbill Tenderloin,19874,https://universalis.app/market/19874,5,7,10,12,15,0.10714286,2,10
+Bombfish Spine,19923,https://universalis.app/market/19923,5,7,10,12,15,0.35714287,2,10
+Gyuki Hide,20000,https://universalis.app/market/20000,5,7,10,12,15,6.892857,126,630
+Dzo Horn,19921,https://universalis.app/market/19921,5,7,10,12,15,3.1785715,28,140
+Dzo Chuck,19873,https://universalis.app/market/19873,5,7,10,12,15,2.75,44,220
+Steppe Milk,19878,https://universalis.app/market/19878,5,7,10,12,15,5.178571,232,1160
+Tiger Skin,20001,https://universalis.app/market/20001,5,7,10,12,15,11.285714,243,1215
+Gazelle Horn,19920,https://universalis.app/market/19920,5,7,10,12,15,4.892857,235,1175
+Halgai Mane,19985,https://universalis.app/market/19985,5,7,10,12,15,8.535714,154,770
+Manzasiri Hair,19986,https://universalis.app/market/19986,5,7,10,12,15,7.178571,262,1310
+Marid Hide,20002,https://universalis.app/market/20002,5,7,10,12,15,5.107143,158,790
+Jhammel Haunch,19875,https://universalis.app/market/19875,5,7,10,12,15,1,5,25
+Twincoon,19989,https://universalis.app/market/19989,5,7,10,12,15,2.5357144,216,1080
+Gazelle Hide,20003,https://universalis.app/market/20003,5,7,10,12,15,5.678571,325,1625
+True Griffin Hide,20004,https://universalis.app/market/20004,5,7,10,12,15,1.0714285,132,660
+Highland Perch,20090,https://universalis.app/market/20090,3,5,7,8,9,1.3928572,699,2097
+Heather Charr,20050,https://universalis.app/market/20050,5,7,10,11,12,0.10714286,2365,11825
+Eastern Sea Pickle,20165,https://universalis.app/market/20165,10,15,20,22,25,1,183,1830
+Gauntlet Crab,20176,https://universalis.app/market/20176,10,15,20,22,25,0.42857143,234,2340
+Curtain Pleco,20138,https://universalis.app/market/20138,1,2,3,4,5,1,900,900
+Steppe Bullfrog,20191,https://universalis.app/market/20191,10,15,20,22,25,0.39285713,1596,15960
+Sea Lamp,20198,https://universalis.app/market/20198,10,15,20,22,25,1.3214285,541,5410
+Spiny Lobster,20209,https://universalis.app/market/20209,5,7,10,11,12,1.2142857,637,3185
+Koromo Octopus,20105,https://universalis.app/market/20105,3,5,7,8,9,0.8214286,455,1365
+Motley Beakfish,20226,https://universalis.app/market/20226,5,7,10,11,12,0.17857143,163,815
+Lumythrite Ore,14148,https://universalis.app/market/14148,3,5,7,8,9,3.75,986,2958
+Palladium Ore,19958,https://universalis.app/market/19958,3,5,7,8,9,0.60714287,467,1401
+Chromite Ore,19959,https://universalis.app/market/19959,3,5,7,8,9,1.75,934,2802
+Torreya Log,19934,https://universalis.app/market/19934,3,5,7,8,9,5.821429,490,1470
+Rhea,19991,https://universalis.app/market/19991,3,5,7,8,9,0.14285715,385,1155
+Gyr Abanian Spring Water,21085,https://universalis.app/market/21085,3,5,7,8,9,0.10714286,56,168
+Silvergrace Ore,22418,https://universalis.app/market/22418,3,5,7,8,9,0.21428572,58,174
+Black Willow Log,22419,https://universalis.app/market/22419,3,5,7,8,9,0.60714287,310,930
+Hingan Flax,22420,https://universalis.app/market/22420,3,5,7,8,9,0.17857143,493,1479
+Usuginu Octopus,22393,https://universalis.app/market/22393,3,5,7,8,9,0.035714287,2007,6021
+Hawk's Eye,23179,https://universalis.app/market/23179,3,5,7,8,9,0.96428573,917,2751
+Hardened Veteran Tree Sap,23180,https://universalis.app/market/23180,3,5,7,8,9,0.75,913,2739
+Azim Spring Water,24255,https://universalis.app/market/24255,3,5,7,8,9,0.4642857,502,1506
+Gyr Abanian Ore,24240,https://universalis.app/market/24240,3,5,7,8,9,0.42857143,296,888
+Evergleam Ore,24241,https://universalis.app/market/24241,3,5,7,8,9,1.5357143,1353,4059
+Urunday Log,24242,https://universalis.app/market/24242,3,5,7,8,9,0.035714287,22,66
+Yanxian Cotton Boll,24243,https://universalis.app/market/24243,3,5,7,8,9,0.035714287,69,207
+Island Wolf Fang,27798,https://universalis.app/market/27798,5,7,10,12,15,1.8214285,175,875
+Smilodon Skin,27732,https://universalis.app/market/27732,5,7,10,12,15,11.357142,291,1455
+Hoptrap Leaf,27763,https://universalis.app/market/27763,5,7,10,12,15,9.785714,859,4295
+Silkmoth Scales,27764,https://universalis.app/market/27764,5,7,10,12,15,1.4642857,1181,5905
+Rail Tenderloin,27850,https://universalis.app/market/27850,5,7,10,12,15,3.107143,321,1605
+Green Glider Skin,27733,https://universalis.app/market/27733,5,7,10,12,15,4.678571,669,3345
+Lorikeet Down,27797,https://universalis.app/market/27797,5,7,10,12,15,5.142857,567,2835
+Lorikeet Egg,27851,https://universalis.app/market/27851,5,7,10,12,15,4.357143,46,230
+Atrociraptor Skin,27734,https://universalis.app/market/27734,5,7,10,12,15,6.75,696,3480
+Vampire Cup Vine,27773,https://universalis.app/market/27773,5,7,10,12,15,10.464286,304,1520
+Vampire Vine Sap,27774,https://universalis.app/market/27774,5,7,10,12,15,9.035714,925,4625
+Ovim Meat,27852,https://universalis.app/market/27852,5,7,10,12,15,8.178572,700,3500
+Zonure Skin,27735,https://universalis.app/market/27735,5,7,10,12,15,10.107142,240,1200
+Ovim Fleece,27756,https://universalis.app/market/27756,5,7,10,12,15,6.178571,87,435
+Sea Swallow Skin,27736,https://universalis.app/market/27736,5,7,10,12,15,15.357142,482,2410
+Cubus Flesh,27799,https://universalis.app/market/27799,5,7,10,12,15,13.035714,306,1530
+Hydrozoan Umbrella,27800,https://universalis.app/market/27800,5,7,10,12,15,1.4642857,466,2330
+Raw Hematite,27726,https://universalis.app/market/27726,3,5,7,8,9,0.53571427,9,27
+Raw Diaspore,27727,https://universalis.app/market/27727,3,5,7,8,9,0.71428573,25,75
+Truegold Ore,27697,https://universalis.app/market/27697,15,20,30,40,50,8.107142,189,2835
+Highland Spring Water,27968,https://universalis.app/market/27968,15,20,30,40,50,4.857143,299,4485
+Raw Lazurite,27728,https://universalis.app/market/27728,3,5,7,8,9,0.39285713,5,15
+Bluespirit Ore,27698,https://universalis.app/market/27698,15,20,30,40,50,8.428572,299,4485
+Extra Effervescent Water,27776,https://universalis.app/market/27776,15,20,30,40,50,0.85714287,182,2730
+Raw Triplite,27729,https://universalis.app/market/27729,3,5,7,8,9,0.64285713,7,21
+Titancopper Ore,27701,https://universalis.app/market/27701,15,20,30,40,50,4.75,177,2655
+Underground Spring Water,27782,https://universalis.app/market/27782,15,20,30,40,50,36.107143,377,5655
+Raw Petalite,27730,https://universalis.app/market/27730,3,5,7,8,9,2.1785715,77,231
+Dimythrite Ore,27703,https://universalis.app/market/27703,15,20,30,40,50,23.107143,313,4695
+Yellow Alumen,27817,https://universalis.app/market/27817,15,20,30,40,50,8.107142,252,3780
+Coarse Saltpeter,27954,https://universalis.app/market/27954,15,20,30,40,50,0.14285715,32,480
+Hard Mudstone,27801,https://universalis.app/market/27801,15,20,30,40,50,4,36,540
+Truegold Sand,27696,https://universalis.app/market/27696,15,20,30,40,50,8.392858,219,3285
+Manasilver Sand,27699,https://universalis.app/market/27699,15,20,30,40,50,6.285714,78,1170
+Volcanic Tuff,27803,https://universalis.app/market/27803,15,20,30,40,50,3.7142856,286,4290
+Titancopper Sand,27700,https://universalis.app/market/27700,15,20,30,40,50,3.0357144,64,960
+Dimythrite Sand,27702,https://universalis.app/market/27702,15,20,30,40,50,8.678572,270,4050
+Frantoio,27820,https://universalis.app/market/27820,15,20,30,40,50,14.821428,644,9660
+Pixie Apple,27831,https://universalis.app/market/27831,15,20,30,40,50,1.2142857,418,6270
+White Oak Log,27683,https://universalis.app/market/27683,15,20,30,40,50,4.214286,23,345
+Miracle Apple Log,27684,https://universalis.app/market/27684,15,20,30,40,50,2.9285715,14,210
+White Ash Log,27685,https://universalis.app/market/27685,15,20,30,40,50,6.857143,135,2025
+Gianthive Chip,27834,https://universalis.app/market/27834,15,20,30,40,50,8.357142,431,6465
+Amber Cloves,27821,https://universalis.app/market/27821,15,20,30,40,50,1.4642857,466,6990
+Sandteak Log,27686,https://universalis.app/market/27686,15,20,30,40,50,8.357142,154,2310
+Harcot,27819,https://universalis.app/market/27819,15,20,30,40,50,1.2857143,114,1710
+Lignum Vitae Log,27687,https://universalis.app/market/27687,15,20,30,40,50,12.607142,321,4815
+Night Pepper,27827,https://universalis.app/market/27827,15,20,30,40,50,1.5714285,178,2670
+Blood Tomato,27825,https://universalis.app/market/27825,15,20,30,40,50,26.571428,575,8625
+Bright Flax,27747,https://universalis.app/market/27747,15,20,30,40,50,3.5714285,308,4620
+Purple Carrot,27818,https://universalis.app/market/27818,15,20,30,40,50,4.357143,330,4950
+Curly Parsley,27823,https://universalis.app/market/27823,15,20,30,40,50,2.0714285,250,3750
+Broad Beans,27833,https://universalis.app/market/27833,3,5,7,8,9,0.71428573,24,72
+Garden Beet,27824,https://universalis.app/market/27824,15,20,30,40,50,5.214286,145,2175
+Iridescent Cocoon,27750,https://universalis.app/market/27750,15,20,30,40,50,2.25,217,3255
+Upland Wheat,27832,https://universalis.app/market/27832,15,20,30,40,50,17.964285,464,6960
+Peppermint,27836,https://universalis.app/market/27836,3,5,7,8,9,5.642857,154,462
+Pixie Floss Boll,27753,https://universalis.app/market/27753,15,20,30,40,50,4.678571,125,1875
+Creamtop Mushroom,27829,https://universalis.app/market/27829,15,20,30,40,50,2.392857,647,9705
+Royal Grapes,27826,https://universalis.app/market/27826,15,20,30,40,50,1.8214285,263,3945
+Russet Popoto,27822,https://universalis.app/market/27822,3,5,7,8,9,2.607143,18,54
+Sweet Alyssum,27779,https://universalis.app/market/27779,15,20,30,40,50,27.035715,309,4635
+Fernleaf Lavender,27780,https://universalis.app/market/27780,15,20,30,40,50,17.75,281,4215
+Coffee Beans,27837,https://universalis.app/market/27837,15,20,30,40,50,3,277,4155
+Bomba Rice,27830,https://universalis.app/market/27830,15,20,30,40,50,4.107143,438,6570
+Lime Basil,27783,https://universalis.app/market/27783,15,20,30,40,50,18.392857,348,5220
+Tiger Lily,27784,https://universalis.app/market/27784,15,20,30,40,50,16.107143,383,5745
+Light Gerbera,27785,https://universalis.app/market/27785,15,20,30,40,50,34.42857,410,6150
+Mist Spinach,27828,https://universalis.app/market/27828,3,5,7,8,9,4.892857,106,318
+Dwarven Cotton Boll,27759,https://universalis.app/market/27759,15,20,30,40,50,8.357142,331,4965
+Sand Egg,27462,https://universalis.app/market/27462,5,7,10,11,12,2.857143,334,1670
+Spearhead Squid,27457,https://universalis.app/market/27457,5,7,10,11,12,0.64285713,2384,11920
+Cherry Herring,27473,https://universalis.app/market/27473,5,7,10,11,12,2.5714285,114,570
+Lemonfish,27475,https://universalis.app/market/27475,5,7,10,11,12,2.892857,183,915
+Black Tri-star,27483,https://universalis.app/market/27483,5,7,10,11,12,0.89285713,1128,5640
+Little Flirt,27540,https://universalis.app/market/27540,10,15,20,22,25,3.9642856,369,3690
+Gourmand Crab,27571,https://universalis.app/market/27571,10,15,20,22,25,3,97,970
+Megapiranha,27576,https://universalis.app/market/27576,10,15,20,22,25,0.6785714,227,2270
+Rose Shrimp,27451,https://universalis.app/market/27451,5,7,10,11,12,1,213,1065
+Sweetflesh Oyster,27513,https://universalis.app/market/27513,5,7,10,11,12,3.2857144,140,700
+Raw Onyx,27731,https://universalis.app/market/27731,3,5,7,8,9,1.5714285,1970,5910
+Prismstone,27705,https://universalis.app/market/27705,3,5,7,8,9,3.4642856,2324,6972
+Tungsten Ore,27704,https://universalis.app/market/27704,3,5,7,8,9,0.89285713,511,1533
+Lemonette,27835,https://universalis.app/market/27835,3,5,7,8,9,13.214286,529,1587
+Sandalwood Log,27688,https://universalis.app/market/27688,3,5,7,8,9,0.78571427,358,1074
+Ethereal Cocoon,27761,https://universalis.app/market/27761,3,5,7,8,9,0.2857143,273,819
+Merbau Log,29972,https://universalis.app/market/29972,3,5,7,8,9,1.5357143,687,2061
+Duskblooms,29974,https://universalis.app/market/29974,3,5,7,8,9,1.2142857,899,2697
+Imperial Fern,29978,https://universalis.app/market/29978,3,5,7,8,9,0.4642857,343,1029
+Brashgold Ore,30486,https://universalis.app/market/30486,3,5,7,8,9,1.25,812,2436
+Tender Dill,30485,https://universalis.app/market/30485,3,5,7,8,9,1.6428572,730,2190
+Blue Crab,30487,https://universalis.app/market/30487,1,2,3,4,5,0.6785714,722,722
+Tektite,13759,https://universalis.app/market/13759,15,20,30,40,50,0.32142857,97,1455
+Eventide Jade,13760,https://universalis.app/market/13760,15,20,30,40,50,0.5,4,60
+Fossilized Dragon Bone,13761,https://universalis.app/market/13761,15,20,30,40,50,0.71428573,181,2715
+Periwinkle,13762,https://universalis.app/market/13762,15,20,30,40,50,0.78571427,51,765
+Cloud Mushroom,13763,https://universalis.app/market/13763,15,20,30,40,50,0.96428573,216,3240
+Wind Widow,13764,https://universalis.app/market/13764,15,20,30,40,50,0.6785714,38,570
+White Oak Branch,27816,https://universalis.app/market/27816,15,20,30,40,50,0.53571427,1935,29025
+Silver Beech Log,32950,https://universalis.app/market/32950,3,5,7,8,9,0.071428575,49,147
+Dolomite,32951,https://universalis.app/market/32951,3,5,7,8,9,0.32142857,277,831
+Solstice Stone,32952,https://universalis.app/market/32952,3,5,7,8,9,0.53571427,229,687
+Raindrop Cotton Boll,32953,https://universalis.app/market/32953,3,5,7,8,9,1.9285715,294,882
+Wattle Petribark,32954,https://universalis.app/market/32954,3,5,7,8,9,1.1428572,209,627
+Hard Water,32955,https://universalis.app/market/32955,3,5,7,8,9,0.42857143,74,222
+Raw Ametrine,36174,https://universalis.app/market/36174,15,20,30,40,50,12.178572,97,1455
+Sharlayan Rock Salt,36084,https://universalis.app/market/36084,15,20,30,40,50,7.428571,247,3705
+High Durium Sand,36162,https://universalis.app/market/36162,15,20,30,40,50,17.75,346,5190
+Chloroschist,36180,https://universalis.app/market/36180,15,20,30,40,50,10.571428,64,960
+High Durium Ore,36163,https://universalis.app/market/36163,15,20,30,40,50,16.464285,231,3465
+Pewter Ore,36175,https://universalis.app/market/36175,15,20,30,40,50,16.357143,153,2295
+Phrygian Gold Ore,36176,https://universalis.app/market/36176,15,20,30,40,50,20.142857,124,1860
+Eblan Alumen,36241,https://universalis.app/market/36241,15,20,30,40,50,26.071428,327,4905
+Bismuth Ore,36164,https://universalis.app/market/36164,15,20,30,40,50,26.392857,227,3405
+Manganese Ore,36165,https://universalis.app/market/36165,15,20,30,40,50,34.392857,136,2040
+Raw Blue Zircon,36177,https://universalis.app/market/36177,15,20,30,40,50,8.321428,9,135
+Annite,36181,https://universalis.app/market/36181,15,20,30,40,50,45.464287,217,3255
+Ambrosial Water,36263,https://universalis.app/market/36263,15,20,30,40,50,56.5,347,5205
+Chondrite,36166,https://universalis.app/market/36166,15,20,30,40,50,60.214287,310,4650
+Raw Star Quartz,36178,https://universalis.app/market/36178,15,20,30,40,50,37.92857,183,2745
+Horse Chestnut Log,36190,https://universalis.app/market/36190,15,20,30,40,50,14.464286,136,2040
+Dark Hemp,36202,https://universalis.app/market/36202,15,20,30,40,50,12.642858,314,4710
+Dark Rye,36083,https://universalis.app/market/36083,15,20,30,40,50,10.321428,174,2610
+Iceberg Lettuce,36088,https://universalis.app/market/36088,15,20,30,40,50,4.214286,203,3045
+Palm Log,36191,https://universalis.app/market/36191,15,20,30,40,50,18.285715,345,5175
+Palm Syrup,36086,https://universalis.app/market/36086,15,20,30,40,50,36.785713,378,5670
+Coconut,36087,https://universalis.app/market/36087,15,20,30,40,50,7.821429,126,1890
+Thavnairian Perilla Leaf,36085,https://universalis.app/market/36085,15,20,30,40,50,12.678572,499,7485
+Thavnairian Paprika,36098,https://universalis.app/market/36098,15,20,30,40,50,6.428571,624,9360
+Cucumber,36091,https://universalis.app/market/36091,15,20,30,40,50,6.178571,213,3195
+Eblan Lentils,36092,https://universalis.app/market/36092,15,20,30,40,50,2.4642856,229,3435
+Red Pine Log,36192,https://universalis.app/market/36192,15,20,30,40,50,25.178572,375,5625
+Snow Flax,36204,https://universalis.app/market/36204,15,20,30,40,50,23.857143,153,2295
+Beet,36093,https://universalis.app/market/36093,15,20,30,40,50,2.75,320,4800
+Carrot of Happiness,36090,https://universalis.app/market/36090,15,20,30,40,50,5.642857,431,6465
+Ironwood Log,36193,https://universalis.app/market/36193,15,20,30,40,50,17.607143,197,2955
+Scarlet Moko Grass,36205,https://universalis.app/market/36205,15,20,30,40,50,14.285714,162,2430
+Sykon,36096,https://universalis.app/market/36096,15,20,30,40,50,22.357143,246,3690
+Giant Popoto,36089,https://universalis.app/market/36089,15,20,30,40,50,31.892857,478,7170
+Elder Nutmeg Seeds,36095,https://universalis.app/market/36095,15,20,30,40,50,31.964285,394,5910
+Sideritis Leaves,36094,https://universalis.app/market/36094,15,20,30,40,50,30.785715,122,1830
+Integral Log,36194,https://universalis.app/market/36194,15,20,30,40,50,60.535713,381,5715
+AR-Caean Cotton Boll,36206,https://universalis.app/market/36206,15,20,30,40,50,53.17857,316,4740
+Alien Onion,36097,https://universalis.app/market/36097,15,20,30,40,50,25.321428,56,840
+Gaja Hide,36242,https://universalis.app/market/36242,5,7,10,12,15,43.535713,338,1690
+Hamsa Tenderloin,36253,https://universalis.app/market/36253,5,7,10,12,15,2,92,460
+Amra,36264,https://universalis.app/market/36264,5,7,10,12,15,3.7142856,225,1125
+Luncheon Toad Skin,36243,https://universalis.app/market/36243,5,7,10,12,15,9.214286,588,2940
+Almasty Fur,36203,https://universalis.app/market/36203,5,7,10,12,15,30.5,677,3385
+Saiga Hide,36244,https://universalis.app/market/36244,5,7,10,12,15,32.392857,106,530
+Ovibos Milk,36255,https://universalis.app/market/36255,5,7,10,12,15,133.42857,1010,5050
+Yakow Chuck,36254,https://universalis.app/market/36254,5,7,10,12,15,3.8214285,443,2215
+Lunatender Blossom,36258,https://universalis.app/market/36258,5,7,10,12,15,37.857143,661,3305
+Mousse Flesh,36257,https://universalis.app/market/36257,5,7,10,12,15,7.5,686,3430
+Dynamite Ash,36259,https://universalis.app/market/36259,5,7,10,12,15,1.8214285,140,700
+Kumbhira Skin,36245,https://universalis.app/market/36245,5,7,10,12,15,25.5,69,345
+Egg of Elpis,36256,https://universalis.app/market/36256,5,7,10,12,15,29.535715,273,1365
+Petalouda Scales,36260,https://universalis.app/market/36260,5,7,10,12,15,20.857143,666,3330
+Ophiotauros Hide,36246,https://universalis.app/market/36246,5,7,10,12,15,69.89286,501,2505
+Berkanan Sap,36261,https://universalis.app/market/36261,5,7,10,12,15,69.75,692,3460
+Dynamis Crystal,36262,https://universalis.app/market/36262,5,7,10,12,15,19.321428,152,760
+Bird of Elpis Breast,36630,https://universalis.app/market/36630,5,7,10,12,15,2.107143,54,270
+Northern Herring,36386,https://universalis.app/market/36386,2,3,5,7,9,4.25,1059,2118
+Spiny King Crab,36523,https://universalis.app/market/36523,5,7,9,12,15,0.8214286,228,1140
+Icepike,36459,https://universalis.app/market/36459,2,3,5,7,9,0.25,160,320
+Grey Mullet,36569,https://universalis.app/market/36569,5,7,9,12,15,2.25,1037,5185
+Shallows Cod,36536,https://universalis.app/market/36536,5,7,9,12,15,0.75,358,1790
+Ruby-spotted Crab,36551,https://universalis.app/market/36551,5,7,9,12,15,1.0357143,1930,9650
+Macrobrachium Lar,36409,https://universalis.app/market/36409,2,3,5,7,9,1.25,9805,19610
+Dream Pickle,36555,https://universalis.app/market/36555,5,7,9,12,15,1.8214285,4537,22685
+Protomyke #987,36471,https://universalis.app/market/36471,2,3,5,7,9,1.5357143,7345,14690
+Rummy-nosed Tetra,36541,https://universalis.app/market/36541,5,7,9,12,15,1.1785715,5621,28105
+Stonehard Water,36215,https://universalis.app/market/36215,3,5,7,8,9,0.42857143,52,156
+Rime Dolomite,36216,https://universalis.app/market/36216,3,5,7,8,9,1.2142857,78,234
+Lunar Adamantite Ore,36167,https://universalis.app/market/36167,3,5,7,8,9,2.9642856,185,555
+Rhodium Sand,36179,https://universalis.app/market/36179,3,5,7,8,9,1.9285715,119,357
+Potent Spice,36214,https://universalis.app/market/36214,3,5,7,8,9,1.3571428,45,135
+Mempisang Log,36195,https://universalis.app/market/36195,3,5,7,8,9,2.857143,114,342
+Golden Cocoon,36207,https://universalis.app/market/36207,3,5,7,8,9,1.9642857,93,279
+Double-edged Herb,36217,https://universalis.app/market/36217,3,5,7,8,9,1.6785715,118,354
+Raw Eblan Danburite,37279,https://universalis.app/market/37279,3,5,7,8,9,1.5,32,96
+Thavnairian Corn,37278,https://universalis.app/market/37278,3,5,7,8,9,1.7857143,67,201
+Raw Rutilated Quartz,37817,https://universalis.app/market/37817,3,5,7,8,9,12.214286,341,1023
+Ilmenite,37820,https://universalis.app/market/37820,3,5,7,8,9,40.82143,1036,3108
+Ash Diatomite,37822,https://universalis.app/market/37822,3,5,7,8,9,1.25,131,393
+Paldao Log,37818,https://universalis.app/market/37818,3,5,7,8,9,22.857143,374,1122
+Haritaki,37819,https://universalis.app/market/37819,3,5,7,8,9,19.107143,325,975
+Bayberry,37821,https://universalis.app/market/37821,3,5,7,8,9,29.321428,856,2568
