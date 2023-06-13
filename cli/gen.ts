@@ -230,7 +230,7 @@ function universalisEntryEnrichedItem(item: Item, historyView: UniversalisV2.com
         ...item,
         maxPriceEntry,
         averagePricePerUnit,
-        regularSaleVelocity,
+        regularSaleVelocity: Number(regularSaleVelocity.toFixed(2)),
         universalisUrl: `https://universalis.app/market/${item.itemId}`,
     };
 }
