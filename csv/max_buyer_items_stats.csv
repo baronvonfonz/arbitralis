@@ -854,7 +854,7 @@ itemId,name,buyerName,pricePerUnit,quantity,timestamp,universalisUrl
 3020,Hempen Doublet Vest of Gathering,Kana'nis Lumimae,1209,1,2023-06-01T02:19:06.000Z,https://universalis.app/market/3020
 3022,Cotton Shirt,Penelophe Atkascha,4000,1,2023-06-10T02:27:36.000Z,https://universalis.app/market/3022
 3023,Cotton Shepherd's Tunic,Aivae Rallana,6000,1,2023-05-19T11:34:06.000Z,https://universalis.app/market/3023
-3024,Cotton Cowl,Merow Redemption,1200,1,2023-05-16T22:45:37.000Z,https://universalis.app/market/3024
+3024,Cotton Cowl,Estari Makermal,1200,1,2023-05-27T04:34:40.000Z,https://universalis.app/market/3024
 3026,Bronze Cuirass,Cyn Feldspar,500,1,2023-06-06T21:58:52.000Z,https://universalis.app/market/3026
 3028,Cotton Tabard,Miia Eternalle,29000000,1,2023-06-05T06:12:27.000Z,https://universalis.app/market/3028
 3036,Cotton Dalmatica,Star Rei,7400,1,2023-06-11T19:03:31.000Z,https://universalis.app/market/3036
@@ -1923,7 +1923,7 @@ itemId,name,buyerName,pricePerUnit,quantity,timestamp,universalisUrl
 7021,Iron Joint Plate,Renari Invictus,20,37,2023-05-29T14:45:52.000Z,https://universalis.app/market/7021
 6348,Riviera Cottage Roof (Composite),Roselyn Iris,7999,1,2023-05-26T22:28:53.000Z,https://universalis.app/market/6348
 6349,Riviera Cottage Roof (Stone),Minsc Winterwulf,29990,1,2023-05-29T00:44:01.000Z,https://universalis.app/market/6349
-6350,Riviera House Roof (Wood),Lilith Lscariot,6632,1,2023-05-16T22:47:06.000Z,https://universalis.app/market/6350
+6350,Riviera House Roof (Wood),Ritz Rose,5632,1,2023-05-24T21:24:02.000Z,https://universalis.app/market/6350
 7019,Steel Nails,Aryn Desrosier,1930,2,2023-05-30T16:38:21.000Z,https://universalis.app/market/7019
 7022,Steel Joint Plate,X'sol Iceblood,2999,99,2023-05-20T07:19:43.000Z,https://universalis.app/market/7022
 6351,Riviera House Roof (Composite),Misti Dragonsfire,4400,1,2023-06-05T09:40:52.000Z,https://universalis.app/market/6351
@@ -1998,7 +1998,7 @@ itemId,name,buyerName,pricePerUnit,quantity,timestamp,universalisUrl
 6409,Oasis Octagonal Window,Mash Figaro,3000,1,2023-05-20T06:15:06.000Z,https://universalis.app/market/6409
 6410,Riviera Wooden Door,Mash Figaro,12998,1,2023-05-20T06:15:29.000Z,https://universalis.app/market/6410
 7024,Steel Hinge,Gyodo Kuroganey,1000,2,2023-06-10T02:28:32.000Z,https://universalis.app/market/7024
-6411,Riviera Studded Door,Lilith Lscariot,10525,1,2023-05-16T22:45:31.000Z,https://universalis.app/market/6411
+6411,Riviera Studded Door,Lofi Toast,10000,1,2023-05-17T04:39:40.000Z,https://universalis.app/market/6411
 6412,Riviera Ornate Door,Mash Figaro,31000,1,2023-05-20T06:15:34.000Z,https://universalis.app/market/6412
 6413,Glade Classical Door,Tori Hito,5554,1,2023-06-04T20:42:01.000Z,https://universalis.app/market/6413
 6414,Glade Lancet Door,Lani Kedves,3965,1,2023-05-30T21:47:30.000Z,https://universalis.app/market/6414
@@ -2664,7 +2664,7 @@ itemId,name,buyerName,pricePerUnit,quantity,timestamp,universalisUrl
 8821,Oasis Lamppost,Marcus Agrippa,45000,1,2023-06-04T19:59:52.000Z,https://universalis.app/market/8821
 8831,Masonwork Interior Wall,Cillian Vetke,59900,1,2023-06-02T04:26:02.000Z,https://universalis.app/market/8831
 8832,Masonwork Flooring,Galeyan Amariyo,84995,1,2023-05-18T11:25:10.000Z,https://universalis.app/market/8832
-8833,Checkered Flooring,Didrianna Winterset,2000,1,2023-06-05T01:48:25.000Z,https://universalis.app/market/8833
+8833,Checkered Flooring,Voius Flare,2899,1,2023-06-13T22:41:00.000Z,https://universalis.app/market/8833
 8834,Iron Plate Flooring,Ginneagan M'rka,1900,1,2023-06-09T19:20:30.000Z,https://universalis.app/market/8834
 8835,Ice Chandelier,Libertus Ostium,4800,1,2023-06-01T00:01:13.000Z,https://universalis.app/market/8835
 9377,Ice Tear,Ursae Komeki,12,1,2023-05-31T13:36:01.000Z,https://universalis.app/market/9377
@@ -2820,7 +2820,6 @@ itemId,name,buyerName,pricePerUnit,quantity,timestamp,universalisUrl
 7916,Worm of Nym,Aka Aka,1499,2,2023-05-17T00:07:36.000Z,https://universalis.app/market/7916
 9528,Vintage Cooking Sherry,Yildun Ursaeus,69970,1,2023-05-18T06:47:12.000Z,https://universalis.app/market/9528
 9517,Perfect Cloth,Fuka Kazamatsuri,150000,1,2023-06-13T10:29:30.000Z,https://universalis.app/market/9517
-9529,Stained Cloth,Mini Jow,5000,1,2023-05-16T22:41:14.000Z,https://universalis.app/market/9529
 9615,Grade 1 Feed - Speed Blend,Otoha Kannagi,250,1,2023-06-11T19:11:17.000Z,https://universalis.app/market/9615
 4868,Gysahl Greens,Kokoru Koru,7150000,1,2023-06-05T05:59:59.000Z,https://universalis.app/market/4868
 7895,Sylkis Bud,Nyx Severin,750,10,2023-05-18T18:39:59.000Z,https://universalis.app/market/7895
@@ -2898,7 +2897,7 @@ itemId,name,buyerName,pricePerUnit,quantity,timestamp,universalisUrl
 10388,Thavnairian Bolero,Allasse Taralom,92700,1,2023-05-21T01:12:48.000Z,https://universalis.app/market/10388
 12645,Thavnairian Leather,Kelito Kelulito,122996,1,2023-05-17T02:51:53.000Z,https://universalis.app/market/12645
 10389,Thavnairian Gloves,Tiamat Dragonhart,58999,1,2023-05-17T06:33:21.000Z,https://universalis.app/market/10389
-10390,Thavnairian Sarouel,Diggie Bloodmoon,194898,1,2023-05-16T22:46:45.000Z,https://universalis.app/market/10390
+10390,Thavnairian Sarouel,Fjrn Isafnesi,194499,1,2023-05-18T04:47:32.000Z,https://universalis.app/market/10390
 10391,Thavnairian Babouches,Cow King,70000,1,2023-06-03T20:04:18.000Z,https://universalis.app/market/10391
 10392,Thavnairian Headdress,Lillychan Bathory,110000,1,2023-05-18T02:13:49.000Z,https://universalis.app/market/10392
 12541,Larimar,Nico Ex,7842,12,2023-06-13T00:18:55.000Z,https://universalis.app/market/12541
@@ -3096,7 +3095,7 @@ itemId,name,buyerName,pricePerUnit,quantity,timestamp,universalisUrl
 10707,Titanium Sollerets of Fending,Minsc Stoneshield,60000,1,2023-05-29T00:05:40.000Z,https://universalis.app/market/10707
 10708,Titanium Sabatons of Fending,Lizbeth Firebrew,79043,1,2023-05-18T01:27:46.000Z,https://universalis.app/market/10708
 10709,Adamantite Sabatons of Fending,Mayhem Solidor,67189,1,2023-06-02T19:44:05.000Z,https://universalis.app/market/10709
-10711,Adamantite Sollerets of Fending,Ciropha Flameburst,22000,1,2023-05-18T05:07:16.000Z,https://universalis.app/market/10711
+10711,Adamantite Sollerets of Fending,Keristyne Montilyet,29999,1,2023-06-13T20:00:09.000Z,https://universalis.app/market/10711
 10712,Mythrite Sallet of Maiming,Taura Akiyama,40000,1,2023-06-11T07:28:28.000Z,https://universalis.app/market/10712
 10713,Wyvernskin Pot Helm of Maiming,Tickle Mcbutts,50162,1,2023-05-26T22:00:52.000Z,https://universalis.app/market/10713
 10714,Titanium Sallet of Maiming,Ki'fal Targria,80000,1,2023-05-26T22:56:02.000Z,https://universalis.app/market/10714
@@ -3582,7 +3581,7 @@ itemId,name,buyerName,pricePerUnit,quantity,timestamp,universalisUrl
 12101,Round Banquet Table,Elora Balro,6790,1,2023-06-10T20:39:44.000Z,https://universalis.app/market/12101
 12103,Bearskin Rug,Valzaer Darkmoon,551000,1,2023-05-20T04:51:01.000Z,https://universalis.app/market/12103
 12574,Bearskin,Rook Teruria,129998,1,2023-05-29T18:18:48.000Z,https://universalis.app/market/12574
-12655,Fine Alumen,Spllyn Iam,187985,1,2023-05-16T22:41:05.000Z,https://universalis.app/market/12655
+12655,Fine Alumen,Vin Valentine,178975,1,2023-05-20T02:05:46.000Z,https://universalis.app/market/12655
 12104,Gordian Bureau,Wolfe Rummusca,89992,1,2023-06-11T05:09:20.000Z,https://universalis.app/market/12104
 12254,Gordian Gear,My Mirage,800,1,2023-06-07T16:59:02.000Z,https://universalis.app/market/12254
 12105,Savage Gordian Bureau,Dishbone Prosso,3500000,1,2023-05-20T23:54:52.000Z,https://universalis.app/market/12105
@@ -4138,7 +4137,7 @@ itemId,name,buyerName,pricePerUnit,quantity,timestamp,universalisUrl
 14834,Expeditioner's Gloves,Sokou Unzan,10000,1,2023-05-31T22:08:16.000Z,https://universalis.app/market/14834
 14835,Expeditioner's Pantalettes,Orange Juiced,119999,1,2023-06-04T00:41:10.000Z,https://universalis.app/market/14835
 14836,Expeditioner's Thighboots,Broken Toy,109750,1,2023-06-08T00:28:42.000Z,https://universalis.app/market/14836
-14841,Dried Red Oldrose,Kai Linh,18494,1,2023-05-16T22:44:13.000Z,https://universalis.app/market/14841
+14841,Dried Red Oldrose,N'orth Belmont,14900,1,2023-05-18T14:02:58.000Z,https://universalis.app/market/14841
 14071,Red Oldroses,Erebus Apollyon,15000,1,2023-05-19T05:14:55.000Z,https://universalis.app/market/14071
 14842,Dried Blue Oldrose,Koh Tayuun,20000,1,2023-05-18T22:49:27.000Z,https://universalis.app/market/14842
 14072,Blue Oldroses,Skorth Khaine,3500,1,2023-05-29T00:46:51.000Z,https://universalis.app/market/14072
@@ -5424,7 +5423,7 @@ itemId,name,buyerName,pricePerUnit,quantity,timestamp,universalisUrl
 20261,Red Daisy Corsage,T'mella Hena,1,1,2023-06-04T21:31:54.000Z,https://universalis.app/market/20261
 20262,Blue Daisy Corsage,Tammo Mae,220,1,2023-05-31T01:16:14.000Z,https://universalis.app/market/20262
 17998,Blue Daisies,M'yria Keihas,190,1,2023-05-23T23:50:18.000Z,https://universalis.app/market/17998
-20263,Yellow Daisy Corsage,Usagi Cruex,23000000,1,2023-05-16T22:41:03.000Z,https://universalis.app/market/20263
+20263,Yellow Daisy Corsage,Synn She,20400000,1,2023-05-19T22:09:34.000Z,https://universalis.app/market/20263
 20264,Green Daisy Corsage,Tuan Nguyen,101,1,2023-05-17T12:16:38.000Z,https://universalis.app/market/20264
 18000,Green Daisies,Tetele Tele,130,1,2023-06-07T01:52:01.000Z,https://universalis.app/market/18000
 20265,Orange Daisy Corsage,Sum Yumi,5000000,1,2023-05-29T17:51:37.000Z,https://universalis.app/market/20265
@@ -6986,7 +6985,7 @@ itemId,name,buyerName,pricePerUnit,quantity,timestamp,universalisUrl
 28133,Oasis Wall-mounted Fountain,Rhaegar Tengoku,11999,1,2023-05-18T19:00:36.000Z,https://universalis.app/market/28133
 28137,Dishware,Kaze Karasu,3250,1,2023-06-04T22:20:09.000Z,https://universalis.app/market/28137
 28139,Imitation Long Window,Athena Nhivasa,9494,1,2023-05-21T02:52:56.000Z,https://universalis.app/market/28139
-28142,Misplaced Mog Slippers,Pancake Syrup,28497,1,2023-05-16T22:42:29.000Z,https://universalis.app/market/28142
+28142,Misplaced Mog Slippers,Anjian Shikari,27750,1,2023-05-20T10:31:05.000Z,https://universalis.app/market/28142
 27797,Lorikeet Down,Bernard Brisbois,1200,6,2023-05-20T03:45:26.000Z,https://universalis.app/market/27797
 28144,Hades Trophy,Kiyan Felonvoid,657999,1,2023-05-21T05:46:03.000Z,https://universalis.app/market/28144
 28631,Hades's Auracite,Miria Kharlan,594990,1,2023-06-13T03:03:44.000Z,https://universalis.app/market/28631
@@ -8806,10 +8805,10 @@ itemId,name,buyerName,pricePerUnit,quantity,timestamp,universalisUrl
 37828,Vanadinite,Yhom Gam,40000,30,2023-05-25T18:41:46.000Z,https://universalis.app/market/37828
 37821,Bayberry,Rheanne Veatent,2000,25,2023-05-18T02:53:34.000Z,https://universalis.app/market/37821
 37829,Palebloom Kudzu Cloth,Biubiu Kafuu,35000,2,2023-05-27T19:53:03.000Z,https://universalis.app/market/37829
-37822,Ash Diatomite,Cleeb Enosnas,390,99,2023-05-16T22:42:42.000Z,https://universalis.app/market/37822
+37822,Ash Diatomite,Ahlei'ra Kura,387,99,2023-05-21T21:27:00.000Z,https://universalis.app/market/37822
 37840,Grade 7 Tincture of Strength,Haise Sasaki',3600,50,2023-05-17T01:07:37.000Z,https://universalis.app/market/37840
 37823,Palaka Mistletoe,Pyu Pew,1888,20,2023-05-17T07:59:04.000Z,https://universalis.app/market/37823
-37841,Grade 7 Tincture of Dexterity,Garou Kami,2459,25,2023-05-16T22:40:29.000Z,https://universalis.app/market/37841
+37841,Grade 7 Tincture of Dexterity,Afterburn Dash,2457,25,2023-05-16T23:20:40.000Z,https://universalis.app/market/37841
 37842,Grade 7 Tincture of Vitality,Nys Fawn,4498,1,2023-06-02T20:21:28.000Z,https://universalis.app/market/37842
 37843,Grade 7 Tincture of Intelligence,Laia Ventos,3000,5,2023-05-17T02:01:09.000Z,https://universalis.app/market/37843
 37844,Grade 7 Tincture of Mind,Lei'eiko Jakoh,4000,26,2023-06-07T02:22:13.000Z,https://universalis.app/market/37844
