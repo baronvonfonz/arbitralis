@@ -41,3 +41,11 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./dist/gh-pages
+
+      - name: Upload to gdrive
+        uses: adityak74/google-drive-upload-git-action@main
+        with:
+          credentials: ${{ secrets.GCP_CREDS }}
+          filename: "./dist/gh-pages/*csv"
+          folderId: "1h1N0QGSagR-D_gfgU_ClMzcVqn12F01L"
+          namePrefix: "test/"
