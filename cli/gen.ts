@@ -386,7 +386,7 @@ async function generateCsvs() {
         Object.keys(ingredientAmounts).forEach((rawItemId) => {
             const ingredientItemId = Number(rawItemId);
             const amount = ingredientAmounts[ingredientItemId];
-            const maybeEnrichedIngredientItem = universalisEntryEnrichedItem({ itemId: Number(craftedItemId), name: itemIdToNameMap[Number(ingredientItemId)] }, historyView);
+            const maybeEnrichedIngredientItem = universalisEntryEnrichedItem({ itemId: ingredientItemId, name: itemIdToNameMap[Number(ingredientItemId)] }, historyView);
 
             if (!maybeEnrichedIngredientItem) {
                 return;
