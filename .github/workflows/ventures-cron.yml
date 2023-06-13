@@ -14,6 +14,10 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      - name: Set up environment
+        run: |
+          echo "TODAY_PREFIX=$(date +'%Y-%m-%d')-" >> $GITHUB_ENV
+          
       - name: Checkout repository
         uses: actions/checkout@v2
 
@@ -48,5 +52,5 @@ jobs:
           credentials: ${{ secrets.GCP_CREDS }}
           filename: "dist/gh-pages/csv/*csv"
           folderId: "1h1N0QGSagR-D_gfgU_ClMzcVqn12F01L"
-          namePrefix: "$(date +'%Y-%m-%d')-"
+          namePrefix: ${{ env.TODAY_PREFIX }}
           overwrite: "true"
