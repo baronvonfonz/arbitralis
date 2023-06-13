@@ -46,7 +46,7 @@ jobs:
         uses: adityak74/google-drive-upload-git-action@main
         with:
           credentials: ${{ secrets.GCP_CREDS }}
-          filename: "./dist/gh-pages/csv/*csv"
+          filename: "dist/gh-pages/csv/*csv"
           folderId: "1h1N0QGSagR-D_gfgU_ClMzcVqn12F01L"
           namePrefix: "test/"
           overwrite: "true"
