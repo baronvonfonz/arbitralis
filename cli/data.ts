@@ -122,20 +122,18 @@ export type RecipesIngredientsRow = {
     craftedId: number;
     craftedAmount: number;
 }
-export function getAllRecipesIngredients(itemIdstoInclude: number[] = []): Promise<RecipesIngredientsMetadata> {
+export function getAllRecipesIngredients(): Promise<RecipesIngredientsMetadata> {
     return new Promise<RecipesIngredientsMetadata>((resolve, reject) => {
         getDb().serialize(function() {
             getDb().all(`
-                SELECT ri.ingredient_id as ingredientId, i2.id as craftedId, ri.amount as ingredientAmount, r.crafted_amount as craftedAmount       
+              SELECT ri.ingredient_id as ingredientId, i2.id as craftedId, ri.amount as ingredientAmount, r.crafted_amount as craftedAmount       
                 FROM recipes_ingredients ri
                 JOIN items i
-                    ON i.id = ri.ingredient_id
+                  ON i.id = ri.ingredient_id
                 JOIN recipes r
-                    ON r.id = ri.recipe_id
+                  ON r.id = ri.recipe_id
                 JOIN items i2
-                    ON i2.id = r.crafted_id
-               WHERE ri.ingredient_id IN (${itemIdstoInclude.join(',')})
-                 AND r.crafted_id IN (${itemIdstoInclude.join(',')})
+                  ON i2.id = r.crafted_id
             ORDER BY craftedId desc;
             `, (error: Error, rows: RecipesIngredientsRow[]) => {
                 if (error) {
@@ -147,26 +145,27 @@ export function getAllRecipesIngredients(itemIdstoInclude: number[] = []): Promi
                 let currentCraftedId = -1;
                 let currentCraftedAmount = -1;
                 let currentIngredientsAmounts: Record<number, number> = {};
-                rows.forEach((aRow, index) => {
-                    if (aRow.craftedId !== currentCraftedId) {
-                        recipesToIngredients[currentCraftedId] = {
-                            ingredientAmounts: currentIngredientsAmounts,
-                            amount: currentCraftedAmount,
-                        };
-                        currentIngredientsAmounts = {};
-                        currentIngredientsAmounts[aRow.ingredientId] = aRow.ingredientAmount;
-                        currentCraftedId = aRow.craftedId;
-                        allItemIds.add(currentCraftedId);
-                        Object.keys(currentIngredientsAmounts).forEach(ingredientId => allItemIds.add(Number(ingredientId)));
-                    } else {
-                        currentIngredientsAmounts[aRow.ingredientId] = aRow.ingredientAmount;
-                        currentCraftedAmount = aRow.craftedAmount;
-                    }
-                });
-                recipesToIngredients[currentCraftedId] = {
-                    ingredientAmounts: currentIngredientsAmounts,
-                    amount: currentCraftedAmount,
+                
+                function updateDataStructures(nextCraftedId: number) {
+                    recipesToIngredients[currentCraftedId] = {
+                        ingredientAmounts: currentIngredientsAmounts,
+                        amount: currentCraftedAmount,
+                    };
+                    allItemIds.add(currentCraftedId);
+                    Object.keys(currentIngredientsAmounts).forEach(id => allItemIds.add(Number(id)));
+                    currentIngredientsAmounts = {};
+                    currentCraftedId = nextCraftedId;
                 };
+
+                rows.forEach((aRow) => {
+                    if (aRow.craftedId !== currentCraftedId) {
+                        updateDataStructures(aRow.craftedId);
+                    }
+                    currentIngredientsAmounts[aRow.ingredientId] = aRow.ingredientAmount;
+                    currentCraftedAmount = aRow.craftedAmount;
+                });
+
+                updateDataStructures(-1);
                 delete recipesToIngredients[-1];
                 allItemIds.delete(-1);
                 resolve({

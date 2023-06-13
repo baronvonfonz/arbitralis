@@ -1,3 +1,4 @@
+import fs from 'fs';
 import createClient, { FetchOptions } from 'openapi-fetch';
 import { UniversalisV2 } from 'universalis-ts';
 
@@ -56,6 +57,8 @@ async function historicalItemStatsInner(itemIds: number[], worldDcRegion = 40,):
     return items    
 }
 
+const API_CONCURRENCY = 15;
+
 // 40 is Jenova
 async function historicalItemStats(itemIds: number[]) {
     console.log(`Attempting to query ${itemIds.length}, this will be appx ${Math.floor(itemIds.length / 100)} API calls`);
@@ -64,19 +67,22 @@ async function historicalItemStats(itemIds: number[]) {
         itemIdSublists.push(itemIds.slice(i, i + 100));
     }
     const responses: ItemsStatsType[] = [];
-    for (let i = 0; i < itemIdSublists.length; i += 15) {
+    for (let i = 0; i < itemIdSublists.length; i += API_CONCURRENCY) {
         const itemIdSublistIndices: number[] = [];
-        for (let j = 0; j < 15; j++) {
+        for (let j = 0; j < API_CONCURRENCY; j++) {
             const nextIndex = j + i;
             if (nextIndex < itemIdSublists.length) {
                 itemIdSublistIndices.push(nextIndex);
             }
         }
-        (await Promise.all(
+        const batchedResponses = (await Promise.all(
             itemIdSublistIndices.map(async (itemSublistIndex) => historicalItemStatsInner(itemIdSublists[itemSublistIndex]))
-        )).forEach(result => responses.push(result));
+        ));
+        batchedResponses.forEach(result => responses.push(result));
         console.log('Waiting 3 seconds before next batch');
-        await new Promise((resolve) => setTimeout(resolve, 3000));
+        if (itemIdSublistIndices.length === API_CONCURRENCY) {
+            await new Promise((resolve) => setTimeout(resolve, 3000));
+        }
     }
     return responses.reduce((bigMap, subMap) => ({ ...bigMap, ...subMap }), {});
 }
