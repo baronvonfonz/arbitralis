@@ -226,7 +226,6 @@ function universalisEntryEnrichedItem(item: Item, historyView: UniversalisV2.com
         console.log(`NaN calc for ${item.itemId}`);
         return undefined;
     }
-
     return {
         ...item,
         maxPriceEntry,
@@ -279,10 +278,10 @@ async function generateCsvs() {
     const recipesIngredientsMetadata = await getAllRecipesIngredients(marketable);
     // await fs.promises.writeFile('temp.json', JSON.stringify(recipesIngredientsMetadata, null, 2));
     const allItemIdsToLookup: number[] = [...(ventureItems.map(({ itemId }) => itemId)), ...recipesIngredientsMetadata.allItemIds];
-    const itemStats = await UniversalClient.historicalItemStats(allItemIdsToLookup);
+    const historyViewsByItemId = await UniversalClient.historicalItemStats(allItemIdsToLookup);
     // Useful for debugging
-    // await fs.promises.writeFile('temp.json', JSON.stringify(itemStats, null, 2));
-    if (!itemStats) {
+    // await fs.promises.writeFile('temp.json', JSON.stringify(historyViewsByItemId, null, 2));
+    if (!historyViewsByItemId) {
         throw Error('Could not make map of item stats');
     }
 
@@ -290,7 +289,7 @@ async function generateCsvs() {
         .reduce((idNameMap, item) => ({ [item.id]: item.name, ...idNameMap }), {});
 
     ventureItems.forEach((ventureItem) => {
-        const historyView = itemStats[ventureItem.itemId];
+        const historyView = historyViewsByItemId[ventureItem.itemId];
         const name = itemIdToNameMap[ventureItem.itemId];
 
         if (!historyView) {
@@ -363,31 +362,28 @@ async function generateCsvs() {
     Object.keys(recipesIngredientsMetadata.recipesToIngredients).forEach(craftedItemId => {
         const recipeStrategy: RecipeStrategy = recipesIngredientsMetadata.recipesToIngredients[Number(craftedItemId)];
         const ingredientAmounts: IngredientAmounts = recipeStrategy.ingredientAmounts;
-        const historyView = itemStats[craftedItemId];
+        const craftedHistoryView = historyViewsByItemId[craftedItemId];
         const craftedName = itemIdToNameMap[Number(craftedItemId)];
-        if (!historyView) {
+        if (!craftedHistoryView) {
             return;
         }
 
-        const maybeEnrichedCraftedItem = universalisEntryEnrichedItem({ itemId: Number(craftedItemId), name: craftedName }, historyView);
+        const maybeEnrichedCraftedItem = universalisEntryEnrichedItem({ itemId: Number(craftedItemId), name: craftedName }, craftedHistoryView);
 
         if (!maybeEnrichedCraftedItem) {
             return;
         }
-
-        const {
-            averagePricePerUnit,
-            regularSaleVelocity,
-            universalisUrl,
-        } = maybeEnrichedCraftedItem;
 
         // TODO: this stanks
         const ingredientsEnriched: UniversalisEnrichedItemAmount[] = [];
         Object.keys(ingredientAmounts).forEach((rawItemId) => {
             const ingredientItemId = Number(rawItemId);
             const amount = ingredientAmounts[ingredientItemId];
-            const maybeEnrichedIngredientItem = universalisEntryEnrichedItem({ itemId: ingredientItemId, name: itemIdToNameMap[Number(ingredientItemId)] }, historyView);
-
+            const ingredientHistoryView = historyViewsByItemId[ingredientItemId];
+            if (!ingredientHistoryView) {
+                return;
+            }
+            const maybeEnrichedIngredientItem = universalisEntryEnrichedItem({ itemId: ingredientItemId, name: itemIdToNameMap[ingredientItemId] }, ingredientHistoryView);
             if (!maybeEnrichedIngredientItem) {
                 return;
             }
@@ -402,9 +398,9 @@ async function generateCsvs() {
         universalisEnrichedRecipes.push({
             crafted_name: craftedName,
             crafted_itemId: Number(craftedItemId),
-            crafted_averagePricePerUnit: averagePricePerUnit,
-            crafted_regularSaleVelocity: regularSaleVelocity,
-            crafted_universalisUrl: universalisUrl,
+            crafted_averagePricePerUnit: maybeEnrichedCraftedItem.averagePricePerUnit,
+            crafted_regularSaleVelocity: maybeEnrichedCraftedItem.regularSaleVelocity,
+            crafted_universalisUrl: maybeEnrichedCraftedItem.universalisUrl,
             crafted_amount: recipeStrategy.amount,
             
             ingredientOne_name: ingredientsEnriched[0]?.name,
@@ -470,7 +466,7 @@ async function generateCsvs() {
             ingredientNine_universalisUrl: ingredientsEnriched[8]?.name,
             ingredientNine_amount: ingredientsEnriched[8]?.amount,
 
-            craftingOutcomeInGil: Math.floor(averagePricePerUnit * recipeStrategy.amount) - ingredientsEnriched.reduce(
+            craftingOutcomeInGil: Math.floor(maybeEnrichedCraftedItem.averagePricePerUnit * recipeStrategy.amount) - ingredientsEnriched.reduce(
                 (ingredientCostSum, ingredient) => ingredientCostSum +  Math.floor(ingredient.averagePricePerUnit * ingredient.amount)
             , 0),
         });
@@ -506,7 +502,7 @@ async function runGen() {
     // await maybeRegenRecipes();
     // await maybeGetRecipePrices();
     await generateCsvs();
-    // UniversalClient.itemStats([34343,34344,34344]);
+    // UniversalClient.historyViewsByItemId([34343,34344,34344]);
 
     const afterMemory = process.memoryUsage().heapUsed;
 
