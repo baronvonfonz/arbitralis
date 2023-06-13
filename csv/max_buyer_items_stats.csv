@@ -781,7 +781,7 @@ itemId,name,buyerName,pricePerUnit,quantity,timestamp,universalisUrl
 2837,Felt Coif of Gathering,Doctor Smallfry,19996,1,2023-06-06T05:08:27.000Z,https://universalis.app/market/2837
 2850,Cobalt Elmo,Oda Nanami,24998,1,2023-05-17T21:56:05.000Z,https://universalis.app/market/2850
 2852,Felt Hat,Rengoku San,40000,1,2023-06-08T00:24:08.000Z,https://universalis.app/market/2852
-2854,Woolen Deerstalker,Spllyn Iam,5000,1,2023-06-05T23:00:22.000Z,https://universalis.app/market/2854
+2854,Woolen Deerstalker,Kazan Fallen,15250,1,2023-06-12T00:40:08.000Z,https://universalis.app/market/2854
 2855,Vintage Jester's Cap,Veneria Foreshadow,45000,1,2023-05-18T15:33:40.000Z,https://universalis.app/market/2855
 2702,Moldering Jester's Cap,Kynoss Parista,6000,1,2023-05-27T21:25:09.000Z,https://universalis.app/market/2702
 2857,Electrum Monocle,Stygian Solidor,10898,1,2023-06-02T23:26:53.000Z,https://universalis.app/market/2857
@@ -2583,7 +2583,7 @@ itemId,name,buyerName,pricePerUnit,quantity,timestamp,universalisUrl
 8455,Augmented Wolfram Cuirass,Heian Ziegler,3200,1,2023-06-11T07:36:01.000Z,https://universalis.app/market/8455
 8456,Augmented Saurian Shirt of Striking,Most Hated,3500,1,2023-05-24T17:03:25.000Z,https://universalis.app/market/8456
 8457,Augmented Saurian Tabard of Aiming,Jaia Jambalaya,2450,1,2023-05-20T15:50:05.000Z,https://universalis.app/market/8457
-8458,Augmented Cashmere Robe of Healing,Hina Anno,4995,1,2023-05-16T22:07:05.000Z,https://universalis.app/market/8458
+8458,Augmented Cashmere Robe of Healing,Rosalinde Redsteele,4990,1,2023-05-18T00:52:54.000Z,https://universalis.app/market/8458
 8459,Augmented Cashmere Robe of Casting,Argon Grezz,10000,1,2023-05-19T00:07:36.000Z,https://universalis.app/market/8459
 8540,Pearl Roselle Capeline,Mo Mo,49999,1,2023-05-20T03:45:57.000Z,https://universalis.app/market/8540
 8023,Pearl Roselle,Erebus Apollyon,11,3,2023-05-17T08:26:22.000Z,https://universalis.app/market/8023
@@ -2655,7 +2655,7 @@ itemId,name,buyerName,pricePerUnit,quantity,timestamp,universalisUrl
 8813,Glade Doormat,Fibi Flick,25998,1,2023-06-12T01:48:37.000Z,https://universalis.app/market/8813
 8814,Oasis Doormat,Uncle Vanzel,34500,1,2023-05-17T15:57:43.000Z,https://universalis.app/market/8814
 8815,Large Woven Rug,Vaula Silk,299982,1,2023-05-18T02:53:56.000Z,https://universalis.app/market/8815
-8816,Large Planter Box,Aizirni Iyrnhyd,30000,1,2023-06-11T22:22:37.000Z,https://universalis.app/market/8816
+8816,Large Planter Box,Kim Katt,43500,1,2023-06-12T20:06:08.000Z,https://universalis.app/market/8816
 8817,Riviera Path Light,Astra Nocturna,148899,1,2023-05-26T21:44:58.000Z,https://universalis.app/market/8817
 8818,Glade Path Light,Kora Kinara,13999,1,2023-05-26T21:24:12.000Z,https://universalis.app/market/8818
 8819,Oasis Path Light,Sunshine Parfait,3847,1,2023-06-06T02:47:36.000Z,https://universalis.app/market/8819
@@ -4319,7 +4319,7 @@ itemId,name,buyerName,pricePerUnit,quantity,timestamp,universalisUrl
 15805,Against the Wind Orchestrion Roll,Katie Lokidottir,48986,1,2023-05-23T22:29:21.000Z,https://universalis.app/market/15805
 15831,Faded Copy of Against the Wind,J'wehli Fasaxo,1149,1,2023-05-22T22:34:31.000Z,https://universalis.app/market/15831
 15806,Landlords Orchestrion Roll,Xfer Lysellux,162988,1,2023-06-03T01:20:49.000Z,https://universalis.app/market/15806
-15832,Faded Copy of Landlords,J'wehli Fasaxo,1468,1,2023-05-22T22:35:05.000Z,https://universalis.app/market/15832
+15832,Faded Copy of Landlords,Max Greyson,2001,3,2023-06-13T14:44:48.000Z,https://universalis.app/market/15832
 15807,Missing Pages Orchestrion Roll,Blade Inky,71998,1,2023-06-11T00:29:41.000Z,https://universalis.app/market/15807
 15833,Faded Copy of Missing Pages,Micaiah Razh,2997,1,2023-05-19T00:26:21.000Z,https://universalis.app/market/15833
 15819,Wreck to the Seaman Orchestrion Roll,Aureliyan Duleau,17965,1,2023-05-22T10:40:17.000Z,https://universalis.app/market/15819
@@ -7888,10 +7888,10 @@ itemId,name,buyerName,pricePerUnit,quantity,timestamp,universalisUrl
 34404,Saigaskin Boots of Fending,Thieving Magpie,21899,1,2023-05-22T16:34:27.000Z,https://universalis.app/market/34404
 34405,Bismuth Headgear of Maiming,Rey Jin,98713,1,2023-06-07T20:01:48.000Z,https://universalis.app/market/34405
 36227,Grade 5 Strength Alkahest,Seanzzie Lightheart,8000,10,2023-05-25T02:18:45.000Z,https://universalis.app/market/36227
-34406,Saigaskin Coat of Maiming,Porter Lapof,98749,1,2023-05-24T04:55:20.000Z,https://universalis.app/market/34406
-34407,Saigaskin Armguards of Maiming,Rykoga Dreadstone,23999,1,2023-05-16T22:01:30.000Z,https://universalis.app/market/34407
-34408,Saigaskin Trousers of Maiming,Rykoga Dreadstone,33398,1,2023-05-16T22:01:34.000Z,https://universalis.app/market/34408
-34409,Saigaskin Boots of Maiming,Rykoga Dreadstone,33744,1,2023-05-16T22:01:39.000Z,https://universalis.app/market/34409
+34406,Saigaskin Coat of Maiming,Bigbossdbz Ultra,99000,1,2023-06-12T03:14:20.000Z,https://universalis.app/market/34406
+34407,Saigaskin Armguards of Maiming,Fallen Aztar,11000,1,2023-06-04T03:57:26.000Z,https://universalis.app/market/34407
+34408,Saigaskin Trousers of Maiming,Salem Mont,20500,1,2023-06-05T15:18:50.000Z,https://universalis.app/market/34408
+34409,Saigaskin Boots of Maiming,Corwin Blackmarsh,19999,1,2023-05-29T03:32:47.000Z,https://universalis.app/market/34409
 34410,Snow Linen Cap of Striking,Heavy Altir,38429,1,2023-06-06T21:47:57.000Z,https://universalis.app/market/34410
 34411,Saigaskin Jacket of Striking,Paddy White,43471,1,2023-05-21T16:31:13.000Z,https://universalis.app/market/34411
 34412,Saigaskin Gloves of Striking,Thairynn Stirling,15999,1,2023-06-10T09:25:23.000Z,https://universalis.app/market/34412
