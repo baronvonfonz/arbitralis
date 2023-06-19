@@ -2,7 +2,33 @@ import fs from 'fs';
 import createClient, { FetchOptions } from 'openapi-fetch';
 import { UniversalisV2 } from 'universalis-ts';
 
-const { get } = createClient<UniversalisV2.paths>({ baseUrl: 'https://universalis.app'});
+const MAX_ATTEMPTS = 5;
+const retryFetch = (url: RequestInfo | URL, options?: RequestInit): Promise<Response> => {
+    const delay = (ms: number) => new Promise(resolve => setTimeout(resolve, ms));
+    let attempt = 0;
+    const doFetch = async (): Promise<Response> => {
+        attempt++;
+        try {
+          const response = await fetch(url, options);
+          if (response.ok && response.headers.get('Content-Type')?.includes('application/json')) {
+            return response;
+          }
+        } catch (error) {
+          console.error(`Request failed: ${error}`);
+        }
+    
+        const backoffTime = Math.pow(2, attempt) * 1000;
+        if (attempt <= MAX_ATTEMPTS) {
+          await delay(backoffTime);
+          return doFetch();
+        } else {
+          throw new Error(`Failed to fetch "${url}" after ${attempt} attempts.`);
+        }
+      };
+    
+      return doFetch();
+};
+const { get } = createClient<UniversalisV2.paths>({ baseUrl: 'https://universalis.app', fetch: retryFetch});
 
 type ItemsStatsType = UniversalisV2.components["schemas"]["HistoryMultiViewV2"]["items"];
 
