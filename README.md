@@ -12,6 +12,8 @@
 
 [GH Pages](https://github.com/baronvonfonz/arbitralis/tree/gh-pages/csv)
 
+[Historical Data](https://drive.google.com/drive/folders/1h1N0QGSagR-D_gfgU_ClMzcVqn12F01L)
+
 ## TODO:
 
 - retry a few times on API failures
