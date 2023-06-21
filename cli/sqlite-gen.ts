@@ -5,17 +5,21 @@ import csv from 'csv-parser';
 import { 
     createItemsTable,
     createRecipesTable,
+    createVentureItemsTable,
     insertItem,    
     insertRecipe,
+    insertVentureItem,
  } from './sqlite-query.js';
 
 const ITEM_ID_MAPPING_LOCATION = 'https://raw.githubusercontent.com/ffxiv-teamcraft/ffxiv-teamcraft/master/libs/data/src/lib/json/items.json';
 const RECIPE_LOCATION = 'https://raw.githubusercontent.com/viion/ffxiv-datamining/master/csv/Recipe.csv';
+const RETAINER_VENTURE_LOCATION = 'https://raw.githubusercontent.com/xivapi/ffxiv-datamining/e55e6d71d43999157db5a5cca94e7d596fd7088d/csv/RetainerTaskNormal.csv';
 
 const ITEMS_RAW_JSON_FILE = 'items_raw.json';
 const RECIPES_RAW_CSV_FILE = 'recipes.csv';
+const RETAINER_VENTURE_LOCATION_CSV_FILE = 'retainer_task_normal.csv';
 
-export async function maybeFetch() {
+async function fetchFiles() {
     console.log('Refetching');
     await axios.get(ITEM_ID_MAPPING_LOCATION)
         .then((response) => {
@@ -25,9 +29,13 @@ export async function maybeFetch() {
         .then((response) => {
             return fs.promises.writeFile(RECIPES_RAW_CSV_FILE, response.data, 'utf8');
         });
+    await axios.get(RETAINER_VENTURE_LOCATION)
+        .then((response) => {
+            return fs.promises.writeFile(RETAINER_VENTURE_LOCATION_CSV_FILE, response.data, 'utf8');
+        });        
 }
 
-export async function maybeRegenItems(dropAll = false) {
+async function regenBaseItems(dropAll = false) {
     return new Promise<void>((resolve, reject) => {
         if (dropAll) {
             createItemsTable();
@@ -53,7 +61,7 @@ export async function maybeRegenItems(dropAll = false) {
     });
 }
 
-export async function maybeRegenRecipes(dropAll = false) {
+async function regenRecipes(dropAll = false) {
     return new Promise<void>((resolve, reject) => {
         if (dropAll) {
             createRecipesTable();
@@ -78,12 +86,51 @@ export async function maybeRegenRecipes(dropAll = false) {
                 const craftedItemAmount = data['Amount{Result}'];
                 const recipeLevel = data['RecipeLevelTable'];
                 insertRecipe({ 
-                    id: recipeId, craftedItemId, craftedItemAmount, recipeLevel
-                    }, ingredientAmountPairs);
+                    id: recipeId,
+                    craftedItemId,
+                    craftedItemAmount,
+                    recipeLevel,
+                }, ingredientAmountPairs);
             })
             .on('end', () => {
                 console.log('Recipes done');
                 resolve();
             });
     });
+}
+
+async function regenVentureItems(dropAll = false) {
+    return new Promise<void>((resolve, reject) => {
+        if (dropAll) {
+            createVentureItemsTable();
+        }
+        const rawReadStream = fs.createReadStream(RETAINER_VENTURE_LOCATION_CSV_FILE, 'utf8');
+        rawReadStream.pipe(csv({ skipLines: 1 }))
+        .on('data', (data) => {
+            const id = Number(data[`Item`]);
+            const itemQuantityBreakpoints: number[] = [];
+            for (let i = 0; i < 5; i++) {
+                itemQuantityBreakpoints.push(data[`Quantity[${i}]`]);
+            }
+            insertVentureItem({
+                id,
+                amountOne: itemQuantityBreakpoints[0],
+                amountTwo: itemQuantityBreakpoints[1],
+                amountThree: itemQuantityBreakpoints[2],
+                amountFour: itemQuantityBreakpoints[3],
+                amountFive: itemQuantityBreakpoints[4],
+            })
+        })
+        .on('end', () => {
+            console.log('Venture items done');
+            resolve();
+        });
+    });
+}
+
+export async function regenAll(dropAll = false) {
+    await fetchFiles();
+    await regenBaseItems(dropAll);
+    await regenRecipes(dropAll);
+    await regenVentureItems(dropAll);
 }

@@ -1,12 +1,8 @@
 import sqlite3, { Database } from 'sqlite3';
-import fs from 'fs';
 const sqlite3Verbose = sqlite3.verbose();
 
 const ITEMS_DB_FILE = `./cli/items.db`;
-const DB_EXISTS = fs.existsSync(ITEMS_DB_FILE);
-if (!DB_EXISTS) {
-    throw Error(`items.db does not exist at location ${ITEMS_DB_FILE}`);
-}
+
 let db: Database | null = null;
 
 type Item = {
@@ -65,6 +61,24 @@ export function createRecipesTable() {
     });
 }
 
+export function createVentureItemsTable() {
+    getDb().serialize(function() {
+        getDb().run(`DROP TABLE IF EXISTS venture_items`);
+        getDb().run(`
+            CREATE TABLE IF NOT EXISTS venture_items (
+                id INTEGER,
+                amount_one INTEGER,
+                amount_two INTEGER,
+                amount_three INTEGER,
+                amount_four INTEGER,
+                amount_five INTEGER,
+                PRIMARY KEY(id),
+                FOREIGN KEY (id) REFERENCES items(id)
+            )
+        `);
+    });
+}
+
 export function insertItem({ id, name }: Item) {
     getDb().run('INSERT INTO items (id, name) VALUES (?, ?)', [id, name], function(err) {
         if (err) {
@@ -101,6 +115,43 @@ export function insertRecipe(
                         console.log(`A new recipe ingredient ${id} ${ingredientId}`);
                     }
                 });        
+            }
+        });
+    });
+}
+
+export type VentureItem = {
+    id: number;
+    amountOne: number;
+    amountTwo: number;
+    amountThree: number;
+    amountFour: number;
+    amountFive: number;
+};
+export function insertVentureItem(
+    { id,    
+      amountOne,
+      amountTwo,
+      amountThree,
+      amountFour,
+      amountFive
+    }: VentureItem,
+) {
+    getDb().serialize(function() {
+        getDb().run(`
+            INSERT INTO venture_items (id, amount_one, amount_two, amount_three, amount_four, amount_five) VALUES (?, ?, ?, ?, ?, ?)
+        `, [
+            id,
+            amountOne,
+            amountTwo,
+            amountThree,
+            amountFour,
+            amountFive
+        ], function(err) {
+            if (err) {
+                console.error(err.message);
+            } else {
+                console.log(`A new venture item ${id}`);
             }
         });
     });
@@ -185,6 +236,27 @@ export async function getItemsById(itemIds: number[]): Promise<Item[]> {
                   FROM items i
                  WHERE i.id IN (${itemIds.join(',')})
             `, (error: Error, rows: Item[]) => {
+                if (error) {
+                    reject(error);
+                }
+                resolve(rows);
+            });
+        });    
+    });
+}
+
+export async function getVentureItems(): Promise<VentureItem[]> {
+    return new Promise<VentureItem[]>((resolve, reject) => {
+        getDb().serialize(function() {
+            getDb().all(`
+                SELECT id, 
+                       amount_one as amountOne,
+                       amount_two as amountTwo,
+                       amount_three as amountThree,
+                       amount_four as amountFour,
+                       amount_five as amountFive
+                  FROM venture_items
+            `, (error: Error, rows: VentureItem[]) => {
                 if (error) {
                     reject(error);
                 }

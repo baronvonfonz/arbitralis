@@ -1,32 +1,22 @@
 import fs from 'fs';
 import { generateCsvs } from './csv-report-gen.js';
-import { maybeFetch, maybeRegenItems, maybeRegenRecipes } from './sqlite-gen.js';
+import { regenAll } from './sqlite-gen.js';
 
 
-let refetch = false;
-let regenItems = false;
-let regenRecipes = false;
+let dataGen = false;
 let dropAll = false;
-let ventures = false;
+let csvGen = false;
 process.argv.forEach((argName) => {
-    if (argName === 'fetch') {
-        refetch = true;
-    }
-
-    if (argName === 'items') {
-        regenItems = true;
-    }
-
-    if (argName === 'recipes') {
-        regenRecipes = true;
+    if (argName === 'data-gen') {
+        dataGen = true;
     }
     
     if (argName === 'drop') {
         dropAll = true;
     }
 
-    if (argName === 'ventures') {
-        ventures = true;
+    if (argName === 'csv-gen') {
+        csvGen = true;
     }
 });
 
@@ -37,15 +27,15 @@ async function runCli() {
     if (!fs.existsSync(distDirectoryPath)) {
         fs.mkdirSync(distDirectoryPath, { recursive: true });
         console.log(`Directory structure created at ${distDirectoryPath}`);
-      } else {
+    } else {
         console.log(`Directory structure already exists at ${distDirectoryPath}`);
-      }
+    }
 
-    // await maybeFetch();
-    // await maybeRegenItems();
-    // await maybeRegenRecipes();
-    // await maybeGetRecipePrices();
-    if (ventures) {
+    if (dataGen) {
+        await regenAll(dropAll);
+    }
+
+    if (csvGen) {
         await generateCsvs();
     }
 
