@@ -5,19 +5,23 @@ import csv from 'csv-parser';
 import { 
     createItemsTable,
     createRecipesTable,
+    createShopItemsTable,
     createVentureItemsTable,
     insertItem,    
     insertRecipe,
+    insertShopItem,
     insertVentureItem,
  } from './sqlite-query.js';
 
 const ITEM_ID_MAPPING_LOCATION = 'https://raw.githubusercontent.com/ffxiv-teamcraft/ffxiv-teamcraft/master/libs/data/src/lib/json/items.json';
 const RECIPE_LOCATION = 'https://raw.githubusercontent.com/viion/ffxiv-datamining/master/csv/Recipe.csv';
 const RETAINER_VENTURE_LOCATION = 'https://raw.githubusercontent.com/xivapi/ffxiv-datamining/e55e6d71d43999157db5a5cca94e7d596fd7088d/csv/RetainerTaskNormal.csv';
+const SPECIAL_SHOP_LOCATION = 'https://raw.githubusercontent.com/xivapi/ffxiv-datamining/master/csv/SpecialShop.csv';
 
 const ITEMS_RAW_JSON_FILE = 'items_raw.json';
 const RECIPES_RAW_CSV_FILE = 'recipes.csv';
 const RETAINER_VENTURE_LOCATION_CSV_FILE = 'retainer_task_normal.csv';
+const SPECIAL_SHOP_LOCATION_CSV_FILE = 'special_shop.csv';
 
 async function fetchFiles() {
     console.log('Refetching');
@@ -33,6 +37,10 @@ async function fetchFiles() {
         .then((response) => {
             return fs.promises.writeFile(RETAINER_VENTURE_LOCATION_CSV_FILE, response.data, 'utf8');
         });        
+    await axios.get(SPECIAL_SHOP_LOCATION)
+        .then((response) => {
+            return fs.promises.writeFile(SPECIAL_SHOP_LOCATION_CSV_FILE, response.data, 'utf8');
+        });                
 }
 
 async function regenBaseItems(dropAll = false) {
@@ -128,9 +136,54 @@ async function regenVentureItems(dropAll = false) {
     });
 }
 
+
+async function regenShopItems(dropAll = false) {
+    return new Promise<void>((resolve, reject) => {
+        if (dropAll) {
+            createShopItemsTable();
+        }
+        const rawReadStream = fs.createReadStream(SPECIAL_SHOP_LOCATION_CSV_FILE, 'utf8');
+        rawReadStream.pipe(csv({ skipLines: 1 }))
+        .on('data', (data) => {
+            // beeeg columns (60 per, sometimes there are items with multiple received/costs which we are ignoring for now)
+            for (let i = 0; i < 60; i++) {
+                const itemId = data[`Item{Receive}[${i}][0]`];
+                const itemAmount = data[`Count{Receive}[${i}][0]`];
+                const costItemId = data[`Item{Cost}[${i}][0]`];
+                const costAmount = data[`Count{Cost}[${i}][0]`];
+
+                const skipIfTwoItemsReceived = data[`Item{Receive}[${i}][1]`];
+                const skipIfTwoItemsCost = data[`Item{Cost}[${i}][1]`];
+
+                if (Number(itemId) === 0) {
+                    console.log('No item received, skipping');
+                    continue;
+                }
+
+                if (Number(skipIfTwoItemsCost) !== 0 || Number(skipIfTwoItemsReceived) !== 0) {
+                    console.log(`Skipping cost/receive ${skipIfTwoItemsCost} - ${skipIfTwoItemsReceived}`);
+                    continue;
+                }
+
+                insertShopItem({
+                    itemId,
+                    itemAmount,
+                    costItemId,
+                    costAmount,
+                });
+            }
+        })
+        .on('end', () => {
+            console.log('Shop items done');
+            resolve();
+        });
+    });
+}
+
 export async function regenAll(dropAll = false) {
     await fetchFiles();
     await regenBaseItems(dropAll);
     await regenRecipes(dropAll);
     await regenVentureItems(dropAll);
+    await regenShopItems(dropAll);
 }

@@ -16,10 +16,4 @@
 
 ## TODO:
 
-- retry a few times on API failures
-
 - better timestamping?
-
-- gil/specialshop
-
-https://raw.githubusercontent.com/xivapi/ffxiv-datamining/master/csv/SpecialShop.csv

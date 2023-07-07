@@ -79,6 +79,22 @@ export function createVentureItemsTable() {
     });
 }
 
+export function createShopItemsTable() {
+    getDb().serialize(function() {
+        getDb().run(`DROP TABLE IF EXISTS shop_items`);
+        getDb().run(`
+            CREATE TABLE IF NOT EXISTS shop_items (
+                id INTEGER PRIMARY KEY AUTOINCREMENT,
+                item_id INTEGER,
+                item_amount INTEGER,
+                cost_item_id INTEGER,
+                cost_amount INTEGER,
+                FOREIGN KEY (item_id) REFERENCES items(id)
+            )
+        `);
+    });
+}
+
 export function insertItem({ id, name }: Item) {
     getDb().run('INSERT INTO items (id, name) VALUES (?, ?)', [id, name], function(err) {
         if (err) {
@@ -224,6 +240,38 @@ export function getAllRecipesIngredients(): Promise<RecipesIngredientsMetadata> 
                     recipesToIngredients,
                 });
             });
+        });
+    });
+}
+
+export type ShopItem = {
+    itemId: number;
+    itemAmount: number;
+    costItemId: number;
+    costAmount: number;
+};
+export function insertShopItem(
+    {
+      itemId,    
+      itemAmount,
+      costItemId,
+      costAmount,
+    }: ShopItem,
+) {
+    getDb().serialize(function() {
+        getDb().run(`
+            INSERT INTO shop_items (item_id, item_amount, cost_item_id, cost_amount) VALUES (?, ?, ?, ?)
+        `, [
+            itemId,    
+            itemAmount,
+            costItemId,
+            costAmount,
+        ], function(err) {
+            if (err) {
+                console.error(err.message);
+            } else {
+                console.log(`A new shop item ${itemId}`);
+            }
         });
     });
 }
