@@ -6,6 +6,8 @@
 
 [Latest Recipe Stats](https://baronvonfonz.github.io/ez-csv/?encodedUrl=https%3A%2F%2Fraw.githubusercontent.com%2Fbaronvonfonz%2Farbitralis%2Fgh-pages%2Fcsv%2Frecipe_item_stats.csv)
 
+[Latest Special Shop Stats](https://baronvonfonz.github.io/ez-csv?encodedUrl=https%3A%2F%2Fraw.githubusercontent.com%2Fbaronvonfonz%2Farbitralis%2Fgh-pages%2Fcsv%2Fshop_item_stats.csv)
+
 [Latest Max Buyers](https://baronvonfonz.github.io/ez-csv/?encodedUrl=https%3A%2F%2Fraw.githubusercontent.com%2Fbaronvonfonz%2Farbitralis%2Fgh-pages%2Fcsv%2Fmax_buyer_items_stats.csv)
 
 ### Raw Stuff
