@@ -5,6 +5,7 @@ import { createObjectCsvWriter } from 'csv-writer';
 import { 
     getAllRecipesIngredients,
     getItemsById,
+    getShopItems,
     getVentureItems,
     IngredientAmounts,
     RecipeStrategy,
@@ -62,6 +63,12 @@ type UniversalisEnrichedRecipe = {
 & Partial<PrefixedType<UniversalisEnrichedItemAmount, "ingredientSeven_">>
 & Partial<PrefixedType<UniversalisEnrichedItemAmount, "ingredientEight_">>
 & Partial<PrefixedType<UniversalisEnrichedItemAmount, "ingredientNine_">>;
+type UniversalisEnrichedShopItem = {
+    amountTotalPrice: number;
+    costItemId: number;
+    costItemName: string;
+    costItemAmount: number;
+} & UniversalisEnrichedItemAmount;
 
 function getCsvWriterFieldNames(instanceOfObject: Record<string, string | number>): { id: string; title:string; }[] {
     const fieldNames = Object.keys(instanceOfObject);
@@ -97,14 +104,23 @@ const universalisEnrichedVentureItems: UniversalisEnrichedVentureItem[] = [];
 const alreadyTrackedMaxBuys = new Set<number>();
 const universalisMaxBuyEntries: UniversalisBuyEntryItem[] = [];
 const universalisEnrichedRecipes: UniversalisEnrichedRecipe[] = [];
+const universalisEnrichedShopItems: UniversalisEnrichedShopItem[] = [];
 
 export async function generateCsvs() {
     const marketable = await UniversalClient.marketable();
     console.log(`There are currently ${marketable.length} marketable items`);
      
-    const ventureItems: VentureItem[] = await getVentureItems();
+    const ventureItems = await getVentureItems();
+    const shopItems = await getShopItems();
     const recipesIngredientsMetadata = await getAllRecipesIngredients();
-    const idsToLookup: number[] = [...new Set([...(ventureItems.map(({ id }) => id)), ...recipesIngredientsMetadata.allItemIds])].sort();
+    const idsToLookup: number[] = [
+        ...new Set([
+            ...(ventureItems.map(({ id }) => id)),
+            ...recipesIngredientsMetadata.allItemIds,
+            ...shopItems.map(({ itemId }) => itemId),
+            ...shopItems.map(({ costItemId }) => costItemId),
+        ])
+    ].sort();
     const idToNameMap: Record<number,string> = (await getItemsById(idsToLookup))
         .reduce((idNameMap, item) => ({ [item.id]: item.name, ...idNameMap }), {});
     
@@ -301,10 +317,40 @@ export async function generateCsvs() {
         ]
     }, universalisEnrichedRecipes);
 
+    shopItems.filter(shopItem => marketable.includes(shopItem.itemId)).forEach(shopItem => {
+        const itemHistoryView = historyViewsByid[shopItem.itemId];
+        const { maxPriceEntry, ...enrichedItem } = universalisEntryEnrichedItem({
+            id: shopItem.itemId,
+            name: idToNameMap[shopItem.itemId] 
+        }, itemHistoryView);
+
+        if (!enrichedItem.averagePricePerUnit) {
+            return;
+        }
+
+        if (maxPriceEntry) {
+            addMaxPriceEntry(enrichedItem, maxPriceEntry);
+        }
+
+        universalisEnrichedShopItems.push({
+            ...enrichedItem,
+            amount: shopItem.itemAmount,
+            amountTotalPrice: shopItem.itemAmount * enrichedItem.averagePricePerUnit,
+            costItemId: shopItem.costItemId,
+            costItemAmount: shopItem.costAmount,
+            costItemName: idToNameMap[shopItem.costItemId] 
+        }); 
+    });
+
+    await writeCsvSync({
+        path: 'dist/gh-pages/csv/shop_item_stats.csv',
+        header: getCsvWriterFieldNames(universalisEnrichedShopItems[0])
+    }, universalisEnrichedShopItems);
+
     await writeCsvSync({
         path: 'dist/gh-pages/csv/max_buyer_items_stats.csv',
         header: getCsvWriterFieldNames(universalisMaxBuyEntries[0])
     }, universalisMaxBuyEntries);
-
+    
     return;
 }

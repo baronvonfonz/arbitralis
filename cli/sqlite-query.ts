@@ -206,7 +206,6 @@ export function getAllRecipesIngredients(): Promise<RecipesIngredientsMetadata> 
                 if (error) {
                     reject(error);
                 }
-                console.log(`Found ${rows.length} recipe ingredients`);
                 const allItemIds = new Set<number>();
                 const recipesToIngredients: RecipeToIngredients = {};
                 let currentCraftedId = -1;
@@ -305,6 +304,25 @@ export async function getVentureItems(): Promise<VentureItem[]> {
                        amount_five as amountFive
                   FROM venture_items
             `, (error: Error, rows: VentureItem[]) => {
+                if (error) {
+                    reject(error);
+                }
+                resolve(rows);
+            });
+        });    
+    });
+}
+
+export async function getShopItems(): Promise<ShopItem[]> {
+    return new Promise<ShopItem[]>((resolve, reject) => {
+        getDb().serialize(function() {
+            getDb().all(`
+                SELECT item_id as itemId,
+                       item_amount as itemAmount,
+                       cost_item_id as costItemId,
+                       cost_amount as costAmount
+                  FROM shop_items
+            `, (error: Error, rows: ShopItem[]) => {
                 if (error) {
                     reject(error);
                 }
