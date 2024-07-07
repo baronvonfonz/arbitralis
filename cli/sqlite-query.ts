@@ -109,6 +109,7 @@ export function insertRecipe(
     { id, craftedItemId, craftedItemAmount, recipeLevel,}: Recipe,
     ingredientAmountPairs: Record<number, number>
 ) {
+    console.log(`inserting [${id}, ${craftedItemId}, ${craftedItemAmount}, ${recipeLevel}]`)
     getDb().serialize(function() {
         getDb().run(`
             INSERT INTO recipes (id, crafted_id, crafted_amount, recipe_level) VALUES (?, ?, ?, ?)

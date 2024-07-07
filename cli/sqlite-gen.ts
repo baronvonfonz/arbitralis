@@ -80,6 +80,8 @@ async function regenRecipes(dropAll = false) {
         const rawReadStream = fs.createReadStream(RECIPES_RAW_CSV_FILE, 'utf8');
         rawReadStream.pipe(csv({ skipLines: 1 }))
             .on('data', (data) => {
+                const craftedItemId = data['Item{Result}'];
+
                 let ingredientAmountPairs = {};
                 for (let i = 0; i < 10; i++) {
                     const itemId = data[`Item{Ingredient}[${i}]`];
@@ -90,12 +92,15 @@ async function regenRecipes(dropAll = false) {
                     }
                 }
                 if (Object.keys(ingredientAmountPairs).length === 0) {
+                    console.log(`Failed to determine ingredient amounts for ${craftedItemId}`);
                     return;
                 }
-                const recipeId = data['Number'];
-                const craftedItemId = data['Item{Result}'];
+
+                // 7/7/2024 -> prior the 'Number' column was unique, now '#' is the 'row id' it seems
+                const recipeId = data['#'];
                 const craftedItemAmount = data['Amount{Result}'];
                 const recipeLevel = data['RecipeLevelTable'];
+
                 insertRecipe({ 
                     id: recipeId,
                     craftedItemId,
