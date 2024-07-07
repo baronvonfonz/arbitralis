@@ -24,19 +24,22 @@ const RETAINER_VENTURE_LOCATION_CSV_FILE = 'retainer_task_normal.csv';
 const SPECIAL_SHOP_LOCATION_CSV_FILE = 'special_shop.csv';
 
 async function fetchFiles() {
-    console.log('Refetching');
+    console.log(`Refecting ${ITEM_ID_MAPPING_LOCATION}`);
     await axios.get(ITEM_ID_MAPPING_LOCATION)
         .then((response) => {
             return fs.promises.writeFile(ITEMS_RAW_JSON_FILE, JSON.stringify(response.data), 'utf8');
         });
+    console.log(`Refecting ${RECIPE_LOCATION}`);
     await axios.get(RECIPE_LOCATION)
         .then((response) => {
             return fs.promises.writeFile(RECIPES_RAW_CSV_FILE, response.data, 'utf8');
         });
+    console.log(`Refecting ${RETAINER_VENTURE_LOCATION}`);
     await axios.get(RETAINER_VENTURE_LOCATION)
         .then((response) => {
             return fs.promises.writeFile(RETAINER_VENTURE_LOCATION_CSV_FILE, response.data, 'utf8');
         });        
+    console.log(`Refecting ${SPECIAL_SHOP_LOCATION}`);
     await axios.get(SPECIAL_SHOP_LOCATION)
         .then((response) => {
             return fs.promises.writeFile(SPECIAL_SHOP_LOCATION_CSV_FILE, response.data, 'utf8');
