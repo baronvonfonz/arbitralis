@@ -1,5 +1,9 @@
 # Quick Links
 
+### Data Explained
+
+[Universalis API Docs](https://docs.universalis.app/) -> most if not all columns here are pass-through from Universalis
+
 ### Latest Data
 
 [Latest Venture Item Stats](https://baronvonfonz.github.io/ez-csv/?encodedUrl=https%3A%2F%2Fraw.githubusercontent.com%2Fbaronvonfonz%2Farbitralis%2Fgh-pages%2Fcsv%2Fventure_items_stats.csv)
