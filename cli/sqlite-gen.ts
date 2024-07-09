@@ -13,56 +13,96 @@ import {
     insertVentureItem,
  } from './sqlite-query.js';
 
-const ITEM_ID_MAPPING_LOCATION = 'https://raw.githubusercontent.com/ffxiv-teamcraft/ffxiv-teamcraft/master/libs/data/src/lib/json/items.json';
+const ITEM_ID_TO_NAME_MAPPING_LOCATION = 'https://raw.githubusercontent.com/ffxiv-teamcraft/ffxiv-teamcraft/master/libs/data/src/lib/json/items.json';
+const ITEM_ID_TO_ILVL_MAPPING_LOCATION = 'https://raw.githubusercontent.com/ffxiv-teamcraft/ffxiv-teamcraft/staging/libs/data/src/lib/json/ilvls.json';
 const RECIPE_LOCATION = 'https://raw.githubusercontent.com/viion/ffxiv-datamining/master/csv/Recipe.csv';
-const RETAINER_VENTURE_LOCATION = 'https://raw.githubusercontent.com/xivapi/ffxiv-datamining/e55e6d71d43999157db5a5cca94e7d596fd7088d/csv/RetainerTaskNormal.csv';
+const RETAINER_VENTURE_LOCATION = 'https://raw.githubusercontent.com/xivapi/ffxiv-datamining/master/csv/RetainerTaskNormal.csv';
 const SPECIAL_SHOP_LOCATION = 'https://raw.githubusercontent.com/xivapi/ffxiv-datamining/master/csv/SpecialShop.csv';
 
 const ITEMS_RAW_JSON_FILE = 'items_raw.json';
+const ILVLS_RAW_JSON_FILE = 'ilvls_raw.json';
 const RECIPES_RAW_CSV_FILE = 'recipes.csv';
 const RETAINER_VENTURE_LOCATION_CSV_FILE = 'retainer_task_normal.csv';
 const SPECIAL_SHOP_LOCATION_CSV_FILE = 'special_shop.csv';
 
 async function fetchFiles() {
-    console.log(`Refecting ${ITEM_ID_MAPPING_LOCATION}`);
-    await axios.get(ITEM_ID_MAPPING_LOCATION)
+    const axiosInstance = axios.create({
+        timeout: 60_000,
+    })
+    console.log(`Refetching ${ITEM_ID_TO_NAME_MAPPING_LOCATION}`);
+    await axiosInstance.get(ITEM_ID_TO_NAME_MAPPING_LOCATION)
         .then((response) => {
             return fs.promises.writeFile(ITEMS_RAW_JSON_FILE, JSON.stringify(response.data), 'utf8');
         });
-    console.log(`Refecting ${RECIPE_LOCATION}`);
-    await axios.get(RECIPE_LOCATION)
+    await new Promise(resolve => setTimeout(resolve, 30_000));
+
+    console.log(`Refetching ${ITEM_ID_TO_ILVL_MAPPING_LOCATION}`);
+    await axiosInstance.get(ITEM_ID_TO_ILVL_MAPPING_LOCATION)
+        .then((response) => {
+            return fs.promises.writeFile(ILVLS_RAW_JSON_FILE, JSON.stringify(response.data), 'utf8');
+        });
+    await new Promise(resolve => setTimeout(resolve, 30_000));
+
+    console.log(`Refetching ${RECIPE_LOCATION}`);
+    await axiosInstance.get(RECIPE_LOCATION)
         .then((response) => {
             return fs.promises.writeFile(RECIPES_RAW_CSV_FILE, response.data, 'utf8');
         });
-    console.log(`Refecting ${RETAINER_VENTURE_LOCATION}`);
-    await axios.get(RETAINER_VENTURE_LOCATION)
+    await new Promise(resolve => setTimeout(resolve, 30_000));
+
+    console.log(`Refetching ${RETAINER_VENTURE_LOCATION}`);
+    await axiosInstance.get(RETAINER_VENTURE_LOCATION)
         .then((response) => {
             return fs.promises.writeFile(RETAINER_VENTURE_LOCATION_CSV_FILE, response.data, 'utf8');
         });        
-    console.log(`Refecting ${SPECIAL_SHOP_LOCATION}`);
-    await axios.get(SPECIAL_SHOP_LOCATION)
+    await new Promise(resolve => setTimeout(resolve, 30_000));
+
+    console.log(`Refetching ${SPECIAL_SHOP_LOCATION}`);
+    await axiosInstance.get(SPECIAL_SHOP_LOCATION)
         .then((response) => {
             return fs.promises.writeFile(SPECIAL_SHOP_LOCATION_CSV_FILE, response.data, 'utf8');
         });                
 }
 
+async function getIlvlMap() {
+    return new Promise<Map<number, number>>((resolve, reject) => {
+        const rawReadStream = fs.createReadStream(ILVLS_RAW_JSON_FILE, 'utf8');
+        const jsonParser = parse('$*');
+        rawReadStream.pipe(jsonParser);
+
+        const idToIlvlMap = new Map<number, number>();
+
+        jsonParser.on('data', (data) => {
+            if (data) {
+                idToIlvlMap.set(Number(data.key), Number(data.value));
+            }
+        });
+
+        jsonParser.on('end', () => {
+            console.log('Items done');
+            resolve(idToIlvlMap);
+        });
+
+    });
+}
+
 async function regenBaseItems(dropAll = false) {
+    const idToIlvlMap = await getIlvlMap();
+
     return new Promise<void>((resolve, reject) => {
         if (dropAll) {
             createItemsTable();
         }
+        
         const rawReadStream = fs.createReadStream(ITEMS_RAW_JSON_FILE, 'utf8');
-        const jsonParser = parse('*');
+        const jsonParser = parse('$*');
         rawReadStream.pipe(jsonParser);
-        //TODO: unclear how JSONStream handles maps, otherwise this should not require a temp var
-        let id = 0;
+
         jsonParser.on('data', (data) => {
-            // some items have no name, they're useless I think but need to track the ID
-            if (data.en || data.en === '') {
-                id++;
-            }
-            if (data.en) {
-                insertItem({ id, name: data.en });
+            const itemData = data.value;
+
+            if (itemData.en) {
+                insertItem({ id: data.key, name: itemData.en, ilvl: idToIlvlMap.get(Number(data.key)) ?? 0 });
             }
         });
         jsonParser.on('end', () => {

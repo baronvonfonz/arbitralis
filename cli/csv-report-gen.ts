@@ -1,4 +1,3 @@
-import axios from 'axios';
 import fs from 'fs';
 import csv from 'csv-parser';
 import { createObjectCsvWriter } from 'csv-writer';

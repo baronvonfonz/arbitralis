@@ -1,6 +1,7 @@
 dist/
 *.sqbpro
 items_raw.json
+ilvls_raw.json
 items_massaged.json
 recipes.csv
 retainer_task_normal.csv

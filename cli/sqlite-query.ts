@@ -8,6 +8,7 @@ let db: Database | null = null;
 type Item = {
     id: number;
     name: string;
+    ilvl: number;
 }
 
 type Recipe = {
@@ -30,7 +31,7 @@ export function createItemsTable() {
         getDb().run(`DROP TABLE IF EXISTS recipes_ingredients`);
         getDb().run(`DROP TABLE IF EXISTS recipes`);
         getDb().run(`DROP TABLE IF EXISTS items`);
-        getDb().run('CREATE TABLE IF NOT EXISTS items (id INTEGER PRIMARY KEY, name TEXT)');        
+        getDb().run('CREATE TABLE IF NOT EXISTS items (id INTEGER PRIMARY KEY, name TEXT, ilvl INTEGER)');        
     });
 }
 
@@ -95,12 +96,12 @@ export function createShopItemsTable() {
     });
 }
 
-export function insertItem({ id, name }: Item) {
-    getDb().run('INSERT INTO items (id, name) VALUES (?, ?)', [id, name], function(err) {
+export function insertItem({ id, name, ilvl }: Item) {
+    getDb().run('INSERT INTO items (id, name, ilvl) VALUES (?, ?, ?)', [id, name, ilvl], function(err) {
         if (err) {
             console.error(err.message);
         } else {
-            console.log(`A new item ${name} with ID ${this.lastID}`);
+            console.log(`A new item ${name}:${ilvl} with ID ${this.lastID}`);
         }
     });
 }
