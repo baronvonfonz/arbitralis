@@ -17,7 +17,7 @@ const retryFetch = (url: RequestInfo | URL, options?: RequestInit): Promise<Resp
           console.error(`Request failed: ${error}`);
         }
     
-        const backoffTime = Math.pow(2, attempt) * 1000;
+        const backoffTime = Math.pow(2, attempt) * 5000;
         if (attempt <= MAX_ATTEMPTS) {
           await delay(backoffTime);
           return doFetch();
