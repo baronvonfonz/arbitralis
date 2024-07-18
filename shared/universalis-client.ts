@@ -22,7 +22,7 @@ const retryFetch = (url: RequestInfo | URL, options?: RequestInit): Promise<Resp
           await delay(backoffTime);
           return doFetch();
         } else {
-          throw new Error(`Failed to fetch "${url}" after ${attempt} attempts.`);
+          console.error(`Failed to fetch "${url}" after ${attempt} attempts.`);
         }
       };
     
